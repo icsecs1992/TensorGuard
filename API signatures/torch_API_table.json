@@ -1,0 +1,4421 @@
+[
+  {
+    "\n torch. sparse_coo_tensor ": "\n torch. sparse_coo_tensor ( indices ,  values ,  size ,  * ,  dtype ,  device ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. is_tensor ": "\n torch. is_tensor ( obj ) [source] \u00b6"
+  },
+  {
+    "\n torch. is_storage ": "\n torch. is_storage ( obj ) [source] \u00b6"
+  },
+  {
+    "\n torch. is_complex ": "\n torch. is_complex ( input ) \u00b6"
+  },
+  {
+    "\n torch. is_conj ": "\n torch. is_conj ( input ) \u00b6"
+  },
+  {
+    "\n torch. is_floating_point ": "\n torch. is_floating_point ( input ) \u00b6"
+  },
+  {
+    "\n torch. is_nonzero ": "\n torch. is_nonzero ( input ) \u00b6"
+  },
+  {
+    "\n torch. set_default_dtype ": "\n torch. set_default_dtype ( d ) [source] \u00b6"
+  },
+  {
+    "\n torch. get_default_dtype ": "\n torch. get_default_dtype ( )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. set_default_tensor_type ": "\n torch. set_default_tensor_type ( t ) [source] \u00b6"
+  },
+  {
+    "\n torch. numel ": "\n torch. numel ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. set_printoptions ": "\n torch. set_printoptions ( precision ,  threshold ,  edgeitems ,  linewidth ,  profile ,  sci_mode ) [source] \u00b6"
+  },
+  {
+    "\n torch. set_flush_denormal ": "\n torch. set_flush_denormal ( mode )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. rand ": "\n torch. rand ( *size ,  * ,  out=None ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False ,  pin_memory=False )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. rand_like ": "\n torch. rand_like ( input ,  * ,  dtype ,  layout ,  device ,  requires_grad ,  memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. randn ": "\n torch. randn ( *size ,  * ,  out=None ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False ,  pin_memory=False )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. randn_like ": "\n torch. randn_like ( input ,  * ,  dtype ,  layout ,  device ,  requires_grad ,  memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. randint ": "\n torch. randint ( low=0 ,  high ,  size ,  \\* ,  generator=None ,  out=None ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. randint_like ": "\n torch. randint_like ( input ,  low=0 ,  high ,  \\* ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False ,  memory_format=torch.preserve_format )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. randperm ": "\n torch. randperm ( n ,  * ,  generator ,  out ,  dtype ,  layout ,  device ,  requires_grad ,  pin_memory )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. empty ": "\n torch. empty ( *size ,  * ,  out=None ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False ,  pin_memory=False ,  memory_format=torch.contiguous_format )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. tensor ": "\n torch. tensor ( data ,  * ,  dtype ,  device ,  requires_grad ,  pin_memory )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. sparse_coo_tensor ": "\n torch. sparse_coo_tensor ( indices ,  values ,  size ,  * ,  dtype ,  device ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. asarray ": "\n torch. asarray ( obj ,  * ,  dtype ,  device ,  copy ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. as_tensor ": "\n torch. as_tensor ( data ,  dtype ,  device )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. as_strided ": "\n torch. as_strided ( input ,  size ,  stride ,  storage_offset )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. from_numpy ": "\n torch. from_numpy ( ndarray )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. from_dlpack ": "\n torch. from_dlpack ( ext_tensor )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch. frombuffer ": "\n torch. frombuffer ( buffer ,  * ,  dtype ,  count ,  offset ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. zeros ": "\n torch. zeros ( *size ,  * ,  out=None ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. zeros_like ": "\n torch. zeros_like ( input ,  * ,  dtype ,  layout ,  device ,  requires_grad ,  memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. ones ": "\n torch. ones ( *size ,  * ,  out=None ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. ones_like ": "\n torch. ones_like ( input ,  * ,  dtype ,  layout ,  device ,  requires_grad ,  memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. arange ": "\n torch. arange ( start=0 ,  end ,  step=1 ,  * ,  out=None ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. range ": "\n torch. range ( start=0 ,  end ,  step=1 ,  * ,  out=None ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. linspace ": "\n torch. linspace ( start ,  end ,  steps ,  * ,  out ,  dtype ,  layout ,  device ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. logspace ": "\n torch. logspace ( start ,  end ,  steps ,  base ,  * ,  out ,  dtype ,  layout ,  device ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. eye ": "\n torch. eye ( n ,  m ,  * ,  out ,  dtype ,  layout ,  device ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. empty_like ": "\n torch. empty_like ( input ,  * ,  dtype ,  layout ,  device ,  requires_grad ,  memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. empty_strided ": "\n torch. empty_strided ( size ,  stride ,  * ,  dtype ,  layout ,  device ,  requires_grad ,  pin_memory )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. full ": "\n torch. full ( size ,  fill_value ,  * ,  out ,  dtype ,  layout ,  device ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. full_like ": "\n torch. full_like ( input ,  fill_value ,  \\* ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False ,  memory_format=torch.preserve_format )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. quantize_per_tensor ": "\n torch. quantize_per_tensor ( input ,  scale ,  zero_point ,  dtype )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. quantize_per_channel ": "\n torch. quantize_per_channel ( input ,  scales ,  zero_points ,  axis ,  dtype )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. dequantize ": "\n torch. dequantize ( tensor )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. complex ": "\n torch. complex ( real ,  imag ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. real ": "\n torch. real ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. imag ": "\n torch. imag ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. polar ": "\n torch. polar ( abs ,  angle ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. abs ": "\n torch. abs ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. angle ": "\n torch. angle ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. heaviside ": "\n torch. heaviside ( input ,  values ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. adjoint ": "\n torch. adjoint ( Tensor )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. argwhere ": "\n torch. argwhere ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. cat ": "\n torch. cat ( tensors ,  dim ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. concat ": "\n torch. concat ( tensors ,  dim ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. concatenate ": "\n torch. concatenate ( tensors ,  axis ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. conj ": "\n torch. conj ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. chunk ": "\n torch. chunk ( input ,  chunks ,  dim )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. dsplit ": "\n torch. dsplit ( input ,  indices_or_sections )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. column_stack ": "\n torch. column_stack ( tensors ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. dstack ": "\n torch. dstack ( tensors ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. gather ": "\n torch. gather ( input ,  dim ,  index ,  * ,  sparse_grad ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. hsplit ": "\n torch. hsplit ( input ,  indices_or_sections )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. hstack ": "\n torch. hstack ( tensors ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. index_add ": "\n torch. index_add ( input ,  dim ,  index ,  source ,  * ,  alpha ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. index_add_ ": "\n Tensor. index_add_ ( dim ,  index ,  source ,  * ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. index_copy ": "\n torch. index_copy ( input ,  dim ,  index ,  source ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. index_reduce ": "\n torch. index_reduce ( input ,  dim ,  index ,  source ,  reduce ,  * ,  include_self ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. index_reduce_ ": "\n Tensor. index_reduce_ ( dim ,  index ,  source ,  reduce ,  * ,  include_self )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. index_select ": "\n torch. index_select ( input ,  dim ,  index ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. masked_select ": "\n torch. masked_select ( input ,  mask ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. movedim ": "\n torch. movedim ( input ,  source ,  destination )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. moveaxis ": "\n torch. moveaxis ( input ,  source ,  destination )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. narrow ": "\n torch. narrow ( input ,  dim ,  start ,  length )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. nonzero ": "\n torch. nonzero ( input ,  * ,  out ,  as_tuple )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. permute ": "\n torch. permute ( input ,  dims )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. reshape ": "\n torch. reshape ( input ,  shape )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. row_stack ": "\n torch. row_stack ( tensors ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. vstack ": "\n torch. vstack ( tensors ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. select ": "\n torch. select ( input ,  dim ,  index )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. scatter ": "\n torch. scatter ( input ,  dim ,  index ,  src )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. scatter_ ": "\n Tensor. scatter_ ( dim ,  index ,  src ,  reduce )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. diagonal_scatter ": "\n torch. diagonal_scatter ( input ,  src ,  offset ,  dim1 ,  dim2 )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. select_scatter ": "\n torch. select_scatter ( input ,  src ,  dim ,  index )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. slice_scatter ": "\n torch. slice_scatter ( input ,  src ,  dim ,  start ,  end ,  step )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. scatter_add ": "\n torch. scatter_add ( input ,  dim ,  index ,  src )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. scatter_add_ ": "\n Tensor. scatter_add_ ( dim ,  index ,  src )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. scatter_reduce ": "\n torch. scatter_reduce ( input ,  dim ,  index ,  src ,  reduce ,  * ,  include_self )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. scatter_reduce_ ": "\n Tensor. scatter_reduce_ ( dim ,  index ,  src ,  reduce ,  * ,  include_self )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. split ": "\n torch. split ( tensor ,  split_size_or_sections ,  dim ) [source] \u00b6"
+  },
+  {
+    "\n torch. squeeze ": "\n torch. squeeze ( input ,  dim )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. stack ": "\n torch. stack ( tensors ,  dim ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. swapaxes ": "\n torch. swapaxes ( input ,  axis0 ,  axis1 )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. transpose ": "\n torch. transpose ( input ,  dim0 ,  dim1 )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. swapdims ": "\n torch. swapdims ( input ,  dim0 ,  dim1 )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. t ": "\n torch. t ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. take ": "\n torch. take ( input ,  index )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. take_along_dim ": "\n torch. take_along_dim ( input ,  indices ,  dim ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. tensor_split ": "\n torch. tensor_split ( input ,  indices_or_sections ,  dim )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. tile ": "\n torch. tile ( input ,  dims )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. unbind ": "\n torch. unbind ( input ,  dim )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. unsqueeze ": "\n torch. unsqueeze ( input ,  dim )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. vsplit ": "\n torch. vsplit ( input ,  indices_or_sections )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. where ": "\n torch. where ( condition ,  x ,  y )   \u2192 \u00b6"
+  },
+  {
+    "\n class torch. Generator ": "\n class torch. Generator ( device ) \u00b6"
+  },
+  {
+    "\n torch. seed ": "\n torch. seed ( ) [source] \u00b6"
+  },
+  {
+    "\n torch. manual_seed ": "\n torch. manual_seed ( seed ) [source] \u00b6"
+  },
+  {
+    "\n torch. initial_seed ": "\n torch. initial_seed ( ) [source] \u00b6"
+  },
+  {
+    "\n torch. get_rng_state ": "\n torch. get_rng_state ( ) [source] \u00b6"
+  },
+  {
+    "\n torch. set_rng_state ": "\n torch. set_rng_state ( new_state ) [source] \u00b6"
+  },
+  {
+    "\n torch. bernoulli ": "\n torch. bernoulli ( input ,  * ,  generator ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. multinomial ": "\n torch. multinomial ( input ,  num_samples ,  replacement ,  * ,  generator ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. normal ": "\n torch. normal ( mean ,  std ,  * ,  generator ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. poisson ": "\n torch. poisson ( input ,  generator )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. bernoulli_ ": "\n Tensor. bernoulli_ ( p ,  * ,  generator )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. cauchy_ ": "\n Tensor. cauchy_ ( median ,  sigma ,  * ,  generator )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. exponential_ ": "\n Tensor. exponential_ ( lambd ,  * ,  generator )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. geometric_ ": "\n Tensor. geometric_ ( p ,  * ,  generator )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. log_normal_ ": "\n Tensor. log_normal_ ( mean ,  std ,  * ,  generator ) \u00b6"
+  },
+  {
+    "\n Tensor. normal_ ": "\n Tensor. normal_ ( mean ,  std ,  * ,  generator )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. random_ ": "\n Tensor. random_ ( from=0 ,  to=None ,  * ,  generator=None )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. uniform_ ": "\n Tensor. uniform_ ( from=0 ,  to=1 )   \u2192 \u00b6"
+  },
+  {
+    "\n class torch.quasirandom. SobolEngine ": "\n class torch.quasirandom. SobolEngine ( dimension ,  scramble ,  seed ) [source] \u00b6"
+  },
+  {
+    "\n torch. save ": "\n torch. save ( obj ,  f ,  pickle_module ,  pickle_protocol ,  _use_new_zipfile_serialization ) [source] \u00b6"
+  },
+  {
+    "\n torch. load ": "\n torch. load ( f ,  map_location ,  pickle_module ,  * ,  weights_only ,  ** ) [source] \u00b6"
+  },
+  {
+    "\n torch. get_num_threads ": "\n torch. get_num_threads ( )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. set_num_threads ": "\n torch. set_num_threads ( int ) \u00b6"
+  },
+  {
+    "\n torch. get_num_interop_threads ": "\n torch. get_num_interop_threads ( )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. set_num_interop_threads ": "\n torch. set_num_interop_threads ( int ) \u00b6"
+  },
+  {
+    "\n class torch. no_grad [source] \u00b6": "\n class torch. no_grad [source] \u00b6"
+  },
+  {
+    "\n class torch. enable_grad [source] \u00b6": "\n class torch. enable_grad [source] \u00b6"
+  },
+  {
+    "\n class torch. set_grad_enabled ": "\n class torch. set_grad_enabled ( mode ) [source] \u00b6"
+  },
+  {
+    "\n torch. is_grad_enabled ": "\n torch. is_grad_enabled ( ) \u00b6"
+  },
+  {
+    "\n class torch. inference_mode ": "\n class torch. inference_mode ( mode ) [source] \u00b6"
+  },
+  {
+    "\n torch. is_inference_mode_enabled ": "\n torch. is_inference_mode_enabled ( ) \u00b6"
+  },
+  {
+    "\n torch. absolute ": "\n torch. absolute ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. acos ": "\n torch. acos ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. arccos ": "\n torch. arccos ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. acosh ": "\n torch. acosh ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. arccosh ": "\n torch. arccosh ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. add ": "\n torch. add ( input ,  other ,  * ,  alpha ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. addcdiv ": "\n torch. addcdiv ( input ,  tensor1 ,  tensor2 ,  * ,  value ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. addcmul ": "\n torch. addcmul ( input ,  tensor1 ,  tensor2 ,  * ,  value ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. asin ": "\n torch. asin ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. arcsin ": "\n torch. arcsin ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. asinh ": "\n torch. asinh ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. arcsinh ": "\n torch. arcsinh ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. atan ": "\n torch. atan ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. arctan ": "\n torch. arctan ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. atanh ": "\n torch. atanh ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. arctanh ": "\n torch. arctanh ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. atan2 ": "\n torch. atan2 ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. arctan2 ": "\n torch. arctan2 ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. bitwise_not ": "\n torch. bitwise_not ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. bitwise_and ": "\n torch. bitwise_and ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. bitwise_or ": "\n torch. bitwise_or ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. bitwise_xor ": "\n torch. bitwise_xor ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. bitwise_left_shift ": "\n torch. bitwise_left_shift ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. bitwise_right_shift ": "\n torch. bitwise_right_shift ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. ceil ": "\n torch. ceil ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. clamp ": "\n torch. clamp ( input ,  min ,  max ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. min ": "\n torch. min ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. max ": "\n torch. max ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. clip ": "\n torch. clip ( input ,  min ,  max ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. conj_physical ": "\n torch. conj_physical ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. copysign ": "\n torch. copysign ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. cos ": "\n torch. cos ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. cosh ": "\n torch. cosh ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. deg2rad ": "\n torch. deg2rad ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. div ": "\n torch. div ( input ,  other ,  * ,  rounding_mode ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. divide ": "\n torch. divide ( input ,  other ,  * ,  rounding_mode ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. digamma ": "\n torch. digamma ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. erf ": "\n torch. erf ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. erfc ": "\n torch. erfc ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. erfinv ": "\n torch. erfinv ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. exp ": "\n torch. exp ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. exp2 ": "\n torch. exp2 ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. expm1 ": "\n torch. expm1 ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. fake_quantize_per_channel_affine ": "\n torch. fake_quantize_per_channel_affine ( input ,  scale ,  zero_point ,  quant_min ,  quant_max )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. fake_quantize_per_tensor_affine ": "\n torch. fake_quantize_per_tensor_affine ( input ,  scale ,  zero_point ,  quant_min ,  quant_max )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. fix ": "\n torch. fix ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. trunc ": "\n torch. trunc ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. float_power ": "\n torch. float_power ( input ,  exponent ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. floor ": "\n torch. floor ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. floor_divide ": "\n torch. floor_divide ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. fmod ": "\n torch. fmod ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. frac ": "\n torch. frac ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. frexp ": "\n torch. frexp ( input ,  * ,  out=None) ,  Tensor ) \u00b6"
+  },
+  {
+    "\n torch. gradient ": "\n torch. gradient ( input ,  * ,  spacing ,  dim ,  edge_order )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. ldexp ": "\n torch. ldexp ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. lerp ": "\n torch. lerp ( input ,  end ,  weight ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch. lgamma ": "\n torch. lgamma ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. log ": "\n torch. log ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. log10 ": "\n torch. log10 ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. log1p ": "\n torch. log1p ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. log2 ": "\n torch. log2 ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. logaddexp ": "\n torch. logaddexp ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. logaddexp2 ": "\n torch. logaddexp2 ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. logical_and ": "\n torch. logical_and ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. logical_not ": "\n torch. logical_not ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. logical_or ": "\n torch. logical_or ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. logical_xor ": "\n torch. logical_xor ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. logit ": "\n torch. logit ( input ,  eps ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. hypot ": "\n torch. hypot ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. i0 ": "\n torch. i0 ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. igamma ": "\n torch. igamma ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. igammac ": "\n torch. igammac ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. mul ": "\n torch. mul ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. multiply ": "\n torch. multiply ( input ,  other ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch. mvlgamma ": "\n torch. mvlgamma ( input ,  p ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. nan_to_num ": "\n torch. nan_to_num ( input ,  nan ,  posinf ,  neginf ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. neg ": "\n torch. neg ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. negative ": "\n torch. negative ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. nextafter ": "\n torch. nextafter ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. polygamma ": "\n torch. polygamma ( n ,  input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. positive ": "\n torch. positive ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. pow ": "\n torch. pow ( input ,  exponent ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. quantized_batch_norm ": "\n torch. quantized_batch_norm ( input ,  weight=None ,  bias=None ,  mean ,  var ,  eps ,  output_scale ,  output_zero_point )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. quantized_max_pool1d ": "\n torch. quantized_max_pool1d ( input ,  kernel_size ,  stride ,  padding ,  dilation ,  ceil_mode )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. quantized_max_pool2d ": "\n torch. quantized_max_pool2d ( input ,  kernel_size ,  stride ,  padding ,  dilation ,  ceil_mode )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. rad2deg ": "\n torch. rad2deg ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. reciprocal ": "\n torch. reciprocal ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. remainder ": "\n torch. remainder ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. round ": "\n torch. round ( input ,  * ,  decimals ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. rsqrt ": "\n torch. rsqrt ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. sigmoid ": "\n torch. sigmoid ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. sign ": "\n torch. sign ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. sgn ": "\n torch. sgn ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. signbit ": "\n torch. signbit ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. sin ": "\n torch. sin ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. sinc ": "\n torch. sinc ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. sinh ": "\n torch. sinh ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. sqrt ": "\n torch. sqrt ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. square ": "\n torch. square ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. sub ": "\n torch. sub ( input ,  other ,  * ,  alpha ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. subtract ": "\n torch. subtract ( input ,  other ,  * ,  alpha ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. tan ": "\n torch. tan ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. tanh ": "\n torch. tanh ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. true_divide ": "\n torch. true_divide ( dividend ,  divisor ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. xlogy ": "\n torch. xlogy ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. argmax ": "\n torch. argmax ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. argmin ": "\n torch. argmin ( input ,  dim ,  keepdim )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. amax ": "\n torch. amax ( input ,  dim ,  keepdim ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. amin ": "\n torch. amin ( input ,  dim ,  keepdim ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. aminmax ": "\n torch. aminmax ( input ,  * ,  dim=None ,  keepdim=False ,  out=None) ,  Tensor ) \u00b6"
+  },
+  {
+    "\n torch. all ": "\n torch. all ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. any ": "\n torch. any ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. dist ": "\n torch. dist ( input ,  other ,  p )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. logsumexp ": "\n torch. logsumexp ( input ,  dim ,  keepdim ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch. mean ": "\n torch. mean ( input ,  * ,  dtype )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. nanmean ": "\n torch. nanmean ( input ,  dim ,  keepdim ,  * ,  dtype ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. median ": "\n torch. median ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. nanmedian ": "\n torch. nanmedian ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. mode ": "\n torch. mode ( input ,  dim ,  keepdim ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch. norm ": "\n torch. norm ( input ,  p ,  dim ,  keepdim ,  out ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n torch. nansum ": "\n torch. nansum ( input ,  * ,  dtype )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. prod ": "\n torch. prod ( input ,  * ,  dtype )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. quantile ": "\n torch. quantile ( input ,  q ,  dim ,  keepdim ,  * ,  interpolation ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. nanquantile ": "\n torch. nanquantile ( input ,  q ,  dim ,  keepdim ,  * ,  interpolation ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. std ": "\n torch. std ( input ,  dim ,  unbiased ,  keepdim ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. std_mean ": "\n torch. std_mean ( input ,  dim ,  unbiased ,  keepdim ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch. sum ": "\n torch. sum ( input ,  * ,  dtype )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. unique ": "\n torch. unique ( input ,  sorted ,  return_inverse ,  return_counts ,  dim )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. unique_consecutive ": "\n torch. unique_consecutive ( * ,  ** ) \u00b6"
+  },
+  {
+    "\n torch. var ": "\n torch. var ( input ,  dim ,  unbiased ,  keepdim ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. var_mean ": "\n torch. var_mean ( input ,  dim ,  unbiased ,  keepdim ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch. count_nonzero ": "\n torch. count_nonzero ( input ,  dim )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. allclose ": "\n torch. allclose ( input ,  other ,  rtol ,  atol ,  equal_nan )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. argsort ": "\n torch. argsort ( input ,  dim ,  descending ,  stable )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. eq ": "\n torch. eq ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. equal ": "\n torch. equal ( input ,  other )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. ge ": "\n torch. ge ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. greater_equal ": "\n torch. greater_equal ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. gt ": "\n torch. gt ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. greater ": "\n torch. greater ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. isclose ": "\n torch. isclose ( input ,  other ,  rtol ,  atol ,  equal_nan )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. isfinite ": "\n torch. isfinite ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. isin ": "\n torch. isin ( elements ,  test_elements ,  * ,  assume_unique ,  invert )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. isinf ": "\n torch. isinf ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. isposinf ": "\n torch. isposinf ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. isneginf ": "\n torch. isneginf ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. isnan ": "\n torch. isnan ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. isreal ": "\n torch. isreal ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. kthvalue ": "\n torch. kthvalue ( input ,  k ,  dim ,  keepdim ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch. le ": "\n torch. le ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. less_equal ": "\n torch. less_equal ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. lt ": "\n torch. lt ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. less ": "\n torch. less ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. maximum ": "\n torch. maximum ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. minimum ": "\n torch. minimum ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. fmax ": "\n torch. fmax ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. fmin ": "\n torch. fmin ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. ne ": "\n torch. ne ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. not_equal ": "\n torch. not_equal ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. sort ": "\n torch. sort ( input ,  dim ,  descending ,  stable ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch. topk ": "\n torch. topk ( input ,  k ,  dim ,  largest ,  sorted ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch. msort ": "\n torch. msort ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. stft ": "\n torch. stft ( input ,  n_fft ,  hop_length ,  win_length ,  window ,  center ,  pad_mode ,  normalized ,  onesided ,  return_complex ) [source] \u00b6"
+  },
+  {
+    "\n torch. istft ": "\n torch. istft ( input ,  n_fft ,  hop_length ,  win_length ,  window ,  center ,  normalized ,  onesided ,  length ,  return_complex )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. bartlett_window ": "\n torch. bartlett_window ( window_length ,  periodic ,  * ,  dtype ,  layout ,  device ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. blackman_window ": "\n torch. blackman_window ( window_length ,  periodic ,  * ,  dtype ,  layout ,  device ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. hamming_window ": "\n torch. hamming_window ( window_length ,  periodic ,  alpha ,  beta ,  * ,  dtype ,  layout ,  device ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. hann_window ": "\n torch. hann_window ( window_length ,  periodic ,  * ,  dtype ,  layout ,  device ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. kaiser_window ": "\n torch. kaiser_window ( window_length ,  periodic ,  beta ,  * ,  dtype ,  layout ,  device ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. atleast_1d ": "\n torch. atleast_1d ( * ) [source] \u00b6"
+  },
+  {
+    "\n torch. atleast_2d ": "\n torch. atleast_2d ( * ) [source] \u00b6"
+  },
+  {
+    "\n torch. atleast_3d ": "\n torch. atleast_3d ( * ) [source] \u00b6"
+  },
+  {
+    "\n torch. bincount ": "\n torch. bincount ( input ,  weights ,  minlength )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. block_diag ": "\n torch. block_diag ( * ) [source] \u00b6"
+  },
+  {
+    "\n torch. broadcast_tensors ": "\n torch. broadcast_tensors ( * )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch. broadcast_to ": "\n torch. broadcast_to ( input ,  shape )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. broadcast_shapes ": "\n torch. broadcast_shapes ( * )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch. bucketize ": "\n torch. bucketize ( input ,  boundaries ,  * ,  out_int32 ,  right ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. cartesian_prod ": "\n torch. cartesian_prod ( * ) [source] \u00b6"
+  },
+  {
+    "\n torch. cdist ": "\n torch. cdist ( x1 ,  x2 ,  p ,  compute_mode ) [source] \u00b6"
+  },
+  {
+    "\n torch. clone ": "\n torch. clone ( input ,  * ,  memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. combinations ": "\n torch. combinations ( input ,  r ,  with_replacement )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. corrcoef ": "\n torch. corrcoef ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. cov ": "\n torch. cov ( input ,  * ,  correction ,  fweights ,  aweights )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. cross ": "\n torch. cross ( input ,  other ,  dim ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. cummax ": "\n torch. cummax ( input ,  dim ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch. cummin ": "\n torch. cummin ( input ,  dim ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch. cumprod ": "\n torch. cumprod ( input ,  dim ,  * ,  dtype ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. cumsum ": "\n torch. cumsum ( input ,  dim ,  * ,  dtype ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. diag ": "\n torch. diag ( input ,  diagonal ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. diag_embed ": "\n torch. diag_embed ( input ,  offset ,  dim1 ,  dim2 )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. diagflat ": "\n torch. diagflat ( input ,  offset )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. diagonal ": "\n torch. diagonal ( input ,  offset ,  dim1 ,  dim2 )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. diff ": "\n torch. diff ( input ,  n ,  dim ,  prepend ,  append )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. einsum ": "\n torch. einsum ( equation ,  * )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch. flatten ": "\n torch. flatten ( input ,  start_dim ,  end_dim )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. flip ": "\n torch. flip ( input ,  dims )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. fliplr ": "\n torch. fliplr ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. flipud ": "\n torch. flipud ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. kron ": "\n torch. kron ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. rot90 ": "\n torch. rot90 ( input ,  k ,  dims )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. gcd ": "\n torch. gcd ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. histc ": "\n torch. histc ( input ,  bins ,  min ,  max ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. histogram ": "\n torch. histogram ( input ,  bins ,  * ,  range ,  weight ,  density ,  out ) \u00b6"
+  },
+  {
+    "\n torch. histogramdd ": "\n torch. histogramdd ( input ,  bins ,  * ,  range=None ,  weight=None ,  density=False ,  out=None) ,  Tensor[] ) \u00b6"
+  },
+  {
+    "\n torch. meshgrid ": "\n torch. meshgrid ( * ,  indexing ) [source] \u00b6"
+  },
+  {
+    "\n torch. lcm ": "\n torch. lcm ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. logcumsumexp ": "\n torch. logcumsumexp ( input ,  dim ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. ravel ": "\n torch. ravel ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. renorm ": "\n torch. renorm ( input ,  p ,  dim ,  maxnorm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. repeat_interleave ": "\n torch. repeat_interleave ( input ,  repeats ,  dim ,  * ,  output_size )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. roll ": "\n torch. roll ( input ,  shifts ,  dims )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. searchsorted ": "\n torch. searchsorted ( sorted_sequence ,  values ,  * ,  out_int32 ,  right ,  side ,  out ,  sorter )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. tensordot ": "\n torch. tensordot ( a ,  b ,  dims ,  out ) [source] \u00b6"
+  },
+  {
+    "\n torch. trace ": "\n torch. trace ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. tril ": "\n torch. tril ( input ,  diagonal ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. tril_indices ": "\n torch. tril_indices ( row ,  col ,  offset ,  * ,  dtype ,  device ,  layout )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. triu ": "\n torch. triu ( input ,  diagonal ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. triu_indices ": "\n torch. triu_indices ( row ,  col ,  offset ,  * ,  dtype ,  device ,  layout )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. unflatten ": "\n torch. unflatten ( input ,  dim ,  sizes )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. vander ": "\n torch. vander ( x ,  N ,  increasing )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. view_as_real ": "\n torch. view_as_real ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. view_as_complex ": "\n torch. view_as_complex ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. resolve_conj ": "\n torch. resolve_conj ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. resolve_neg ": "\n torch. resolve_neg ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. addbmm ": "\n torch. addbmm ( input ,  batch1 ,  batch2 ,  * ,  beta ,  alpha ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. addmm ": "\n torch. addmm ( input ,  mat1 ,  mat2 ,  * ,  beta ,  alpha ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. addmv ": "\n torch. addmv ( input ,  mat ,  vec ,  * ,  beta ,  alpha ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. addr ": "\n torch. addr ( input ,  vec1 ,  vec2 ,  * ,  beta ,  alpha ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. baddbmm ": "\n torch. baddbmm ( input ,  batch1 ,  batch2 ,  * ,  beta ,  alpha ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. bmm ": "\n torch. bmm ( input ,  mat2 ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. chain_matmul ": "\n torch. chain_matmul ( * ,  out ) [source] \u00b6"
+  },
+  {
+    "\n torch. cholesky ": "\n torch. cholesky ( input ,  upper ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. cholesky_inverse ": "\n torch. cholesky_inverse ( input ,  upper ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. cholesky_solve ": "\n torch. cholesky_solve ( input ,  input2 ,  upper ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. dot ": "\n torch. dot ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. geqrf ": "\n torch. geqrf ( input ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch. ger ": "\n torch. ger ( input ,  vec2 ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. outer ": "\n torch. outer ( input ,  vec2 ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. inner ": "\n torch. inner ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. inverse ": "\n torch. inverse ( input ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. inv ": "\n torch.linalg. inv ( A ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. det ": "\n torch. det ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. det ": "\n torch.linalg. det ( A ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. logdet ": "\n torch. logdet ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. slogdet ": "\n torch. slogdet ( input ) \u00b6"
+  },
+  {
+    "\n torch.linalg. slogdet ": "\n torch.linalg. slogdet ( A ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch. lu ": "\n torch. lu ( * ,  ** ) \u00b6"
+  },
+  {
+    "\n torch. lu_solve ": "\n torch. lu_solve ( b ,  LU_data ,  LU_pivots ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. lu_factor ": "\n torch.linalg. lu_factor ( A ,  * ,  bool ,  out=None) ,  Tensor ) \u00b6"
+  },
+  {
+    "\n torch. lu_unpack ": "\n torch. lu_unpack ( LU_data ,  LU_pivots ,  unpack_data ,  unpack_pivots ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch. matmul ": "\n torch. matmul ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. matrix_power ": "\n torch. matrix_power ( input ,  n ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. matrix_power ": "\n torch.linalg. matrix_power ( A ,  n ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. matrix_exp ": "\n torch. matrix_exp ( A )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. matrix_exp ": "\n torch.linalg. matrix_exp ( A )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. mm ": "\n torch. mm ( input ,  mat2 ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. mv ": "\n torch. mv ( input ,  vec ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. orgqr ": "\n torch. orgqr ( input ,  tau )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. householder_product ": "\n torch.linalg. householder_product ( A ,  tau ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. ormqr ": "\n torch. ormqr ( input ,  tau ,  other ,  left ,  transpose ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. pinverse ": "\n torch. pinverse ( input ,  rcond )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. pinv ": "\n torch.linalg. pinv ( A ,  * ,  atol ,  rtol ,  hermitian ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. qr ": "\n torch. qr ( input ,  some ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch. svd ": "\n torch. svd ( input ,  some ,  compute_uv ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch. svd_lowrank ": "\n torch. svd_lowrank ( A ,  q ,  niter ,  M ) [source] \u00b6"
+  },
+  {
+    "\n torch. pca_lowrank ": "\n torch. pca_lowrank ( A ,  q ,  center ,  niter ) [source] \u00b6"
+  },
+  {
+    "\n torch. symeig ": "\n torch. symeig ( input ,  eigenvectors ,  upper ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch. lobpcg ": "\n torch. lobpcg ( A ,  k ,  B ,  X ,  n ,  iK ,  niter ,  tol ,  largest ,  method ,  tracker ,  ortho_iparams ,  ortho_fparams ,  ortho_bparams ) [source] \u00b6"
+  },
+  {
+    "\n torch. trapz ": "\n torch. trapz ( y ,  x ,  * ,  dim )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. trapezoid ": "\n torch. trapezoid ( y ,  x ,  * ,  dx ,  dim )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. cumulative_trapezoid ": "\n torch. cumulative_trapezoid ( y ,  x ,  * ,  dx ,  dim )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. triangular_solve ": "\n torch. triangular_solve ( b ,  A ,  upper ,  transpose ,  unitriangular ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch. vdot ": "\n torch. vdot ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. compiled_with_cxx11_abi ": "\n torch. compiled_with_cxx11_abi ( ) [source] \u00b6"
+  },
+  {
+    "\n torch. result_type ": "\n torch. result_type ( tensor1 ,  tensor2 )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. can_cast ": "\n torch. can_cast ( from ,  to )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. promote_types ": "\n torch. promote_types ( type1 ,  type2 )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. use_deterministic_algorithms ": "\n torch. use_deterministic_algorithms ( mode ,  * ,  warn_only ) [source] \u00b6"
+  },
+  {
+    "\n torch. are_deterministic_algorithms_enabled ": "\n torch. are_deterministic_algorithms_enabled ( ) [source] \u00b6"
+  },
+  {
+    "\n torch. is_deterministic_algorithms_warn_only_enabled ": "\n torch. is_deterministic_algorithms_warn_only_enabled ( ) [source] \u00b6"
+  },
+  {
+    "\n torch. set_deterministic_debug_mode ": "\n torch. set_deterministic_debug_mode ( debug_mode ) [source] \u00b6"
+  },
+  {
+    "\n torch. get_deterministic_debug_mode ": "\n torch. get_deterministic_debug_mode ( ) [source] \u00b6"
+  },
+  {
+    "\n torch. set_float32_matmul_precision ": "\n torch. set_float32_matmul_precision ( precision ) [source] \u00b6"
+  },
+  {
+    "\n torch. get_float32_matmul_precision ": "\n torch. get_float32_matmul_precision ( ) [source] \u00b6"
+  },
+  {
+    "\n torch. set_warn_always ": "\n torch. set_warn_always ( b ) [source] \u00b6"
+  },
+  {
+    "\n torch. is_warn_always_enabled ": "\n torch. is_warn_always_enabled ( ) [source] \u00b6"
+  },
+  {
+    "\n torch. _assert ": "\n torch. _assert ( condition ,  message ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn.parameter. Parameter ": "\n class torch.nn.parameter. Parameter ( data ,  requires_grad ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn.parameter. UninitializedParameter ": "\n class torch.nn.parameter. UninitializedParameter ( requires_grad ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn.parameter. UninitializedBuffer ": "\n class torch.nn.parameter. UninitializedBuffer ( requires_grad ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Module [source] \u00b6": "\n class torch.nn. Module [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Sequential ": "\n class torch.nn. Sequential ( * ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ModuleList ": "\n class torch.nn. ModuleList ( modules ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ModuleDict ": "\n class torch.nn. ModuleDict ( modules ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ParameterList ": "\n class torch.nn. ParameterList ( values ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ParameterDict ": "\n class torch.nn. ParameterDict ( parameters ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.modules.module. register_module_forward_pre_hook ": "\n torch.nn.modules.module. register_module_forward_pre_hook ( hook ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.modules.module. register_module_forward_hook ": "\n torch.nn.modules.module. register_module_forward_hook ( hook ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.modules.module. register_module_backward_hook ": "\n torch.nn.modules.module. register_module_backward_hook ( hook ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.modules.module. register_module_full_backward_hook ": "\n torch.nn.modules.module. register_module_full_backward_hook ( hook ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Conv1d ": "\n class torch.nn. Conv1d ( in_channels ,  out_channels ,  kernel_size ,  stride ,  padding ,  dilation ,  groups ,  bias ,  padding_mode ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Conv2d ": "\n class torch.nn. Conv2d ( in_channels ,  out_channels ,  kernel_size ,  stride ,  padding ,  dilation ,  groups ,  bias ,  padding_mode ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Conv3d ": "\n class torch.nn. Conv3d ( in_channels ,  out_channels ,  kernel_size ,  stride ,  padding ,  dilation ,  groups ,  bias ,  padding_mode ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ConvTranspose1d ": "\n class torch.nn. ConvTranspose1d ( in_channels ,  out_channels ,  kernel_size ,  stride ,  padding ,  output_padding ,  groups ,  bias ,  dilation ,  padding_mode ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ConvTranspose2d ": "\n class torch.nn. ConvTranspose2d ( in_channels ,  out_channels ,  kernel_size ,  stride ,  padding ,  output_padding ,  groups ,  bias ,  dilation ,  padding_mode ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ConvTranspose3d ": "\n class torch.nn. ConvTranspose3d ( in_channels ,  out_channels ,  kernel_size ,  stride ,  padding ,  output_padding ,  groups ,  bias ,  dilation ,  padding_mode ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LazyConv1d ": "\n class torch.nn. LazyConv1d ( out_channels ,  kernel_size ,  stride ,  padding ,  dilation ,  groups ,  bias ,  padding_mode ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LazyConv2d ": "\n class torch.nn. LazyConv2d ( out_channels ,  kernel_size ,  stride ,  padding ,  dilation ,  groups ,  bias ,  padding_mode ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LazyConv3d ": "\n class torch.nn. LazyConv3d ( out_channels ,  kernel_size ,  stride ,  padding ,  dilation ,  groups ,  bias ,  padding_mode ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LazyConvTranspose1d ": "\n class torch.nn. LazyConvTranspose1d ( out_channels ,  kernel_size ,  stride ,  padding ,  output_padding ,  groups ,  bias ,  dilation ,  padding_mode ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LazyConvTranspose2d ": "\n class torch.nn. LazyConvTranspose2d ( out_channels ,  kernel_size ,  stride ,  padding ,  output_padding ,  groups ,  bias ,  dilation ,  padding_mode ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LazyConvTranspose3d ": "\n class torch.nn. LazyConvTranspose3d ( out_channels ,  kernel_size ,  stride ,  padding ,  output_padding ,  groups ,  bias ,  dilation ,  padding_mode ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Unfold ": "\n class torch.nn. Unfold ( kernel_size ,  dilation ,  padding ,  stride ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Fold ": "\n class torch.nn. Fold ( output_size ,  kernel_size ,  dilation ,  padding ,  stride ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. MaxPool1d ": "\n class torch.nn. MaxPool1d ( kernel_size ,  stride ,  padding ,  dilation ,  return_indices ,  ceil_mode ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. MaxPool2d ": "\n class torch.nn. MaxPool2d ( kernel_size ,  stride ,  padding ,  dilation ,  return_indices ,  ceil_mode ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. MaxPool3d ": "\n class torch.nn. MaxPool3d ( kernel_size ,  stride ,  padding ,  dilation ,  return_indices ,  ceil_mode ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. MaxUnpool1d ": "\n class torch.nn. MaxUnpool1d ( kernel_size ,  stride ,  padding ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. MaxUnpool2d ": "\n class torch.nn. MaxUnpool2d ( kernel_size ,  stride ,  padding ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. MaxUnpool3d ": "\n class torch.nn. MaxUnpool3d ( kernel_size ,  stride ,  padding ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. AvgPool1d ": "\n class torch.nn. AvgPool1d ( kernel_size ,  stride ,  padding ,  ceil_mode ,  count_include_pad ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. AvgPool2d ": "\n class torch.nn. AvgPool2d ( kernel_size ,  stride ,  padding ,  ceil_mode ,  count_include_pad ,  divisor_override ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. AvgPool3d ": "\n class torch.nn. AvgPool3d ( kernel_size ,  stride ,  padding ,  ceil_mode ,  count_include_pad ,  divisor_override ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. FractionalMaxPool2d ": "\n class torch.nn. FractionalMaxPool2d ( kernel_size ,  output_size ,  output_ratio ,  return_indices ,  _random_samples ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. FractionalMaxPool3d ": "\n class torch.nn. FractionalMaxPool3d ( kernel_size ,  output_size ,  output_ratio ,  return_indices ,  _random_samples ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LPPool1d ": "\n class torch.nn. LPPool1d ( norm_type ,  kernel_size ,  stride ,  ceil_mode ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LPPool2d ": "\n class torch.nn. LPPool2d ( norm_type ,  kernel_size ,  stride ,  ceil_mode ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. AdaptiveMaxPool1d ": "\n class torch.nn. AdaptiveMaxPool1d ( output_size ,  return_indices ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. AdaptiveMaxPool2d ": "\n class torch.nn. AdaptiveMaxPool2d ( output_size ,  return_indices ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. AdaptiveMaxPool3d ": "\n class torch.nn. AdaptiveMaxPool3d ( output_size ,  return_indices ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. AdaptiveAvgPool1d ": "\n class torch.nn. AdaptiveAvgPool1d ( output_size ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. AdaptiveAvgPool2d ": "\n class torch.nn. AdaptiveAvgPool2d ( output_size ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. AdaptiveAvgPool3d ": "\n class torch.nn. AdaptiveAvgPool3d ( output_size ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ReflectionPad1d ": "\n class torch.nn. ReflectionPad1d ( padding ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ReflectionPad2d ": "\n class torch.nn. ReflectionPad2d ( padding ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ReflectionPad3d ": "\n class torch.nn. ReflectionPad3d ( padding ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ReplicationPad1d ": "\n class torch.nn. ReplicationPad1d ( padding ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ReplicationPad2d ": "\n class torch.nn. ReplicationPad2d ( padding ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ReplicationPad3d ": "\n class torch.nn. ReplicationPad3d ( padding ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ZeroPad2d ": "\n class torch.nn. ZeroPad2d ( padding ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ConstantPad1d ": "\n class torch.nn. ConstantPad1d ( padding ,  value ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ConstantPad2d ": "\n class torch.nn. ConstantPad2d ( padding ,  value ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ConstantPad3d ": "\n class torch.nn. ConstantPad3d ( padding ,  value ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ELU ": "\n class torch.nn. ELU ( alpha ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Hardshrink ": "\n class torch.nn. Hardshrink ( lambd ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Hardsigmoid ": "\n class torch.nn. Hardsigmoid ( inplace ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Hardtanh ": "\n class torch.nn. Hardtanh ( min_val ,  max_val ,  inplace ,  min_value ,  max_value ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Hardswish ": "\n class torch.nn. Hardswish ( inplace ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LeakyReLU ": "\n class torch.nn. LeakyReLU ( negative_slope ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LogSigmoid [source] \u00b6": "\n class torch.nn. LogSigmoid [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. MultiheadAttention ": "\n class torch.nn. MultiheadAttention ( embed_dim ,  num_heads ,  dropout ,  bias ,  add_bias_kv ,  add_zero_attn ,  kdim ,  vdim ,  batch_first ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. PReLU ": "\n class torch.nn. PReLU ( num_parameters ,  init ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ReLU ": "\n class torch.nn. ReLU ( inplace ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ReLU6 ": "\n class torch.nn. ReLU6 ( inplace ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. RReLU ": "\n class torch.nn. RReLU ( lower ,  upper ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. SELU ": "\n class torch.nn. SELU ( inplace ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. CELU ": "\n class torch.nn. CELU ( alpha ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. GELU ": "\n class torch.nn. GELU ( approximate ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Sigmoid [source] \u00b6": "\n class torch.nn. Sigmoid [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. SiLU ": "\n class torch.nn. SiLU ( inplace ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Mish ": "\n class torch.nn. Mish ( inplace ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Softplus ": "\n class torch.nn. Softplus ( beta ,  threshold ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Softshrink ": "\n class torch.nn. Softshrink ( lambd ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Softsign [source] \u00b6": "\n class torch.nn. Softsign [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Tanh [source] \u00b6": "\n class torch.nn. Tanh [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Tanhshrink [source] \u00b6": "\n class torch.nn. Tanhshrink [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Threshold ": "\n class torch.nn. Threshold ( threshold ,  value ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. GLU ": "\n class torch.nn. GLU ( dim ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Softmin ": "\n class torch.nn. Softmin ( dim ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Softmax ": "\n class torch.nn. Softmax ( dim ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Softmax2d [source] \u00b6": "\n class torch.nn. Softmax2d [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LogSoftmax ": "\n class torch.nn. LogSoftmax ( dim ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. AdaptiveLogSoftmaxWithLoss ": "\n class torch.nn. AdaptiveLogSoftmaxWithLoss ( in_features ,  n_classes ,  cutoffs ,  div_value ,  head_bias ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. BatchNorm1d ": "\n class torch.nn. BatchNorm1d ( num_features ,  eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. BatchNorm2d ": "\n class torch.nn. BatchNorm2d ( num_features ,  eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. BatchNorm3d ": "\n class torch.nn. BatchNorm3d ( num_features ,  eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LazyBatchNorm1d ": "\n class torch.nn. LazyBatchNorm1d ( eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LazyBatchNorm2d ": "\n class torch.nn. LazyBatchNorm2d ( eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LazyBatchNorm3d ": "\n class torch.nn. LazyBatchNorm3d ( eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. GroupNorm ": "\n class torch.nn. GroupNorm ( num_groups ,  num_channels ,  eps ,  affine ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. SyncBatchNorm ": "\n class torch.nn. SyncBatchNorm ( num_features ,  eps ,  momentum ,  affine ,  track_running_stats ,  process_group ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. InstanceNorm1d ": "\n class torch.nn. InstanceNorm1d ( num_features ,  eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. InstanceNorm2d ": "\n class torch.nn. InstanceNorm2d ( num_features ,  eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. InstanceNorm3d ": "\n class torch.nn. InstanceNorm3d ( num_features ,  eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LazyInstanceNorm1d ": "\n class torch.nn. LazyInstanceNorm1d ( eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LazyInstanceNorm2d ": "\n class torch.nn. LazyInstanceNorm2d ( eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LazyInstanceNorm3d ": "\n class torch.nn. LazyInstanceNorm3d ( eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LayerNorm ": "\n class torch.nn. LayerNorm ( normalized_shape ,  eps ,  elementwise_affine ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LocalResponseNorm ": "\n class torch.nn. LocalResponseNorm ( size ,  alpha ,  beta ,  k ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. RNNBase ": "\n class torch.nn. RNNBase ( mode ,  input_size ,  hidden_size ,  num_layers ,  bias ,  batch_first ,  dropout ,  bidirectional ,  proj_size ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. RNN ": "\n class torch.nn. RNN ( * ,  ** ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LSTM ": "\n class torch.nn. LSTM ( * ,  ** ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. GRU ": "\n class torch.nn. GRU ( * ,  ** ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. RNNCell ": "\n class torch.nn. RNNCell ( input_size ,  hidden_size ,  bias ,  nonlinearity ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LSTMCell ": "\n class torch.nn. LSTMCell ( input_size ,  hidden_size ,  bias ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. GRUCell ": "\n class torch.nn. GRUCell ( input_size ,  hidden_size ,  bias ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Transformer ": "\n class torch.nn. Transformer ( d_model=512 ,  nhead=8 ,  num_encoder_layers=6 ,  num_decoder_layers=6 ,  dim_feedforward=2048 ,  dropout=0.1 ,  activation=<function ,  custom_encoder=None ,  custom_decoder=None ,  layer_norm_eps=1e-05 ,  batch_first=False ,  norm_first=False ,  device=None ,  dtype=None ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. TransformerEncoder ": "\n class torch.nn. TransformerEncoder ( encoder_layer ,  num_layers ,  norm ,  enable_nested_tensor ,  mask_check ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. TransformerDecoder ": "\n class torch.nn. TransformerDecoder ( decoder_layer ,  num_layers ,  norm ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. TransformerEncoderLayer ": "\n class torch.nn. TransformerEncoderLayer ( d_model ,  nhead ,  dim_feedforward=2048 ,  dropout=0.1 ,  activation=<function ,  layer_norm_eps=1e-05 ,  batch_first=False ,  norm_first=False ,  device=None ,  dtype=None ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. TransformerDecoderLayer ": "\n class torch.nn. TransformerDecoderLayer ( d_model ,  nhead ,  dim_feedforward=2048 ,  dropout=0.1 ,  activation=<function ,  layer_norm_eps=1e-05 ,  batch_first=False ,  norm_first=False ,  device=None ,  dtype=None ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Identity ": "\n class torch.nn. Identity ( * ,  ** ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Linear ": "\n class torch.nn. Linear ( in_features ,  out_features ,  bias ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Bilinear ": "\n class torch.nn. Bilinear ( in1_features ,  in2_features ,  out_features ,  bias ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. LazyLinear ": "\n class torch.nn. LazyLinear ( out_features ,  bias ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Dropout ": "\n class torch.nn. Dropout ( p ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Dropout1d ": "\n class torch.nn. Dropout1d ( p ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Dropout2d ": "\n class torch.nn. Dropout2d ( p ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Dropout3d ": "\n class torch.nn. Dropout3d ( p ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. AlphaDropout ": "\n class torch.nn. AlphaDropout ( p ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. FeatureAlphaDropout ": "\n class torch.nn. FeatureAlphaDropout ( p ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Embedding ": "\n class torch.nn. Embedding ( num_embeddings ,  embedding_dim ,  padding_idx ,  max_norm ,  norm_type ,  scale_grad_by_freq ,  sparse ,  _weight ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. EmbeddingBag ": "\n class torch.nn. EmbeddingBag ( num_embeddings ,  embedding_dim ,  max_norm ,  norm_type ,  scale_grad_by_freq ,  mode ,  sparse ,  _weight ,  include_last_offset ,  padding_idx ,  device ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. CosineSimilarity ": "\n class torch.nn. CosineSimilarity ( dim ,  eps ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. PairwiseDistance ": "\n class torch.nn. PairwiseDistance ( p ,  eps ,  keepdim ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. L1Loss ": "\n class torch.nn. L1Loss ( size_average ,  reduce ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. MSELoss ": "\n class torch.nn. MSELoss ( size_average ,  reduce ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. CrossEntropyLoss ": "\n class torch.nn. CrossEntropyLoss ( weight ,  size_average ,  ignore_index ,  reduce ,  reduction ,  label_smoothing ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. CTCLoss ": "\n class torch.nn. CTCLoss ( blank ,  reduction ,  zero_infinity ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. NLLLoss ": "\n class torch.nn. NLLLoss ( weight ,  size_average ,  ignore_index ,  reduce ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. PoissonNLLLoss ": "\n class torch.nn. PoissonNLLLoss ( log_input ,  full ,  size_average ,  eps ,  reduce ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. GaussianNLLLoss ": "\n class torch.nn. GaussianNLLLoss ( * ,  full ,  eps ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. KLDivLoss ": "\n class torch.nn. KLDivLoss ( size_average ,  reduce ,  reduction ,  log_target ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. BCELoss ": "\n class torch.nn. BCELoss ( weight ,  size_average ,  reduce ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. BCEWithLogitsLoss ": "\n class torch.nn. BCEWithLogitsLoss ( weight ,  size_average ,  reduce ,  reduction ,  pos_weight ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. MarginRankingLoss ": "\n class torch.nn. MarginRankingLoss ( margin ,  size_average ,  reduce ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. HingeEmbeddingLoss ": "\n class torch.nn. HingeEmbeddingLoss ( margin ,  size_average ,  reduce ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. MultiLabelMarginLoss ": "\n class torch.nn. MultiLabelMarginLoss ( size_average ,  reduce ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. HuberLoss ": "\n class torch.nn. HuberLoss ( reduction ,  delta ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. SmoothL1Loss ": "\n class torch.nn. SmoothL1Loss ( size_average ,  reduce ,  reduction ,  beta ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. SoftMarginLoss ": "\n class torch.nn. SoftMarginLoss ( size_average ,  reduce ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. MultiLabelSoftMarginLoss ": "\n class torch.nn. MultiLabelSoftMarginLoss ( weight ,  size_average ,  reduce ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. CosineEmbeddingLoss ": "\n class torch.nn. CosineEmbeddingLoss ( margin ,  size_average ,  reduce ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. MultiMarginLoss ": "\n class torch.nn. MultiMarginLoss ( p ,  margin ,  weight ,  size_average ,  reduce ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. TripletMarginLoss ": "\n class torch.nn. TripletMarginLoss ( margin ,  p ,  eps ,  swap ,  size_average ,  reduce ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. TripletMarginWithDistanceLoss ": "\n class torch.nn. TripletMarginWithDistanceLoss ( * ,  distance_function ,  margin ,  swap ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. PixelShuffle ": "\n class torch.nn. PixelShuffle ( upscale_factor ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. PixelUnshuffle ": "\n class torch.nn. PixelUnshuffle ( downscale_factor ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Upsample ": "\n class torch.nn. Upsample ( size ,  scale_factor ,  mode ,  align_corners ,  recompute_scale_factor ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. UpsamplingNearest2d ": "\n class torch.nn. UpsamplingNearest2d ( size ,  scale_factor ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. UpsamplingBilinear2d ": "\n class torch.nn. UpsamplingBilinear2d ( size ,  scale_factor ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. ChannelShuffle ": "\n class torch.nn. ChannelShuffle ( groups ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. DataParallel ": "\n class torch.nn. DataParallel ( module ,  device_ids ,  output_device ,  dim ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn.parallel. DistributedDataParallel ": "\n class torch.nn.parallel. DistributedDataParallel ( module ,  device_ids ,  output_device ,  dim ,  broadcast_buffers ,  process_group ,  bucket_cap_mb ,  find_unused_parameters ,  check_reduction ,  gradient_as_bucket_view ,  static_graph ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils. clip_grad_norm_ ": "\n torch.nn.utils. clip_grad_norm_ ( parameters ,  max_norm ,  norm_type ,  error_if_nonfinite ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils. clip_grad_value_ ": "\n torch.nn.utils. clip_grad_value_ ( parameters ,  clip_value ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils. parameters_to_vector ": "\n torch.nn.utils. parameters_to_vector ( parameters ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils. vector_to_parameters ": "\n torch.nn.utils. vector_to_parameters ( vec ,  parameters ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn.utils.prune. BasePruningMethod [source] \u00b6": "\n class torch.nn.utils.prune. BasePruningMethod [source] \u00b6"
+  },
+  {
+    "\n class torch.nn.utils.prune. PruningContainer ": "\n class torch.nn.utils.prune. PruningContainer ( * ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn.utils.prune. Identity [source] \u00b6": "\n class torch.nn.utils.prune. Identity [source] \u00b6"
+  },
+  {
+    "\n class torch.nn.utils.prune. RandomUnstructured ": "\n class torch.nn.utils.prune. RandomUnstructured ( amount ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn.utils.prune. L1Unstructured ": "\n class torch.nn.utils.prune. L1Unstructured ( amount ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn.utils.prune. RandomStructured ": "\n class torch.nn.utils.prune. RandomStructured ( amount ,  dim ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn.utils.prune. LnStructured ": "\n class torch.nn.utils.prune. LnStructured ( amount ,  n ,  dim ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn.utils.prune. CustomFromMask ": "\n class torch.nn.utils.prune. CustomFromMask ( mask ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.prune. identity ": "\n torch.nn.utils.prune. identity ( module ,  name ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.prune. random_unstructured ": "\n torch.nn.utils.prune. random_unstructured ( module ,  name ,  amount ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.prune. l1_unstructured ": "\n torch.nn.utils.prune. l1_unstructured ( module ,  name ,  amount ,  importance_scores ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.prune. random_structured ": "\n torch.nn.utils.prune. random_structured ( module ,  name ,  amount ,  dim ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.prune. ln_structured ": "\n torch.nn.utils.prune. ln_structured ( module ,  name ,  amount ,  n ,  dim ,  importance_scores ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.prune. global_unstructured ": "\n torch.nn.utils.prune. global_unstructured ( parameters ,  pruning_method ,  importance_scores ,  ** ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.prune. custom_from_mask ": "\n torch.nn.utils.prune. custom_from_mask ( module ,  name ,  mask ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.prune. remove ": "\n torch.nn.utils.prune. remove ( module ,  name ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.prune. is_pruned ": "\n torch.nn.utils.prune. is_pruned ( module ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils. weight_norm ": "\n torch.nn.utils. weight_norm ( module ,  name ,  dim ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils. remove_weight_norm ": "\n torch.nn.utils. remove_weight_norm ( module ,  name ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils. spectral_norm ": "\n torch.nn.utils. spectral_norm ( module ,  name ,  n_power_iterations ,  eps ,  dim ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils. remove_spectral_norm ": "\n torch.nn.utils. remove_spectral_norm ( module ,  name ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils. skip_init ": "\n torch.nn.utils. skip_init ( module_cls ,  * ,  ** ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.parametrizations. orthogonal ": "\n torch.nn.utils.parametrizations. orthogonal ( module ,  name ,  orthogonal_map ,  * ,  use_trivialization ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.parametrizations. spectral_norm ": "\n torch.nn.utils.parametrizations. spectral_norm ( module ,  name ,  n_power_iterations ,  eps ,  dim ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.parametrize. register_parametrization ": "\n torch.nn.utils.parametrize. register_parametrization ( module ,  tensor_name ,  parametrization ,  * ,  unsafe ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.parametrize. remove_parametrizations ": "\n torch.nn.utils.parametrize. remove_parametrizations ( module ,  tensor_name ,  leave_parametrized ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.parametrize. cached ": "\n torch.nn.utils.parametrize. cached ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.parametrize. is_parametrized ": "\n torch.nn.utils.parametrize. is_parametrized ( module ,  tensor_name ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn.utils.parametrize. ParametrizationList ": "\n class torch.nn.utils.parametrize. ParametrizationList ( modules ,  original ,  unsafe ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.stateless. functional_call ": "\n torch.nn.utils.stateless. functional_call ( module ,  parameters_and_buffers ,  args ,  kwargs ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn.utils.rnn. PackedSequence ": "\n class torch.nn.utils.rnn. PackedSequence ( data ,  batch_sizes ,  sorted_indices ,  unsorted_indices ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.rnn. pack_padded_sequence ": "\n torch.nn.utils.rnn. pack_padded_sequence ( input ,  lengths ,  batch_first ,  enforce_sorted ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.rnn. pad_packed_sequence ": "\n torch.nn.utils.rnn. pad_packed_sequence ( sequence ,  batch_first ,  padding_value ,  total_length ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.rnn. pad_sequence ": "\n torch.nn.utils.rnn. pad_sequence ( sequences ,  batch_first ,  padding_value ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.utils.rnn. pack_sequence ": "\n torch.nn.utils.rnn. pack_sequence ( sequences ,  enforce_sorted ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Flatten ": "\n class torch.nn. Flatten ( start_dim ,  end_dim ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn. Unflatten ": "\n class torch.nn. Unflatten ( dim ,  unflattened_size ) [source] \u00b6"
+  },
+  {
+    "\n class torch.nn.modules.lazy. LazyModuleMixin ": "\n class torch.nn.modules.lazy. LazyModuleMixin ( * ,  ** ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. conv1d ": "\n torch.nn.functional. conv1d ( input ,  weight ,  bias ,  stride ,  padding ,  dilation ,  groups )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. conv2d ": "\n torch.nn.functional. conv2d ( input ,  weight ,  bias ,  stride ,  padding ,  dilation ,  groups )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. conv3d ": "\n torch.nn.functional. conv3d ( input ,  weight ,  bias ,  stride ,  padding ,  dilation ,  groups )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. conv_transpose1d ": "\n torch.nn.functional. conv_transpose1d ( input ,  weight ,  bias ,  stride ,  padding ,  output_padding ,  groups ,  dilation )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. conv_transpose2d ": "\n torch.nn.functional. conv_transpose2d ( input ,  weight ,  bias ,  stride ,  padding ,  output_padding ,  groups ,  dilation )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. conv_transpose3d ": "\n torch.nn.functional. conv_transpose3d ( input ,  weight ,  bias ,  stride ,  padding ,  output_padding ,  groups ,  dilation )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. unfold ": "\n torch.nn.functional. unfold ( input ,  kernel_size ,  dilation ,  padding ,  stride ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. fold ": "\n torch.nn.functional. fold ( input ,  output_size ,  kernel_size ,  dilation ,  padding ,  stride ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. avg_pool1d ": "\n torch.nn.functional. avg_pool1d ( input ,  kernel_size ,  stride ,  padding ,  ceil_mode ,  count_include_pad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. avg_pool2d ": "\n torch.nn.functional. avg_pool2d ( input ,  kernel_size ,  stride ,  padding ,  ceil_mode ,  count_include_pad ,  divisor_override )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. avg_pool3d ": "\n torch.nn.functional. avg_pool3d ( input ,  kernel_size ,  stride ,  padding ,  ceil_mode ,  count_include_pad ,  divisor_override )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. max_pool1d ": "\n torch.nn.functional. max_pool1d ( input ,  kernel_size ,  stride ,  padding ,  dilation ,  ceil_mode ,  return_indices ) \u00b6"
+  },
+  {
+    "\n torch.nn.functional. max_pool2d ": "\n torch.nn.functional. max_pool2d ( input ,  kernel_size ,  stride ,  padding ,  dilation ,  ceil_mode ,  return_indices ) \u00b6"
+  },
+  {
+    "\n torch.nn.functional. max_pool3d ": "\n torch.nn.functional. max_pool3d ( input ,  kernel_size ,  stride ,  padding ,  dilation ,  ceil_mode ,  return_indices ) \u00b6"
+  },
+  {
+    "\n torch.nn.functional. max_unpool1d ": "\n torch.nn.functional. max_unpool1d ( input ,  indices ,  kernel_size ,  stride ,  padding ,  output_size ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. max_unpool2d ": "\n torch.nn.functional. max_unpool2d ( input ,  indices ,  kernel_size ,  stride ,  padding ,  output_size ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. max_unpool3d ": "\n torch.nn.functional. max_unpool3d ( input ,  indices ,  kernel_size ,  stride ,  padding ,  output_size ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. lp_pool1d ": "\n torch.nn.functional. lp_pool1d ( input ,  norm_type ,  kernel_size ,  stride ,  ceil_mode ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. lp_pool2d ": "\n torch.nn.functional. lp_pool2d ( input ,  norm_type ,  kernel_size ,  stride ,  ceil_mode ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. adaptive_max_pool1d ": "\n torch.nn.functional. adaptive_max_pool1d ( * ,  ** ) \u00b6"
+  },
+  {
+    "\n torch.nn.functional. adaptive_max_pool2d ": "\n torch.nn.functional. adaptive_max_pool2d ( * ,  ** ) \u00b6"
+  },
+  {
+    "\n torch.nn.functional. adaptive_max_pool3d ": "\n torch.nn.functional. adaptive_max_pool3d ( * ,  ** ) \u00b6"
+  },
+  {
+    "\n torch.nn.functional. adaptive_avg_pool1d ": "\n torch.nn.functional. adaptive_avg_pool1d ( input ,  output_size )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. adaptive_avg_pool2d ": "\n torch.nn.functional. adaptive_avg_pool2d ( input ,  output_size ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. adaptive_avg_pool3d ": "\n torch.nn.functional. adaptive_avg_pool3d ( input ,  output_size ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. fractional_max_pool2d ": "\n torch.nn.functional. fractional_max_pool2d ( * ,  ** ) \u00b6"
+  },
+  {
+    "\n torch.nn.functional. fractional_max_pool3d ": "\n torch.nn.functional. fractional_max_pool3d ( * ,  ** ) \u00b6"
+  },
+  {
+    "\n torch.nn.functional. threshold ": "\n torch.nn.functional. threshold ( input ,  threshold ,  value ,  inplace ) \u00b6"
+  },
+  {
+    "\n torch.nn.functional. threshold_ ": "\n torch.nn.functional. threshold_ ( input ,  threshold ,  value )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. relu ": "\n torch.nn.functional. relu ( input ,  inplace )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. relu_ ": "\n torch.nn.functional. relu_ ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. hardtanh ": "\n torch.nn.functional. hardtanh ( input ,  min_val ,  max_val ,  inplace )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. hardtanh_ ": "\n torch.nn.functional. hardtanh_ ( input ,  min_val ,  max_val )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. hardswish ": "\n torch.nn.functional. hardswish ( input ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. relu6 ": "\n torch.nn.functional. relu6 ( input ,  inplace )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. elu ": "\n torch.nn.functional. elu ( input ,  alpha ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. elu_ ": "\n torch.nn.functional. elu_ ( input ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. selu ": "\n torch.nn.functional. selu ( input ,  inplace )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. celu ": "\n torch.nn.functional. celu ( input ,  alpha ,  inplace )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. leaky_relu ": "\n torch.nn.functional. leaky_relu ( input ,  negative_slope ,  inplace )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. leaky_relu_ ": "\n torch.nn.functional. leaky_relu_ ( input ,  negative_slope )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. prelu ": "\n torch.nn.functional. prelu ( input ,  weight )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. rrelu ": "\n torch.nn.functional. rrelu ( input ,  lower ,  upper ,  training ,  inplace )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. rrelu_ ": "\n torch.nn.functional. rrelu_ ( input ,  lower ,  upper ,  training )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. glu ": "\n torch.nn.functional. glu ( input ,  dim )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. gelu ": "\n torch.nn.functional. gelu ( input ,  approximate )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. logsigmoid ": "\n torch.nn.functional. logsigmoid ( input )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. hardshrink ": "\n torch.nn.functional. hardshrink ( input ,  lambd )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. tanhshrink ": "\n torch.nn.functional. tanhshrink ( input )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. softsign ": "\n torch.nn.functional. softsign ( input )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. softplus ": "\n torch.nn.functional. softplus ( input ,  beta ,  threshold )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. softmin ": "\n torch.nn.functional. softmin ( input ,  dim ,  _stacklevel ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. softmax ": "\n torch.nn.functional. softmax ( input ,  dim ,  _stacklevel ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. softshrink ": "\n torch.nn.functional. softshrink ( input ,  lambd )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. gumbel_softmax ": "\n torch.nn.functional. gumbel_softmax ( logits ,  tau ,  hard ,  eps ,  dim ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. log_softmax ": "\n torch.nn.functional. log_softmax ( input ,  dim ,  _stacklevel ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. tanh ": "\n torch.nn.functional. tanh ( input )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. sigmoid ": "\n torch.nn.functional. sigmoid ( input )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. hardsigmoid ": "\n torch.nn.functional. hardsigmoid ( input ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. silu ": "\n torch.nn.functional. silu ( input ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. mish ": "\n torch.nn.functional. mish ( input ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. batch_norm ": "\n torch.nn.functional. batch_norm ( input ,  running_mean ,  running_var ,  weight ,  bias ,  training ,  momentum ,  eps ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. group_norm ": "\n torch.nn.functional. group_norm ( input ,  num_groups ,  weight ,  bias ,  eps ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. instance_norm ": "\n torch.nn.functional. instance_norm ( input ,  running_mean ,  running_var ,  weight ,  bias ,  use_input_stats ,  momentum ,  eps ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. layer_norm ": "\n torch.nn.functional. layer_norm ( input ,  normalized_shape ,  weight ,  bias ,  eps ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. local_response_norm ": "\n torch.nn.functional. local_response_norm ( input ,  size ,  alpha ,  beta ,  k ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. normalize ": "\n torch.nn.functional. normalize ( input ,  p ,  dim ,  eps ,  out ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. linear ": "\n torch.nn.functional. linear ( input ,  weight ,  bias )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. bilinear ": "\n torch.nn.functional. bilinear ( input1 ,  input2 ,  weight ,  bias )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. dropout ": "\n torch.nn.functional. dropout ( input ,  p ,  training ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. alpha_dropout ": "\n torch.nn.functional. alpha_dropout ( input ,  p ,  training ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. feature_alpha_dropout ": "\n torch.nn.functional. feature_alpha_dropout ( input ,  p ,  training ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. dropout1d ": "\n torch.nn.functional. dropout1d ( input ,  p ,  training ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. dropout2d ": "\n torch.nn.functional. dropout2d ( input ,  p ,  training ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. dropout3d ": "\n torch.nn.functional. dropout3d ( input ,  p ,  training ,  inplace ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. embedding ": "\n torch.nn.functional. embedding ( input ,  weight ,  padding_idx ,  max_norm ,  norm_type ,  scale_grad_by_freq ,  sparse ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. embedding_bag ": "\n torch.nn.functional. embedding_bag ( input ,  weight ,  offsets ,  max_norm ,  norm_type ,  scale_grad_by_freq ,  mode ,  sparse ,  per_sample_weights ,  include_last_offset ,  padding_idx ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. one_hot ": "\n torch.nn.functional. one_hot ( tensor ,  num_classes )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. pairwise_distance ": "\n torch.nn.functional. pairwise_distance ( x1 ,  x2 ,  p ,  eps ,  keepdim )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. cosine_similarity ": "\n torch.nn.functional. cosine_similarity ( x1 ,  x2 ,  dim ,  eps )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. pdist ": "\n torch.nn.functional. pdist ( input ,  p )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. binary_cross_entropy ": "\n torch.nn.functional. binary_cross_entropy ( input ,  target ,  weight ,  size_average ,  reduce ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. binary_cross_entropy_with_logits ": "\n torch.nn.functional. binary_cross_entropy_with_logits ( input ,  target ,  weight ,  size_average ,  reduce ,  reduction ,  pos_weight ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. poisson_nll_loss ": "\n torch.nn.functional. poisson_nll_loss ( input ,  target ,  log_input ,  full ,  size_average ,  eps ,  reduce ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. cosine_embedding_loss ": "\n torch.nn.functional. cosine_embedding_loss ( input1 ,  input2 ,  target ,  margin ,  size_average ,  reduce ,  reduction )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. cross_entropy ": "\n torch.nn.functional. cross_entropy ( input ,  target ,  weight ,  size_average ,  ignore_index ,  reduce ,  reduction ,  label_smoothing ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. ctc_loss ": "\n torch.nn.functional. ctc_loss ( log_probs ,  targets ,  input_lengths ,  target_lengths ,  blank ,  reduction ,  zero_infinity ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. gaussian_nll_loss ": "\n torch.nn.functional. gaussian_nll_loss ( input ,  target ,  var ,  full ,  eps ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. hinge_embedding_loss ": "\n torch.nn.functional. hinge_embedding_loss ( input ,  target ,  margin ,  size_average ,  reduce ,  reduction )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. kl_div ": "\n torch.nn.functional. kl_div ( input ,  target ,  size_average ,  reduce ,  reduction ,  log_target ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. l1_loss ": "\n torch.nn.functional. l1_loss ( input ,  target ,  size_average ,  reduce ,  reduction )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. mse_loss ": "\n torch.nn.functional. mse_loss ( input ,  target ,  size_average ,  reduce ,  reduction )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. margin_ranking_loss ": "\n torch.nn.functional. margin_ranking_loss ( input1 ,  input2 ,  target ,  margin ,  size_average ,  reduce ,  reduction )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. multilabel_margin_loss ": "\n torch.nn.functional. multilabel_margin_loss ( input ,  target ,  size_average ,  reduce ,  reduction )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. multilabel_soft_margin_loss ": "\n torch.nn.functional. multilabel_soft_margin_loss ( input ,  target ,  weight ,  size_average ,  reduce ,  reduction )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. multi_margin_loss ": "\n torch.nn.functional. multi_margin_loss ( input ,  target ,  p ,  margin ,  weight ,  size_average ,  reduce ,  reduction )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. nll_loss ": "\n torch.nn.functional. nll_loss ( input ,  target ,  weight ,  size_average ,  ignore_index ,  reduce ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. huber_loss ": "\n torch.nn.functional. huber_loss ( input ,  target ,  reduction ,  delta ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. smooth_l1_loss ": "\n torch.nn.functional. smooth_l1_loss ( input ,  target ,  size_average ,  reduce ,  reduction ,  beta ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. soft_margin_loss ": "\n torch.nn.functional. soft_margin_loss ( input ,  target ,  size_average ,  reduce ,  reduction )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. triplet_margin_loss ": "\n torch.nn.functional. triplet_margin_loss ( anchor ,  positive ,  negative ,  margin ,  p ,  eps ,  swap ,  size_average ,  reduce ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. triplet_margin_with_distance_loss ": "\n torch.nn.functional. triplet_margin_with_distance_loss ( anchor ,  positive ,  negative ,  * ,  distance_function ,  margin ,  swap ,  reduction ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. pixel_shuffle ": "\n torch.nn.functional. pixel_shuffle ( input ,  upscale_factor )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. pixel_unshuffle ": "\n torch.nn.functional. pixel_unshuffle ( input ,  downscale_factor )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. pad ": "\n torch.nn.functional. pad ( input ,  pad ,  mode ,  value )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.functional. interpolate ": "\n torch.nn.functional. interpolate ( input ,  size ,  scale_factor ,  mode ,  align_corners ,  recompute_scale_factor ,  antialias ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. upsample ": "\n torch.nn.functional. upsample ( input ,  size ,  scale_factor ,  mode ,  align_corners ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. upsample_nearest ": "\n torch.nn.functional. upsample_nearest ( input ,  size ,  scale_factor ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. upsample_bilinear ": "\n torch.nn.functional. upsample_bilinear ( input ,  size ,  scale_factor ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. grid_sample ": "\n torch.nn.functional. grid_sample ( input ,  grid ,  mode ,  padding_mode ,  align_corners ) [source] \u00b6"
+  },
+  {
+    "\n torch.nn.functional. affine_grid ": "\n torch.nn.functional. affine_grid ( theta ,  size ,  align_corners ) [source] \u00b6"
+  },
+  {
+    "\n Tensor. new_tensor ": "\n Tensor. new_tensor ( data ,  * ,  dtype ,  device ,  requires_grad ,  layout ,  pin_memory )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.nn.parallel. data_parallel ": "\n torch.nn.parallel. data_parallel ( module ,  inputs ,  device_ids ,  output_device ,  dim ,  module_kwargs ) [source] \u00b6"
+  },
+  {
+    "\n Tensor. requires_grad_ ": "\n Tensor. requires_grad_ ( requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. detach ": "\n Tensor. detach ( ) \u00b6"
+  },
+  {
+    "\n Tensor. item ": "\n Tensor. item ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. to ": "\n Tensor. to ( * ,  ** )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. new_full ": "\n Tensor. new_full ( size ,  fill_value ,  * ,  dtype ,  device ,  requires_grad ,  layout ,  pin_memory )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. new_empty ": "\n Tensor. new_empty ( size ,  * ,  dtype ,  device ,  requires_grad ,  layout ,  pin_memory )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. new_ones ": "\n Tensor. new_ones ( size ,  * ,  dtype ,  device ,  requires_grad ,  layout ,  pin_memory )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. new_zeros ": "\n Tensor. new_zeros ( size ,  * ,  dtype ,  device ,  requires_grad ,  layout ,  pin_memory )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. is_cuda \u00b6": "\n Tensor. is_cuda \u00b6"
+  },
+  {
+    "\n Tensor. is_quantized \u00b6": "\n Tensor. is_quantized \u00b6"
+  },
+  {
+    "\n Tensor. is_meta \u00b6": "\n Tensor. is_meta \u00b6"
+  },
+  {
+    "\n Tensor. device \u00b6": "\n Tensor. device \u00b6"
+  },
+  {
+    "\n Tensor. grad \u00b6": "\n Tensor. grad \u00b6"
+  },
+  {
+    "\n Tensor. ndim \u00b6": "\n Tensor. ndim \u00b6"
+  },
+  {
+    "\n Tensor. dim ": "\n Tensor. dim ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. real \u00b6": "\n Tensor. real \u00b6"
+  },
+  {
+    "\n Tensor. imag \u00b6": "\n Tensor. imag \u00b6"
+  },
+  {
+    "\n Tensor. abs ": "\n Tensor. abs ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. abs_ ": "\n Tensor. abs_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. absolute ": "\n Tensor. absolute ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. absolute_ ": "\n Tensor. absolute_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. acos ": "\n Tensor. acos ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. acos_ ": "\n Tensor. acos_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. arccos ": "\n Tensor. arccos ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. arccos_ ": "\n Tensor. arccos_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. add ": "\n Tensor. add ( other ,  * ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. add_ ": "\n Tensor. add_ ( other ,  * ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. addbmm ": "\n Tensor. addbmm ( batch1 ,  batch2 ,  * ,  beta ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. addbmm_ ": "\n Tensor. addbmm_ ( batch1 ,  batch2 ,  * ,  beta ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. addcdiv ": "\n Tensor. addcdiv ( tensor1 ,  tensor2 ,  * ,  value )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. addcdiv_ ": "\n Tensor. addcdiv_ ( tensor1 ,  tensor2 ,  * ,  value )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. addcmul ": "\n Tensor. addcmul ( tensor1 ,  tensor2 ,  * ,  value )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. addcmul_ ": "\n Tensor. addcmul_ ( tensor1 ,  tensor2 ,  * ,  value )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. addmm ": "\n Tensor. addmm ( mat1 ,  mat2 ,  * ,  beta ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. addmm_ ": "\n Tensor. addmm_ ( mat1 ,  mat2 ,  * ,  beta ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sspaddmm ": "\n Tensor. sspaddmm ( mat1 ,  mat2 ,  * ,  beta ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. sspaddmm ": "\n torch. sspaddmm ( input ,  mat1 ,  mat2 ,  * ,  beta ,  alpha ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. addmv ": "\n Tensor. addmv ( mat ,  vec ,  * ,  beta ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. addmv_ ": "\n Tensor. addmv_ ( mat ,  vec ,  * ,  beta ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. addr ": "\n Tensor. addr ( vec1 ,  vec2 ,  * ,  beta ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. addr_ ": "\n Tensor. addr_ ( vec1 ,  vec2 ,  * ,  beta ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. adjoint ": "\n Tensor. adjoint ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. allclose ": "\n Tensor. allclose ( other ,  rtol ,  atol ,  equal_nan )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. amax ": "\n Tensor. amax ( dim ,  keepdim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. amin ": "\n Tensor. amin ( dim ,  keepdim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. aminmax ": "\n Tensor. aminmax ( * ,  dim=None ,  keepdim=False) ,  Tensor ) \u00b6"
+  },
+  {
+    "\n Tensor. angle ": "\n Tensor. angle ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. apply_ ": "\n Tensor. apply_ ( callable )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. argmax ": "\n Tensor. argmax ( dim ,  keepdim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. argmin ": "\n Tensor. argmin ( dim ,  keepdim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. argsort ": "\n Tensor. argsort ( dim ,  descending )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. argwhere ": "\n Tensor. argwhere ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. asin ": "\n Tensor. asin ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. asin_ ": "\n Tensor. asin_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. arcsin ": "\n Tensor. arcsin ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. arcsin_ ": "\n Tensor. arcsin_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. as_strided ": "\n Tensor. as_strided ( size ,  stride ,  storage_offset )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. atan ": "\n Tensor. atan ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. atan_ ": "\n Tensor. atan_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. arctan ": "\n Tensor. arctan ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. arctan_ ": "\n Tensor. arctan_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. atan2 ": "\n Tensor. atan2 ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. atan2_ ": "\n Tensor. atan2_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. arctan2 ": "\n Tensor. arctan2 ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. arctan2_ ": "\n Tensor. arctan2_ ( ) \u00b6"
+  },
+  {
+    "\n Tensor. all ": "\n Tensor. all ( dim ,  keepdim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. any ": "\n Tensor. any ( dim ,  keepdim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. backward ": "\n Tensor. backward ( gradient ,  retain_graph ,  create_graph ,  inputs ) [source] \u00b6"
+  },
+  {
+    "\n Tensor. baddbmm ": "\n Tensor. baddbmm ( batch1 ,  batch2 ,  * ,  beta ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. baddbmm_ ": "\n Tensor. baddbmm_ ( batch1 ,  batch2 ,  * ,  beta ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. bernoulli ": "\n Tensor. bernoulli ( * ,  generator )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. bfloat16 ": "\n Tensor. bfloat16 ( memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. bincount ": "\n Tensor. bincount ( weights ,  minlength )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. bitwise_not ": "\n Tensor. bitwise_not ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. bitwise_not_ ": "\n Tensor. bitwise_not_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. bitwise_and ": "\n Tensor. bitwise_and ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. bitwise_and_ ": "\n Tensor. bitwise_and_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. bitwise_or ": "\n Tensor. bitwise_or ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. bitwise_or_ ": "\n Tensor. bitwise_or_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. bitwise_xor ": "\n Tensor. bitwise_xor ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. bitwise_xor_ ": "\n Tensor. bitwise_xor_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. bitwise_left_shift ": "\n Tensor. bitwise_left_shift ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. bitwise_left_shift_ ": "\n Tensor. bitwise_left_shift_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. bitwise_right_shift ": "\n Tensor. bitwise_right_shift ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. bitwise_right_shift_ ": "\n Tensor. bitwise_right_shift_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. bmm ": "\n Tensor. bmm ( batch2 )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. bool ": "\n Tensor. bool ( memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. byte ": "\n Tensor. byte ( memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. broadcast_to ": "\n Tensor. broadcast_to ( shape )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. ceil ": "\n Tensor. ceil ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. ceil_ ": "\n Tensor. ceil_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. char ": "\n Tensor. char ( memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. cholesky ": "\n Tensor. cholesky ( upper )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. cholesky_inverse ": "\n Tensor. cholesky_inverse ( upper )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. cholesky_solve ": "\n Tensor. cholesky_solve ( input2 ,  upper )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. chunk ": "\n Tensor. chunk ( chunks ,  dim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. clamp ": "\n Tensor. clamp ( min ,  max )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. clamp_ ": "\n Tensor. clamp_ ( min ,  max )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. clip ": "\n Tensor. clip ( min ,  max )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. clip_ ": "\n Tensor. clip_ ( min ,  max )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. clone ": "\n Tensor. clone ( * ,  memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. contiguous ": "\n Tensor. contiguous ( memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. copy_ ": "\n Tensor. copy_ ( src ,  non_blocking )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. conj ": "\n Tensor. conj ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. conj_physical ": "\n Tensor. conj_physical ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. conj_physical_ ": "\n Tensor. conj_physical_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. resolve_conj ": "\n Tensor. resolve_conj ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. resolve_neg ": "\n Tensor. resolve_neg ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. copysign ": "\n Tensor. copysign ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. copysign_ ": "\n Tensor. copysign_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. cos ": "\n Tensor. cos ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. cos_ ": "\n Tensor. cos_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. cosh ": "\n Tensor. cosh ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. cosh_ ": "\n Tensor. cosh_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. corrcoef ": "\n Tensor. corrcoef ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. count_nonzero ": "\n Tensor. count_nonzero ( dim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. cov ": "\n Tensor. cov ( * ,  correction ,  fweights ,  aweights )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. acosh ": "\n Tensor. acosh ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. acosh_ ": "\n Tensor. acosh_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. arccosh ": "\n Tensor. arccosh ( ) \u00b6"
+  },
+  {
+    "\n Tensor. arccosh_ ": "\n Tensor. arccosh_ ( ) \u00b6"
+  },
+  {
+    "\n Tensor. cpu ": "\n Tensor. cpu ( memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. cross ": "\n Tensor. cross ( other ,  dim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. cuda ": "\n Tensor. cuda ( device ,  non_blocking ,  memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. logcumsumexp ": "\n Tensor. logcumsumexp ( dim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. cummax ": "\n Tensor. cummax ( dim ) \u00b6"
+  },
+  {
+    "\n Tensor. cummin ": "\n Tensor. cummin ( dim ) \u00b6"
+  },
+  {
+    "\n Tensor. cumprod ": "\n Tensor. cumprod ( dim ,  dtype )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. cumprod_ ": "\n Tensor. cumprod_ ( dim ,  dtype )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. cumsum ": "\n Tensor. cumsum ( dim ,  dtype )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. cumsum_ ": "\n Tensor. cumsum_ ( dim ,  dtype )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. chalf ": "\n Tensor. chalf ( memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. cfloat ": "\n Tensor. cfloat ( memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. cdouble ": "\n Tensor. cdouble ( memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. data_ptr ": "\n Tensor. data_ptr ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. deg2rad ": "\n Tensor. deg2rad ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. dequantize ": "\n Tensor. dequantize ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. det ": "\n Tensor. det ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. dense_dim ": "\n Tensor. dense_dim ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. detach_ ": "\n Tensor. detach_ ( ) \u00b6"
+  },
+  {
+    "\n Tensor. diag ": "\n Tensor. diag ( diagonal )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. diag_embed ": "\n Tensor. diag_embed ( offset ,  dim1 ,  dim2 )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. diagflat ": "\n Tensor. diagflat ( offset )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. diagonal ": "\n Tensor. diagonal ( offset ,  dim1 ,  dim2 )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. diagonal_scatter ": "\n Tensor. diagonal_scatter ( src ,  offset ,  dim1 ,  dim2 )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. fill_diagonal_ ": "\n Tensor. fill_diagonal_ ( fill_value ,  wrap )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. fmax ": "\n Tensor. fmax ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. fmin ": "\n Tensor. fmin ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. diff ": "\n Tensor. diff ( n ,  dim ,  prepend ,  append )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. digamma ": "\n Tensor. digamma ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. digamma_ ": "\n Tensor. digamma_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. dist ": "\n Tensor. dist ( other ,  p )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. div ": "\n Tensor. div ( value ,  * ,  rounding_mode )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. div_ ": "\n Tensor. div_ ( value ,  * ,  rounding_mode )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. divide ": "\n Tensor. divide ( value ,  * ,  rounding_mode )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. divide_ ": "\n Tensor. divide_ ( value ,  * ,  rounding_mode )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. dot ": "\n Tensor. dot ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. double ": "\n Tensor. double ( memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. dsplit ": "\n Tensor. dsplit ( split_size_or_sections )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. element_size ": "\n Tensor. element_size ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. eq ": "\n Tensor. eq ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. eq_ ": "\n Tensor. eq_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. equal ": "\n Tensor. equal ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. erf ": "\n Tensor. erf ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. erf_ ": "\n Tensor. erf_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. erfc ": "\n Tensor. erfc ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. erfc_ ": "\n Tensor. erfc_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. erfinv ": "\n Tensor. erfinv ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. erfinv_ ": "\n Tensor. erfinv_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. exp ": "\n Tensor. exp ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. exp_ ": "\n Tensor. exp_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. expm1 ": "\n Tensor. expm1 ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. expm1_ ": "\n Tensor. expm1_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. expand ": "\n Tensor. expand ( * )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. expand_as ": "\n Tensor. expand_as ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. fix ": "\n Tensor. fix ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. fix_ ": "\n Tensor. fix_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. fill_ ": "\n Tensor. fill_ ( value )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. flatten ": "\n Tensor. flatten ( start_dim ,  end_dim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. flip ": "\n Tensor. flip ( dims )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. fliplr ": "\n Tensor. fliplr ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. flipud ": "\n Tensor. flipud ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. float ": "\n Tensor. float ( memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. float_power ": "\n Tensor. float_power ( exponent )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. float_power_ ": "\n Tensor. float_power_ ( exponent )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. floor ": "\n Tensor. floor ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. floor_ ": "\n Tensor. floor_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. floor_divide ": "\n Tensor. floor_divide ( value )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. floor_divide_ ": "\n Tensor. floor_divide_ ( value )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. fmod ": "\n Tensor. fmod ( divisor )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. fmod_ ": "\n Tensor. fmod_ ( divisor )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. frac ": "\n Tensor. frac ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. frac_ ": "\n Tensor. frac_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. frexp ": "\n Tensor. frexp ( input) ,  Tensor ) \u00b6"
+  },
+  {
+    "\n Tensor. gather ": "\n Tensor. gather ( dim ,  index )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. gcd ": "\n Tensor. gcd ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. gcd_ ": "\n Tensor. gcd_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. ge ": "\n Tensor. ge ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. ge_ ": "\n Tensor. ge_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. greater_equal ": "\n Tensor. greater_equal ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. greater_equal_ ": "\n Tensor. greater_equal_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. geqrf ": "\n Tensor. geqrf ( ) \u00b6"
+  },
+  {
+    "\n Tensor. ger ": "\n Tensor. ger ( vec2 )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. get_device ": "\n Tensor. get_device ( ) ) \u00b6"
+  },
+  {
+    "\n Tensor. gt ": "\n Tensor. gt ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. gt_ ": "\n Tensor. gt_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. greater ": "\n Tensor. greater ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. greater_ ": "\n Tensor. greater_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. half ": "\n Tensor. half ( memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. hardshrink ": "\n Tensor. hardshrink ( lambd )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. heaviside ": "\n Tensor. heaviside ( values )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. histc ": "\n Tensor. histc ( bins ,  min ,  max )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. histogram ": "\n Tensor. histogram ( input ,  bins ,  * ,  range ,  weight ,  density ) \u00b6"
+  },
+  {
+    "\n Tensor. hsplit ": "\n Tensor. hsplit ( split_size_or_sections )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. hypot ": "\n Tensor. hypot ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. hypot_ ": "\n Tensor. hypot_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. i0 ": "\n Tensor. i0 ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. i0_ ": "\n Tensor. i0_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. igamma ": "\n Tensor. igamma ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. igamma_ ": "\n Tensor. igamma_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. igammac ": "\n Tensor. igammac ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. igammac_ ": "\n Tensor. igammac_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. index_add ": "\n Tensor. index_add ( dim ,  index ,  source ,  * ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. index_copy_ ": "\n Tensor. index_copy_ ( dim ,  index ,  tensor )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. index_copy ": "\n Tensor. index_copy ( dim ,  index ,  tensor2 )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. index_fill_ ": "\n Tensor. index_fill_ ( dim ,  index ,  value )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. index_fill ": "\n Tensor. index_fill ( dim ,  index ,  value )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. index_put_ ": "\n Tensor. index_put_ ( indices ,  values ,  accumulate )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. index_put ": "\n Tensor. index_put ( indices ,  values ,  accumulate )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. index_reduce ": "\n Tensor. index_reduce ( ) \u00b6"
+  },
+  {
+    "\n Tensor. index_select ": "\n Tensor. index_select ( dim ,  index )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. indices ": "\n Tensor. indices ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. inner ": "\n Tensor. inner ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. int ": "\n Tensor. int ( memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. int_repr ": "\n Tensor. int_repr ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. inverse ": "\n Tensor. inverse ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. isclose ": "\n Tensor. isclose ( other ,  rtol ,  atol ,  equal_nan )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. isfinite ": "\n Tensor. isfinite ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. isinf ": "\n Tensor. isinf ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. isposinf ": "\n Tensor. isposinf ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. isneginf ": "\n Tensor. isneginf ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. isnan ": "\n Tensor. isnan ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. is_contiguous ": "\n Tensor. is_contiguous ( memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. is_complex ": "\n Tensor. is_complex ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. is_conj ": "\n Tensor. is_conj ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. is_floating_point ": "\n Tensor. is_floating_point ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. is_inference ": "\n Tensor. is_inference ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. is_leaf \u00b6": "\n Tensor. is_leaf \u00b6"
+  },
+  {
+    "\n Tensor. is_pinned ": "\n Tensor. is_pinned ( ) \u00b6"
+  },
+  {
+    "\n Tensor. is_set_to ": "\n Tensor. is_set_to ( tensor )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. is_shared ": "\n Tensor. is_shared ( ) [source] \u00b6"
+  },
+  {
+    "\n Tensor. is_signed ": "\n Tensor. is_signed ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. is_sparse \u00b6": "\n Tensor. is_sparse \u00b6"
+  },
+  {
+    "\n Tensor. istft ": "\n Tensor. istft ( n_fft ,  hop_length ,  win_length ,  window ,  center ,  normalized ,  onesided ,  length ,  return_complex ) [source] \u00b6"
+  },
+  {
+    "\n Tensor. isreal ": "\n Tensor. isreal ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. kthvalue ": "\n Tensor. kthvalue ( k ,  dim ,  keepdim ) \u00b6"
+  },
+  {
+    "\n Tensor. lcm ": "\n Tensor. lcm ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. lcm_ ": "\n Tensor. lcm_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. ldexp ": "\n Tensor. ldexp ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. ldexp_ ": "\n Tensor. ldexp_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. le ": "\n Tensor. le ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. le_ ": "\n Tensor. le_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. less_equal ": "\n Tensor. less_equal ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. less_equal_ ": "\n Tensor. less_equal_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. lerp ": "\n Tensor. lerp ( end ,  weight )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. lerp_ ": "\n Tensor. lerp_ ( end ,  weight )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. lgamma ": "\n Tensor. lgamma ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. lgamma_ ": "\n Tensor. lgamma_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. log ": "\n Tensor. log ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. log_ ": "\n Tensor. log_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. logdet ": "\n Tensor. logdet ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. log10 ": "\n Tensor. log10 ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. log10_ ": "\n Tensor. log10_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. log1p ": "\n Tensor. log1p ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. log1p_ ": "\n Tensor. log1p_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. log2 ": "\n Tensor. log2 ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. log2_ ": "\n Tensor. log2_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. logaddexp ": "\n Tensor. logaddexp ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. logaddexp2 ": "\n Tensor. logaddexp2 ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. logsumexp ": "\n Tensor. logsumexp ( dim ,  keepdim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. logical_and ": "\n Tensor. logical_and ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. logical_and_ ": "\n Tensor. logical_and_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. logical_not ": "\n Tensor. logical_not ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. logical_not_ ": "\n Tensor. logical_not_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. logical_or ": "\n Tensor. logical_or ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. logical_or_ ": "\n Tensor. logical_or_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. logical_xor ": "\n Tensor. logical_xor ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. logical_xor_ ": "\n Tensor. logical_xor_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. logit ": "\n Tensor. logit ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. logit_ ": "\n Tensor. logit_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. long ": "\n Tensor. long ( memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. lt ": "\n Tensor. lt ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. lt_ ": "\n Tensor. lt_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. less ": "\n Tensor. less ( ) \u00b6"
+  },
+  {
+    "\n Tensor. less_ ": "\n Tensor. less_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. lu ": "\n Tensor. lu ( pivot ,  get_infos ) [source] \u00b6"
+  },
+  {
+    "\n Tensor. lu_solve ": "\n Tensor. lu_solve ( LU_data ,  LU_pivots )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. as_subclass ": "\n Tensor. as_subclass ( cls )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. map_ ": "\n Tensor. map_ ( tensor ,  callable ) \u00b6"
+  },
+  {
+    "\n Tensor. masked_scatter_ ": "\n Tensor. masked_scatter_ ( mask ,  source ) \u00b6"
+  },
+  {
+    "\n Tensor. masked_scatter ": "\n Tensor. masked_scatter ( mask ,  tensor )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. masked_fill_ ": "\n Tensor. masked_fill_ ( mask ,  value ) \u00b6"
+  },
+  {
+    "\n Tensor. masked_fill ": "\n Tensor. masked_fill ( mask ,  value )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. masked_select ": "\n Tensor. masked_select ( mask )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. matmul ": "\n Tensor. matmul ( tensor2 )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. matrix_power ": "\n Tensor. matrix_power ( n )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. matrix_exp ": "\n Tensor. matrix_exp ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. max ": "\n Tensor. max ( dim ,  keepdim ) \u00b6"
+  },
+  {
+    "\n Tensor. maximum ": "\n Tensor. maximum ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. mean ": "\n Tensor. mean ( dim ,  keepdim ,  * ,  dtype )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. nanmean ": "\n Tensor. nanmean ( dim ,  keepdim ,  * ,  dtype )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. median ": "\n Tensor. median ( dim ,  keepdim ) \u00b6"
+  },
+  {
+    "\n Tensor. nanmedian ": "\n Tensor. nanmedian ( dim ,  keepdim ) \u00b6"
+  },
+  {
+    "\n Tensor. min ": "\n Tensor. min ( dim ,  keepdim ) \u00b6"
+  },
+  {
+    "\n Tensor. minimum ": "\n Tensor. minimum ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. mm ": "\n Tensor. mm ( mat2 )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. smm ": "\n Tensor. smm ( mat )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. smm ": "\n torch. smm ( input ,  mat )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. mode ": "\n Tensor. mode ( dim ,  keepdim ) \u00b6"
+  },
+  {
+    "\n Tensor. movedim ": "\n Tensor. movedim ( source ,  destination )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. moveaxis ": "\n Tensor. moveaxis ( source ,  destination )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. msort ": "\n Tensor. msort ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. mul ": "\n Tensor. mul ( value )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. mul_ ": "\n Tensor. mul_ ( value )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. multiply ": "\n Tensor. multiply ( value )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. multiply_ ": "\n Tensor. multiply_ ( value )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. multinomial ": "\n Tensor. multinomial ( num_samples ,  replacement ,  * ,  generator )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. mv ": "\n Tensor. mv ( vec )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. mvlgamma ": "\n Tensor. mvlgamma ( p )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. mvlgamma_ ": "\n Tensor. mvlgamma_ ( p )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. nansum ": "\n Tensor. nansum ( dim ,  keepdim ,  dtype )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. narrow ": "\n Tensor. narrow ( dimension ,  start ,  length )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. narrow_copy ": "\n Tensor. narrow_copy ( dimension ,  start ,  length )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. ndimension ": "\n Tensor. ndimension ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. nan_to_num ": "\n Tensor. nan_to_num ( nan ,  posinf ,  neginf )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. nan_to_num_ ": "\n Tensor. nan_to_num_ ( nan ,  posinf ,  neginf )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. ne ": "\n Tensor. ne ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. ne_ ": "\n Tensor. ne_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. not_equal ": "\n Tensor. not_equal ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. not_equal_ ": "\n Tensor. not_equal_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. neg ": "\n Tensor. neg ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. neg_ ": "\n Tensor. neg_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. negative ": "\n Tensor. negative ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. negative_ ": "\n Tensor. negative_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. nelement ": "\n Tensor. nelement ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. numel ": "\n Tensor. numel ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. nextafter ": "\n Tensor. nextafter ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. nextafter_ ": "\n Tensor. nextafter_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. nonzero ": "\n Tensor. nonzero ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. norm ": "\n Tensor. norm ( p ,  dim ,  keepdim ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n Tensor. numpy ": "\n Tensor. numpy ( * ,  force )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. orgqr ": "\n Tensor. orgqr ( input2 )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. ormqr ": "\n Tensor. ormqr ( input2 ,  input3 ,  left ,  transpose )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. outer ": "\n Tensor. outer ( vec2 )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. permute ": "\n Tensor. permute ( * )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. pin_memory ": "\n Tensor. pin_memory ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. pinverse ": "\n Tensor. pinverse ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. polygamma ": "\n Tensor. polygamma ( n )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. polygamma_ ": "\n Tensor. polygamma_ ( n )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. positive ": "\n Tensor. positive ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. pow ": "\n Tensor. pow ( exponent )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. pow_ ": "\n Tensor. pow_ ( exponent )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. prod ": "\n Tensor. prod ( dim ,  keepdim ,  dtype )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. put_ ": "\n Tensor. put_ ( index ,  source ,  accumulate )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. qr ": "\n Tensor. qr ( some ) \u00b6"
+  },
+  {
+    "\n Tensor. qscheme ": "\n Tensor. qscheme ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. quantile ": "\n Tensor. quantile ( q ,  dim ,  keepdim ,  * ,  interpolation )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. nanquantile ": "\n Tensor. nanquantile ( q ,  dim ,  keepdim ,  * ,  interpolation )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. q_scale ": "\n Tensor. q_scale ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. q_zero_point ": "\n Tensor. q_zero_point ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. q_per_channel_scales ": "\n Tensor. q_per_channel_scales ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. q_per_channel_zero_points ": "\n Tensor. q_per_channel_zero_points ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. q_per_channel_axis ": "\n Tensor. q_per_channel_axis ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. rad2deg ": "\n Tensor. rad2deg ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. ravel ": "\n Tensor. ravel ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. reciprocal ": "\n Tensor. reciprocal ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. reciprocal_ ": "\n Tensor. reciprocal_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. record_stream ": "\n Tensor. record_stream ( stream ) \u00b6"
+  },
+  {
+    "\n Tensor. register_hook ": "\n Tensor. register_hook ( hook ) [source] \u00b6"
+  },
+  {
+    "\n Tensor. remainder ": "\n Tensor. remainder ( divisor )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. remainder_ ": "\n Tensor. remainder_ ( divisor )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. renorm ": "\n Tensor. renorm ( p ,  dim ,  maxnorm )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. renorm_ ": "\n Tensor. renorm_ ( p ,  dim ,  maxnorm )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. repeat ": "\n Tensor. repeat ( * )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. repeat_interleave ": "\n Tensor. repeat_interleave ( repeats ,  dim ,  * ,  output_size )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. requires_grad \u00b6": "\n Tensor. requires_grad \u00b6"
+  },
+  {
+    "\n Tensor. reshape ": "\n Tensor. reshape ( * )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. reshape_as ": "\n Tensor. reshape_as ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. resize_ ": "\n Tensor. resize_ ( * ,  memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. resize_as_ ": "\n Tensor. resize_as_ ( tensor ,  memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. retain_grad ": "\n Tensor. retain_grad ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. retains_grad \u00b6": "\n Tensor. retains_grad \u00b6"
+  },
+  {
+    "\n Tensor. roll ": "\n Tensor. roll ( shifts ,  dims )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. rot90 ": "\n Tensor. rot90 ( k ,  dims )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. round ": "\n Tensor. round ( decimals )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. round_ ": "\n Tensor. round_ ( decimals )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. rsqrt ": "\n Tensor. rsqrt ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. rsqrt_ ": "\n Tensor. rsqrt_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. scatter ": "\n Tensor. scatter ( dim ,  index ,  src )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. scatter_add ": "\n Tensor. scatter_add ( dim ,  index ,  src )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. scatter_reduce ": "\n Tensor. scatter_reduce ( dim ,  index ,  src ,  reduce ,  * ,  include_self )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. select ": "\n Tensor. select ( dim ,  index )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. select_scatter ": "\n Tensor. select_scatter ( src ,  dim ,  index )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. set_ ": "\n Tensor. set_ ( source ,  storage_offset ,  size ,  stride )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. share_memory_ ": "\n Tensor. share_memory_ ( ) [source] \u00b6"
+  },
+  {
+    "\n Tensor. short ": "\n Tensor. short ( memory_format )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sigmoid ": "\n Tensor. sigmoid ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sigmoid_ ": "\n Tensor. sigmoid_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sign ": "\n Tensor. sign ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sign_ ": "\n Tensor. sign_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. signbit ": "\n Tensor. signbit ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sgn ": "\n Tensor. sgn ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sgn_ ": "\n Tensor. sgn_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sin ": "\n Tensor. sin ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sin_ ": "\n Tensor. sin_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sinc ": "\n Tensor. sinc ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sinc_ ": "\n Tensor. sinc_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sinh ": "\n Tensor. sinh ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sinh_ ": "\n Tensor. sinh_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. asinh ": "\n Tensor. asinh ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. asinh_ ": "\n Tensor. asinh_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. arcsinh ": "\n Tensor. arcsinh ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. arcsinh_ ": "\n Tensor. arcsinh_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. size ": "\n Tensor. size ( dim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. slogdet ": "\n Tensor. slogdet ( ) \u00b6"
+  },
+  {
+    "\n Tensor. slice_scatter ": "\n Tensor. slice_scatter ( src ,  dim ,  start ,  end ,  step )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sort ": "\n Tensor. sort ( dim ,  descending ) \u00b6"
+  },
+  {
+    "\n Tensor. split ": "\n Tensor. split ( split_size ,  dim ) [source] \u00b6"
+  },
+  {
+    "\n Tensor. sparse_mask ": "\n Tensor. sparse_mask ( mask )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sparse_dim ": "\n Tensor. sparse_dim ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sqrt ": "\n Tensor. sqrt ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sqrt_ ": "\n Tensor. sqrt_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. square ": "\n Tensor. square ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. square_ ": "\n Tensor. square_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. squeeze ": "\n Tensor. squeeze ( dim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. squeeze_ ": "\n Tensor. squeeze_ ( dim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. std ": "\n Tensor. std ( dim ,  unbiased ,  keepdim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. stft ": "\n Tensor. stft ( n_fft ,  hop_length ,  win_length ,  window ,  center ,  pad_mode ,  normalized ,  onesided ,  return_complex ) [source] \u00b6"
+  },
+  {
+    "\n Tensor. storage ": "\n Tensor. storage ( )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n Tensor. storage_offset ": "\n Tensor. storage_offset ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. storage_type ": "\n Tensor. storage_type ( )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n Tensor. stride ": "\n Tensor. stride ( dim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sub ": "\n Tensor. sub ( other ,  * ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sub_ ": "\n Tensor. sub_ ( other ,  * ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. subtract ": "\n Tensor. subtract ( other ,  * ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. subtract_ ": "\n Tensor. subtract_ ( other ,  * ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sum ": "\n Tensor. sum ( dim ,  keepdim ,  dtype )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sum_to_size ": "\n Tensor. sum_to_size ( * )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. svd ": "\n Tensor. svd ( some ,  compute_uv ) \u00b6"
+  },
+  {
+    "\n Tensor. swapaxes ": "\n Tensor. swapaxes ( axis0 ,  axis1 )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. swapdims ": "\n Tensor. swapdims ( dim0 ,  dim1 )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. symeig ": "\n Tensor. symeig ( eigenvectors ,  upper ) \u00b6"
+  },
+  {
+    "\n Tensor. t ": "\n Tensor. t ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. t_ ": "\n Tensor. t_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. tensor_split ": "\n Tensor. tensor_split ( indices_or_sections ,  dim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. tile ": "\n Tensor. tile ( * )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. to_mkldnn ": "\n Tensor. to_mkldnn ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. take ": "\n Tensor. take ( indices )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. take_along_dim ": "\n Tensor. take_along_dim ( indices ,  dim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. tan ": "\n Tensor. tan ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. tan_ ": "\n Tensor. tan_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. tanh ": "\n Tensor. tanh ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. tanh_ ": "\n Tensor. tanh_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. atanh ": "\n Tensor. atanh ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. atanh_ ": "\n Tensor. atanh_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. arctanh ": "\n Tensor. arctanh ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. arctanh_ ": "\n Tensor. arctanh_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. tolist ": "\n Tensor. tolist ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. topk ": "\n Tensor. topk ( k ,  dim ,  largest ,  sorted ) \u00b6"
+  },
+  {
+    "\n Tensor. to_dense ": "\n Tensor. to_dense ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. to_sparse ": "\n Tensor. to_sparse ( sparseDims )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. to_sparse_csr ": "\n Tensor. to_sparse_csr ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. to_sparse_csc ": "\n Tensor. to_sparse_csc ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. to_sparse_bsr ": "\n Tensor. to_sparse_bsr ( blocksize )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. to_sparse_bsc ": "\n Tensor. to_sparse_bsc ( blocksize )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. trace ": "\n Tensor. trace ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. transpose ": "\n Tensor. transpose ( dim0 ,  dim1 )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. transpose_ ": "\n Tensor. transpose_ ( dim0 ,  dim1 )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. triangular_solve ": "\n Tensor. triangular_solve ( A ,  upper ,  transpose ,  unitriangular ) \u00b6"
+  },
+  {
+    "\n Tensor. tril ": "\n Tensor. tril ( diagonal )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. tril_ ": "\n Tensor. tril_ ( diagonal )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. triu ": "\n Tensor. triu ( diagonal )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. triu_ ": "\n Tensor. triu_ ( diagonal )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. true_divide ": "\n Tensor. true_divide ( value )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. true_divide_ ": "\n Tensor. true_divide_ ( value )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. trunc ": "\n Tensor. trunc ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. trunc_ ": "\n Tensor. trunc_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. type ": "\n Tensor. type ( dtype ,  non_blocking ,  ** )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. type_as ": "\n Tensor. type_as ( tensor )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. unbind ": "\n Tensor. unbind ( dim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. unflatten ": "\n Tensor. unflatten ( dim ,  sizes )   \u2192 [source] \u00b6"
+  },
+  {
+    "\n Tensor. unfold ": "\n Tensor. unfold ( dimension ,  size ,  step )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. unique ": "\n Tensor. unique ( sorted ,  return_inverse ,  return_counts ,  dim ) [source] \u00b6"
+  },
+  {
+    "\n Tensor. unique_consecutive ": "\n Tensor. unique_consecutive ( return_inverse ,  return_counts ,  dim ) [source] \u00b6"
+  },
+  {
+    "\n Tensor. unsqueeze ": "\n Tensor. unsqueeze ( dim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. unsqueeze_ ": "\n Tensor. unsqueeze_ ( dim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. values ": "\n Tensor. values ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. var ": "\n Tensor. var ( dim ,  unbiased ,  keepdim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. vdot ": "\n Tensor. vdot ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. view ": "\n Tensor. view ( * )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. view_as ": "\n Tensor. view_as ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. vsplit ": "\n Tensor. vsplit ( split_size_or_sections )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. where ": "\n Tensor. where ( condition ,  y )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. xlogy ": "\n Tensor. xlogy ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. xlogy_ ": "\n Tensor. xlogy_ ( other )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. zero_ ": "\n Tensor. zero_ ( )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.cuda. set_device ": "\n torch.cuda. set_device ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. current_device ": "\n torch.cuda. current_device ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.autograd. backward ": "\n torch.autograd. backward ( tensors ,  grad_tensors ,  retain_graph ,  create_graph ,  grad_variables ,  inputs ) [source] \u00b6"
+  },
+  {
+    "\n torch.autograd. grad ": "\n torch.autograd. grad ( outputs ,  inputs ,  grad_outputs ,  retain_graph ,  create_graph ,  only_inputs ,  allow_unused ,  is_grads_batched ) [source] \u00b6"
+  },
+  {
+    "\n class torch.autograd.forward_ad. dual_level [source] \u00b6": "\n class torch.autograd.forward_ad. dual_level [source] \u00b6"
+  },
+  {
+    "\n torch.autograd.forward_ad. make_dual ": "\n torch.autograd.forward_ad. make_dual ( tensor ,  tangent ,  * ,  level ) [source] \u00b6"
+  },
+  {
+    "\n torch.autograd.forward_ad. unpack_dual ": "\n torch.autograd.forward_ad. unpack_dual ( tensor ,  * ,  level ) [source] \u00b6"
+  },
+  {
+    "\n torch.autograd.functional. jacobian ": "\n torch.autograd.functional. jacobian ( func ,  inputs ,  create_graph ,  strict ,  vectorize ,  strategy ) [source] \u00b6"
+  },
+  {
+    "\n torch.autograd.functional. hessian ": "\n torch.autograd.functional. hessian ( func ,  inputs ,  create_graph ,  strict ,  vectorize ,  outer_jacobian_strategy ) [source] \u00b6"
+  },
+  {
+    "\n torch.autograd.functional. vjp ": "\n torch.autograd.functional. vjp ( func ,  inputs ,  v ,  create_graph ,  strict ) [source] \u00b6"
+  },
+  {
+    "\n torch.autograd.functional. jvp ": "\n torch.autograd.functional. jvp ( func ,  inputs ,  v ,  create_graph ,  strict ) [source] \u00b6"
+  },
+  {
+    "\n torch.autograd.functional. vhp ": "\n torch.autograd.functional. vhp ( func ,  inputs ,  v ,  create_graph ,  strict ) [source] \u00b6"
+  },
+  {
+    "\n torch.autograd.functional. hvp ": "\n torch.autograd.functional. hvp ( func ,  inputs ,  v ,  create_graph ,  strict ) [source] \u00b6"
+  },
+  {
+    "\n static Function. forward ": "\n static Function. forward ( ctx ,  * ,  ** ) [source] \u00b6"
+  },
+  {
+    "\n torch.autograd. gradcheck ": "\n torch.autograd. gradcheck ( func ,  inputs ,  * ,  eps ,  atol ,  rtol ,  raise_exception ,  check_sparse_nnz ,  nondet_tol ,  check_undefined_grad ,  check_grad_dtypes ,  check_batched_grad ,  check_batched_forward_grad ,  check_forward_ad ,  check_backward_ad ,  fast_mode ) [source] \u00b6"
+  },
+  {
+    "\n static Function. backward ": "\n static Function. backward ( ctx ,  * ) [source] \u00b6"
+  },
+  {
+    "\n static Function. jvp ": "\n static Function. jvp ( ctx ,  * ) [source] \u00b6"
+  },
+  {
+    "\n FunctionCtx. mark_dirty ": "\n FunctionCtx. mark_dirty ( * ) [source] \u00b6"
+  },
+  {
+    "\n FunctionCtx. mark_non_differentiable ": "\n FunctionCtx. mark_non_differentiable ( * ) [source] \u00b6"
+  },
+  {
+    "\n FunctionCtx. save_for_backward ": "\n FunctionCtx. save_for_backward ( * ) [source] \u00b6"
+  },
+  {
+    "\n FunctionCtx. set_materialize_grads ": "\n FunctionCtx. set_materialize_grads ( value ) [source] \u00b6"
+  },
+  {
+    "\n torch.autograd. gradgradcheck ": "\n torch.autograd. gradgradcheck ( func ,  inputs ,  grad_outputs ,  * ,  eps ,  atol ,  rtol ,  gen_non_contig_grad_outputs ,  raise_exception ,  nondet_tol ,  check_undefined_grad ,  check_grad_dtypes ,  check_batched_grad ,  check_fwd_over_rev ,  check_rev_over_rev ,  fast_mode ) [source] \u00b6"
+  },
+  {
+    "\n profile. export_chrome_trace ": "\n profile. export_chrome_trace ( path ) [source] \u00b6"
+  },
+  {
+    "\n profile. key_averages ": "\n profile. key_averages ( group_by_input_shape ,  group_by_stack_n ) [source] \u00b6"
+  },
+  {
+    "\n property profile. self_cpu_time_total \u00b6": "\n property profile. self_cpu_time_total \u00b6"
+  },
+  {
+    "\n profile. total_average ": "\n profile. total_average ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.autograd.profiler. load_nvprof ": "\n torch.autograd.profiler. load_nvprof ( path ) [source] \u00b6"
+  },
+  {
+    "\n class torch.cuda. StreamContext ": "\n class torch.cuda. StreamContext ( stream ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. is_available ": "\n torch.cuda. is_available ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. can_device_access_peer ": "\n torch.cuda. can_device_access_peer ( device ,  peer_device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. current_blas_handle ": "\n torch.cuda. current_blas_handle ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. current_stream ": "\n torch.cuda. current_stream ( device ) [source] \u00b6"
+  },
+  {
+    "\n class torch.cuda. Stream ": "\n class torch.cuda. Stream ( device ,  priority ,  ** ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. default_stream ": "\n torch.cuda. default_stream ( device ) [source] \u00b6"
+  },
+  {
+    "\n class torch.cuda. device ": "\n class torch.cuda. device ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. device_count ": "\n torch.cuda. device_count ( ) [source] \u00b6"
+  },
+  {
+    "\n class torch.cuda. device_of ": "\n class torch.cuda. device_of ( obj ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. get_arch_list ": "\n torch.cuda. get_arch_list ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. get_device_capability ": "\n torch.cuda. get_device_capability ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. get_device_name ": "\n torch.cuda. get_device_name ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. get_device_properties ": "\n torch.cuda. get_device_properties ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. get_gencode_flags ": "\n torch.cuda. get_gencode_flags ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. get_sync_debug_mode ": "\n torch.cuda. get_sync_debug_mode ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. init ": "\n torch.cuda. init ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. ipc_collect ": "\n torch.cuda. ipc_collect ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. is_initialized ": "\n torch.cuda. is_initialized ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. memory_usage ": "\n torch.cuda. memory_usage ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. set_stream ": "\n torch.cuda. set_stream ( stream ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. set_sync_debug_mode ": "\n torch.cuda. set_sync_debug_mode ( debug_mode ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. stream ": "\n torch.cuda. stream ( stream ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. synchronize ": "\n torch.cuda. synchronize ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. utilization ": "\n torch.cuda. utilization ( device ) [source] \u00b6"
+  },
+  {
+    "\n exception torch.cuda. OutOfMemoryError \u00b6": "\n exception torch.cuda. OutOfMemoryError \u00b6"
+  },
+  {
+    "\n torch.cuda. get_rng_state ": "\n torch.cuda. get_rng_state ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. get_rng_state_all ": "\n torch.cuda. get_rng_state_all ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. set_rng_state ": "\n torch.cuda. set_rng_state ( new_state ,  device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. set_rng_state_all ": "\n torch.cuda. set_rng_state_all ( new_states ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. manual_seed ": "\n torch.cuda. manual_seed ( seed ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. manual_seed_all ": "\n torch.cuda. manual_seed_all ( seed ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. seed ": "\n torch.cuda. seed ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. seed_all ": "\n torch.cuda. seed_all ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. initial_seed ": "\n torch.cuda. initial_seed ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda.comm. broadcast ": "\n torch.cuda.comm. broadcast ( tensor ,  devices ,  * ,  out ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda.comm. broadcast_coalesced ": "\n torch.cuda.comm. broadcast_coalesced ( tensors ,  devices ,  buffer_size ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda.comm. reduce_add ": "\n torch.cuda.comm. reduce_add ( inputs ,  destination ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda.comm. scatter ": "\n torch.cuda.comm. scatter ( tensor ,  devices ,  chunk_sizes ,  dim ,  streams ,  * ,  out ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda.comm. gather ": "\n torch.cuda.comm. gather ( tensors ,  dim ,  destination ,  * ,  out ) [source] \u00b6"
+  },
+  {
+    "\n class torch.cuda. ExternalStream ": "\n class torch.cuda. ExternalStream ( stream_ptr ,  device ,  ** ) [source] \u00b6"
+  },
+  {
+    "\n class torch.cuda. Event ": "\n class torch.cuda. Event ( enable_timing ,  blocking ,  interprocess ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. is_current_stream_capturing ": "\n torch.cuda. is_current_stream_capturing ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. graph_pool_handle ": "\n torch.cuda. graph_pool_handle ( ) [source] \u00b6"
+  },
+  {
+    "\n class torch.cuda. CUDAGraph [source] \u00b6": "\n class torch.cuda. CUDAGraph [source] \u00b6"
+  },
+  {
+    "\n class torch.cuda. graph ": "\n class torch.cuda. graph ( cuda_graph ,  pool ,  stream ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. make_graphed_callables ": "\n torch.cuda. make_graphed_callables ( callables ,  sample_args ,  num_warmup_iters ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. empty_cache ": "\n torch.cuda. empty_cache ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. list_gpu_processes ": "\n torch.cuda. list_gpu_processes ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. mem_get_info ": "\n torch.cuda. mem_get_info ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. memory_stats ": "\n torch.cuda. memory_stats ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. memory_summary ": "\n torch.cuda. memory_summary ( device ,  abbreviated ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. memory_snapshot ": "\n torch.cuda. memory_snapshot ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. memory_allocated ": "\n torch.cuda. memory_allocated ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. max_memory_allocated ": "\n torch.cuda. max_memory_allocated ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. reset_max_memory_allocated ": "\n torch.cuda. reset_max_memory_allocated ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. memory_reserved ": "\n torch.cuda. memory_reserved ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. max_memory_reserved ": "\n torch.cuda. max_memory_reserved ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. set_per_process_memory_fraction ": "\n torch.cuda. set_per_process_memory_fraction ( fraction ,  device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. memory_cached ": "\n torch.cuda. memory_cached ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. max_memory_cached ": "\n torch.cuda. max_memory_cached ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. reset_max_memory_cached ": "\n torch.cuda. reset_max_memory_cached ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. reset_peak_memory_stats ": "\n torch.cuda. reset_peak_memory_stats ( device ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. caching_allocator_alloc ": "\n torch.cuda. caching_allocator_alloc ( size ,  device ,  stream ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda. caching_allocator_delete ": "\n torch.cuda. caching_allocator_delete ( mem_ptr ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda.nvtx. mark ": "\n torch.cuda.nvtx. mark ( msg ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda.nvtx. range_push ": "\n torch.cuda.nvtx. range_push ( msg ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda.nvtx. range_pop ": "\n torch.cuda.nvtx. range_pop ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda.jiterator. _create_jit_fn ": "\n torch.cuda.jiterator. _create_jit_fn ( code_string ,  ** ) [source] \u00b6"
+  },
+  {
+    "\n torch.cuda.jiterator. _create_multi_output_jit_fn ": "\n torch.cuda.jiterator. _create_multi_output_jit_fn ( code_string ,  num_outputs ,  ** ) [source] \u00b6"
+  },
+  {
+    "\n torch.linalg. inv_ex ": "\n torch.linalg. inv_ex ( A ,  * ,  check_errors ,  out ) \u00b6"
+  },
+  {
+    "\n torch.linalg. cholesky ": "\n torch.linalg. cholesky ( A ,  * ,  upper ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. cholesky_ex ": "\n torch.linalg. cholesky_ex ( A ,  * ,  upper ,  check_errors ,  out ) \u00b6"
+  },
+  {
+    "\n torch.linalg. lu ": "\n torch.linalg. lu ( A ,  * ,  pivot ,  out ) \u00b6"
+  },
+  {
+    "\n torch.linalg. lu_solve ": "\n torch.linalg. lu_solve ( LU ,  pivots ,  B ,  * ,  left ,  adjoint ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. qr ": "\n torch.linalg. qr ( A ,  mode ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch.linalg. eigh ": "\n torch.linalg. eigh ( A ,  UPLO ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch.linalg. svd ": "\n torch.linalg. svd ( A ,  full_matrices ,  * ,  driver ,  out ) \u00b6"
+  },
+  {
+    "\n torch.linalg. svdvals ": "\n torch.linalg. svdvals ( A ,  * ,  driver ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n Optimizer. state_dict ": "\n Optimizer. state_dict ( ) [source] \u00b6"
+  },
+  {
+    "\n Optimizer. step ": "\n Optimizer. step ( closure ) [source] \u00b6"
+  },
+  {
+    "\n torch.fft. fft ": "\n torch.fft. fft ( input ,  n ,  dim ,  norm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. ifft ": "\n torch.fft. ifft ( input ,  n ,  dim ,  norm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. fft2 ": "\n torch.fft. fft2 ( input ,  s ,  dim ,  norm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. ifft2 ": "\n torch.fft. ifft2 ( input ,  s ,  dim ,  norm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. fftn ": "\n torch.fft. fftn ( input ,  s ,  dim ,  norm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. ifftn ": "\n torch.fft. ifftn ( input ,  s ,  dim ,  norm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. rfft ": "\n torch.fft. rfft ( input ,  n ,  dim ,  norm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. irfft ": "\n torch.fft. irfft ( input ,  n ,  dim ,  norm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. rfft2 ": "\n torch.fft. rfft2 ( input ,  s ,  dim ,  norm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. irfft2 ": "\n torch.fft. irfft2 ( input ,  s ,  dim ,  norm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. rfftn ": "\n torch.fft. rfftn ( input ,  s ,  dim ,  norm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. irfftn ": "\n torch.fft. irfftn ( input ,  s ,  dim ,  norm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. hfft ": "\n torch.fft. hfft ( input ,  n ,  dim ,  norm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. ihfft ": "\n torch.fft. ihfft ( input ,  n ,  dim ,  norm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. hfft2 ": "\n torch.fft. hfft2 ( input ,  s ,  dim ,  norm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. ihfft2 ": "\n torch.fft. ihfft2 ( input ,  s ,  dim ,  norm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. hfftn ": "\n torch.fft. hfftn ( input ,  s ,  dim ,  norm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. ihfftn ": "\n torch.fft. ihfftn ( input ,  s ,  dim ,  norm ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. fftfreq ": "\n torch.fft. fftfreq ( n ,  d ,  * ,  out ,  dtype ,  layout ,  device ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. rfftfreq ": "\n torch.fft. rfftfreq ( n ,  d ,  * ,  out ,  dtype ,  layout ,  device ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. fftshift ": "\n torch.fft. fftshift ( input ,  dim )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.fft. ifftshift ": "\n torch.fft. ifftshift ( input ,  dim )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.jit. script ": "\n torch.jit. script ( obj ,  optimize ,  _frames_up ,  _rcb ,  example_inputs ) [source] \u00b6"
+  },
+  {
+    "\n class torch.jit. ScriptModule [source] \u00b6": "\n class torch.jit. ScriptModule [source] \u00b6"
+  },
+  {
+    "\n class torch.jit. ScriptFunction \u00b6": "\n class torch.jit. ScriptFunction \u00b6"
+  },
+  {
+    "\n torch.jit. trace ": "\n torch.jit. trace ( func ,  example_inputs ,  optimize=None ,  check_trace=True ,  check_inputs=None ,  check_tolerance=1e-05 ,  strict=True ,  _force_outplace=False ,  _module_class=None ,  _compilation_unit=<torch.jit.CompilationUnit ) [source] \u00b6"
+  },
+  {
+    "\n torch.jit. script_if_tracing ": "\n torch.jit. script_if_tracing ( fn ) [source] \u00b6"
+  },
+  {
+    "\n torch.jit. trace_module ": "\n torch.jit. trace_module ( mod ,  inputs ,  optimize=None ,  check_trace=True ,  check_inputs=None ,  check_tolerance=1e-05 ,  strict=True ,  _force_outplace=False ,  _module_class=None ,  _compilation_unit=<torch.jit.CompilationUnit ) [source] \u00b6"
+  },
+  {
+    "\n torch.jit. fork ": "\n torch.jit. fork ( func ,  * ,  ** ) [source] \u00b6"
+  },
+  {
+    "\n torch.jit. wait ": "\n torch.jit. wait ( future ) [source] \u00b6"
+  },
+  {
+    "\n torch.jit. freeze ": "\n torch.jit. freeze ( mod ,  preserved_attrs ,  optimize_numerics ) [source] \u00b6"
+  },
+  {
+    "\n torch.jit. optimize_for_inference ": "\n torch.jit. optimize_for_inference ( mod ,  other_methods ) [source] \u00b6"
+  },
+  {
+    "\n torch.jit. enable_onednn_fusion ": "\n torch.jit. enable_onednn_fusion ( enabled ) [source] \u00b6"
+  },
+  {
+    "\n torch.jit. onednn_fusion_enabled ": "\n torch.jit. onednn_fusion_enabled ( ) [source] \u00b6"
+  },
+  {
+    "\n torch.jit. set_fusion_strategy ": "\n torch.jit. set_fusion_strategy ( strategy ) [source] \u00b6"
+  },
+  {
+    "\n class torch.jit. strict_fusion [source] \u00b6": "\n class torch.jit. strict_fusion [source] \u00b6"
+  },
+  {
+    "\n torch.jit. save ": "\n torch.jit. save ( m ,  f ,  _extra_files ) [source] \u00b6"
+  },
+  {
+    "\n torch.jit. load ": "\n torch.jit. load ( f ,  map_location ,  _extra_files ) [source] \u00b6"
+  },
+  {
+    "\n torch.jit. ignore ": "\n torch.jit. ignore ( drop ,  ** ) [source] \u00b6"
+  },
+  {
+    "\n torch.jit. unused ": "\n torch.jit. unused ( fn ) [source] \u00b6"
+  },
+  {
+    "\n torch.jit. isinstance ": "\n torch.jit. isinstance ( obj ,  target_type ) [source] \u00b6"
+  },
+  {
+    "\n class torch.jit. Attribute ": "\n class torch.jit. Attribute ( value ,  type ) [source] \u00b6"
+  },
+  {
+    "\n torch.jit. annotate ": "\n torch.jit. annotate ( the_type ,  the_value ) [source] \u00b6"
+  },
+  {
+    "\n torch.linalg. norm ": "\n torch.linalg. norm ( A ,  ord ,  dim ,  keepdim ,  * ,  out ,  dtype )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. vector_norm ": "\n torch.linalg. vector_norm ( x ,  ord ,  dim ,  keepdim ,  * ,  dtype ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. matrix_norm ": "\n torch.linalg. matrix_norm ( A ,  ord ,  dim ,  keepdim ,  * ,  dtype ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. diagonal ": "\n torch.linalg. diagonal ( A ,  * ,  offset ,  dim1 ,  dim2 )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. cond ": "\n torch.linalg. cond ( A ,  p ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. matrix_rank ": "\n torch.linalg. matrix_rank ( A ,  * ,  atol ,  rtol ,  hermitian ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. eig ": "\n torch.linalg. eig ( A ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch.linalg. eigvals ": "\n torch.linalg. eigvals ( A ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. eigvalsh ": "\n torch.linalg. eigvalsh ( A ,  UPLO ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. solve ": "\n torch.linalg. solve ( A ,  B ,  * ,  left ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. solve_triangular ": "\n torch.linalg. solve_triangular ( A ,  B ,  * ,  upper ,  left ,  unitriangular ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. lstsq ": "\n torch.linalg. lstsq ( A ,  B ,  rcond ,  * ,  driver ) \u00b6"
+  },
+  {
+    "\n torch.linalg. cross ": "\n torch.linalg. cross ( input ,  other ,  * ,  dim ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. matmul ": "\n torch.linalg. matmul ( input ,  other ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. vecdot ": "\n torch.linalg. vecdot ( x ,  y ,  * ,  dim ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. multi_dot ": "\n torch.linalg. multi_dot ( tensors ,  * ,  out ) \u00b6"
+  },
+  {
+    "\n torch.linalg. tensorinv ": "\n torch.linalg. tensorinv ( A ,  ind ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. tensorsolve ": "\n torch.linalg. tensorsolve ( A ,  B ,  dims ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. vander ": "\n torch.linalg. vander ( x ,  N )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.linalg. solve_ex ": "\n torch.linalg. solve_ex ( A ,  B ,  * ,  left ,  check_errors ,  out ) \u00b6"
+  },
+  {
+    "\n torch.linalg. lu_factor_ex ": "\n torch.linalg. lu_factor_ex ( A ,  * ,  pivot ,  check_errors ,  out ) \u00b6"
+  },
+  {
+    "\n torch.linalg. ldl_factor ": "\n torch.linalg. ldl_factor ( A ,  * ,  hermitian ,  out ) \u00b6"
+  },
+  {
+    "\n torch.linalg. ldl_factor_ex ": "\n torch.linalg. ldl_factor_ex ( A ,  * ,  hermitian ,  check_errors ,  out ) \u00b6"
+  },
+  {
+    "\n torch.linalg. ldl_solve ": "\n torch.linalg. ldl_solve ( LD ,  pivots ,  B ,  * ,  hermitian ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n class torch.onnx. JitScalarType ": "\n class torch.onnx. JitScalarType ( value ) \u00b6"
+  },
+  {
+    "\n Optimizer. add_param_group ": "\n Optimizer. add_param_group ( param_group ) [source] \u00b6"
+  },
+  {
+    "\n Optimizer. load_state_dict ": "\n Optimizer. load_state_dict ( state_dict ) [source] \u00b6"
+  },
+  {
+    "\n Optimizer. zero_grad ": "\n Optimizer. zero_grad ( set_to_none ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim. Adadelta ": "\n class torch.optim. Adadelta ( params ,  lr ,  rho ,  eps ,  weight_decay ,  foreach ,  * ,  maximize ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim. Adagrad ": "\n class torch.optim. Adagrad ( params ,  lr ,  lr_decay ,  weight_decay ,  initial_accumulator_value ,  eps ,  foreach ,  * ,  maximize ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim. Adam ": "\n class torch.optim. Adam ( params ,  lr ,  betas ,  eps ,  weight_decay ,  amsgrad ,  * ,  foreach ,  maximize ,  capturable ,  differentiable ,  fused ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim. AdamW ": "\n class torch.optim. AdamW ( params ,  lr ,  betas ,  eps ,  weight_decay ,  amsgrad ,  * ,  maximize ,  foreach ,  capturable ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim. SparseAdam ": "\n class torch.optim. SparseAdam ( params ,  lr ,  betas ,  eps ,  maximize ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim. Adamax ": "\n class torch.optim. Adamax ( params ,  lr ,  betas ,  eps ,  weight_decay ,  foreach ,  * ,  maximize ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim. ASGD ": "\n class torch.optim. ASGD ( params ,  lr ,  lambd ,  alpha ,  t0 ,  weight_decay ,  foreach ,  maximize ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim. LBFGS ": "\n class torch.optim. LBFGS ( params ,  lr ,  max_iter ,  max_eval ,  tolerance_grad ,  tolerance_change ,  history_size ,  line_search_fn ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim. NAdam ": "\n class torch.optim. NAdam ( params ,  lr ,  betas ,  eps ,  weight_decay ,  momentum_decay ,  foreach ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim. RAdam ": "\n class torch.optim. RAdam ( params ,  lr ,  betas ,  eps ,  weight_decay ,  foreach ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim. RMSprop ": "\n class torch.optim. RMSprop ( params ,  lr ,  alpha ,  eps ,  weight_decay ,  momentum ,  centered ,  foreach ,  maximize ,  differentiable ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim. Rprop ": "\n class torch.optim. Rprop ( params ,  lr ,  etas ,  step_sizes ,  foreach ,  maximize ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim. SGD ": "\n class torch.optim. SGD ( params ,  lr=<required ,  momentum=0 ,  dampening=0 ,  weight_decay=0 ,  nesterov=False ,  * ,  maximize=False ,  foreach=None ,  differentiable=False ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim.lr_scheduler. ReduceLROnPlateau ": "\n class torch.optim.lr_scheduler. ReduceLROnPlateau ( optimizer ,  mode ,  factor ,  patience ,  threshold ,  threshold_mode ,  cooldown ,  min_lr ,  eps ,  verbose ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim.lr_scheduler. LambdaLR ": "\n class torch.optim.lr_scheduler. LambdaLR ( optimizer ,  lr_lambda ,  last_epoch ,  verbose ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim.lr_scheduler. MultiplicativeLR ": "\n class torch.optim.lr_scheduler. MultiplicativeLR ( optimizer ,  lr_lambda ,  last_epoch ,  verbose ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim.lr_scheduler. StepLR ": "\n class torch.optim.lr_scheduler. StepLR ( optimizer ,  step_size ,  gamma ,  last_epoch ,  verbose ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim.lr_scheduler. MultiStepLR ": "\n class torch.optim.lr_scheduler. MultiStepLR ( optimizer ,  milestones ,  gamma ,  last_epoch ,  verbose ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim.lr_scheduler. ConstantLR ": "\n class torch.optim.lr_scheduler. ConstantLR ( optimizer ,  factor ,  total_iters ,  last_epoch ,  verbose ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim.lr_scheduler. LinearLR ": "\n class torch.optim.lr_scheduler. LinearLR ( optimizer ,  start_factor ,  end_factor ,  total_iters ,  last_epoch ,  verbose ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim.lr_scheduler. ExponentialLR ": "\n class torch.optim.lr_scheduler. ExponentialLR ( optimizer ,  gamma ,  last_epoch ,  verbose ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim.lr_scheduler. PolynomialLR ": "\n class torch.optim.lr_scheduler. PolynomialLR ( optimizer ,  total_iters ,  power ,  last_epoch ,  verbose ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim.lr_scheduler. CosineAnnealingLR ": "\n class torch.optim.lr_scheduler. CosineAnnealingLR ( optimizer ,  T_max ,  eta_min ,  last_epoch ,  verbose ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim.lr_scheduler. ChainedScheduler ": "\n class torch.optim.lr_scheduler. ChainedScheduler ( schedulers ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim.lr_scheduler. SequentialLR ": "\n class torch.optim.lr_scheduler. SequentialLR ( optimizer ,  schedulers ,  milestones ,  last_epoch ,  verbose ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim.lr_scheduler. CyclicLR ": "\n class torch.optim.lr_scheduler. CyclicLR ( optimizer ,  base_lr ,  max_lr ,  step_size_up ,  step_size_down ,  mode ,  gamma ,  scale_fn ,  scale_mode ,  cycle_momentum ,  base_momentum ,  max_momentum ,  last_epoch ,  verbose ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim.lr_scheduler. OneCycleLR ": "\n class torch.optim.lr_scheduler. OneCycleLR ( optimizer ,  max_lr ,  total_steps ,  epochs ,  steps_per_epoch ,  pct_start ,  anneal_strategy ,  cycle_momentum ,  base_momentum ,  max_momentum ,  div_factor ,  final_div_factor ,  three_phase ,  last_epoch ,  verbose ) [source] \u00b6"
+  },
+  {
+    "\n class torch.optim.lr_scheduler. CosineAnnealingWarmRestarts ": "\n class torch.optim.lr_scheduler. CosineAnnealingWarmRestarts ( optimizer ,  T_0 ,  T_mult ,  eta_min ,  last_epoch ,  verbose ) [source] \u00b6"
+  },
+  {
+    "\n class torch.ao.nn.quantized. FloatFunctional [source] \u00b6": "\n class torch.ao.nn.quantized. FloatFunctional [source] \u00b6"
+  },
+  {
+    "\n Tensor. is_sparse_csr \u00b6": "\n Tensor. is_sparse_csr \u00b6"
+  },
+  {
+    "\n Tensor. coalesce ": "\n Tensor. coalesce ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. is_coalesced ": "\n Tensor. is_coalesced ( )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.sparse. softmax ": "\n torch.sparse. softmax ( input ,  dim ,  * ,  dtype )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. sparse_csr_tensor ": "\n torch. sparse_csr_tensor ( crow_indices ,  col_indices ,  values ,  size ,  * ,  dtype ,  device ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. sparse_csc_tensor ": "\n torch. sparse_csc_tensor ( ccol_indices ,  row_indices ,  values ,  size ,  * ,  dtype ,  device ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. sparse_bsr_tensor ": "\n torch. sparse_bsr_tensor ( crow_indices ,  col_indices ,  values ,  size ,  * ,  dtype ,  device ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. sparse_bsc_tensor ": "\n torch. sparse_bsc_tensor ( ccol_indices ,  row_indices ,  values ,  size ,  * ,  dtype ,  device ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch. sparse_compressed_tensor ": "\n torch. sparse_compressed_tensor ( compressed_indices ,  plain_indices ,  values ,  size ,  * ,  dtype ,  layout ,  device ,  requires_grad )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.sparse. mm ": "\n torch.sparse. mm ( ) \u00b6"
+  },
+  {
+    "\n torch. hspmm ": "\n torch. hspmm ( mat1 ,  mat2 ,  * ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.sparse. addmm ": "\n torch.sparse. addmm ( mat ,  mat1 ,  mat2 ,  * ,  beta ,  alpha )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. to_sparse_coo ": "\n Tensor. to_sparse_coo ( ) [source] \u00b6"
+  },
+  {
+    "\n Tensor. sparse_resize_ ": "\n Tensor. sparse_resize_ ( size ,  sparse_dim ,  dense_dim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. sparse_resize_and_clear_ ": "\n Tensor. sparse_resize_and_clear_ ( size ,  sparse_dim ,  dense_dim )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. crow_indices ": "\n Tensor. crow_indices ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. col_indices ": "\n Tensor. col_indices ( )   \u2192 \u00b6"
+  },
+  {
+    "\n Tensor. row_indices ": "\n Tensor. row_indices ( ) \u00b6"
+  },
+  {
+    "\n Tensor. ccol_indices ": "\n Tensor. ccol_indices ( ) \u00b6"
+  },
+  {
+    "\n torch.sparse. sum ": "\n torch.sparse. sum ( input ,  dim ,  dtype ) [source] \u00b6"
+  },
+  {
+    "\n torch.sparse. sampled_addmm ": "\n torch.sparse. sampled_addmm ( input ,  mat1 ,  mat2 ,  * ,  beta ,  alpha ,  out )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.sparse. log_softmax ": "\n torch.sparse. log_softmax ( input ,  dim ,  * ,  dtype )   \u2192 \u00b6"
+  },
+  {
+    "\n torch.sparse. spdiags ": "\n torch.sparse. spdiags ( diagonals ,  offsets ,  shape ,  layout )   \u2192 \u00b6"
+  }
+]

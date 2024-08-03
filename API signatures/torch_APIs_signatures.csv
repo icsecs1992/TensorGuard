@@ -1,0 +1,2978 @@
+API,,
+"
+ torch. sparse_coo_tensor ( indices ,  values ,  size ,  * ,  dtype ,  device ,  requires_grad )   → ¶",,
+"
+ torch. is_tensor ( obj ) [source] ¶",,
+"
+ torch. is_storage ( obj ) [source] ¶",,
+"
+ torch. is_complex ( input ) ¶",,
+"
+ torch. is_conj ( input ) ¶",,
+"
+ torch. is_floating_point ( input ) ¶",,
+"
+ torch. is_nonzero ( input ) ¶",,
+"
+ torch. set_default_dtype ( d ) [source] ¶",,
+"
+ torch. get_default_dtype ( )   → ¶",,
+"
+ torch. set_default_tensor_type ( t ) [source] ¶",,
+"
+ torch. numel ( input )   → ¶",,
+"
+ torch. set_printoptions ( precision ,  threshold ,  edgeitems ,  linewidth ,  profile ,  sci_mode ) [source] ¶",,
+"
+ torch. set_flush_denormal ( mode )   → ¶",,
+"
+ torch. rand ( *size ,  * ,  out=None ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False ,  pin_memory=False )   → ¶",,
+"
+ torch. rand_like ( input ,  * ,  dtype ,  layout ,  device ,  requires_grad ,  memory_format )   → ¶",,
+"
+ torch. randn ( *size ,  * ,  out=None ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False ,  pin_memory=False )   → ¶",,
+"
+ torch. randn_like ( input ,  * ,  dtype ,  layout ,  device ,  requires_grad ,  memory_format )   → ¶",,
+"
+ torch. randint ( low=0 ,  high ,  size ,  \* ,  generator=None ,  out=None ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False )   → ¶",,
+"
+ torch. randint_like ( input ,  low=0 ,  high ,  \* ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False ,  memory_format=torch.preserve_format )   → ¶",,
+"
+ torch. randperm ( n ,  * ,  generator ,  out ,  dtype ,  layout ,  device ,  requires_grad ,  pin_memory )   → ¶",,
+"
+ torch. empty ( *size ,  * ,  out=None ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False ,  pin_memory=False ,  memory_format=torch.contiguous_format )   → ¶",,
+"
+ torch. tensor ( data ,  * ,  dtype ,  device ,  requires_grad ,  pin_memory )   → ¶",,
+"
+ torch. sparse_coo_tensor ( indices ,  values ,  size ,  * ,  dtype ,  device ,  requires_grad )   → ¶",,
+"
+ torch. asarray ( obj ,  * ,  dtype ,  device ,  copy ,  requires_grad )   → ¶",,
+"
+ torch. as_tensor ( data ,  dtype ,  device )   → ¶",,
+"
+ torch. as_strided ( input ,  size ,  stride ,  storage_offset )   → ¶",,
+"
+ torch. from_numpy ( ndarray )   → ¶",,
+"
+ torch. from_dlpack ( ext_tensor )   → [source] ¶",,
+"
+ torch. frombuffer ( buffer ,  * ,  dtype ,  count ,  offset ,  requires_grad )   → ¶",,
+"
+ torch. zeros ( *size ,  * ,  out=None ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False )   → ¶",,
+"
+ torch. zeros_like ( input ,  * ,  dtype ,  layout ,  device ,  requires_grad ,  memory_format )   → ¶",,
+"
+ torch. ones ( *size ,  * ,  out=None ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False )   → ¶",,
+"
+ torch. ones_like ( input ,  * ,  dtype ,  layout ,  device ,  requires_grad ,  memory_format )   → ¶",,
+"
+ torch. arange ( start=0 ,  end ,  step=1 ,  * ,  out=None ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False )   → ¶",,
+"
+ torch. range ( start=0 ,  end ,  step=1 ,  * ,  out=None ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False )   → ¶",,
+"
+ torch. linspace ( start ,  end ,  steps ,  * ,  out ,  dtype ,  layout ,  device ,  requires_grad )   → ¶",,
+"
+ torch. logspace ( start ,  end ,  steps ,  base ,  * ,  out ,  dtype ,  layout ,  device ,  requires_grad )   → ¶",,
+"
+ torch. eye ( n ,  m ,  * ,  out ,  dtype ,  layout ,  device ,  requires_grad )   → ¶",,
+"
+ torch. empty_like ( input ,  * ,  dtype ,  layout ,  device ,  requires_grad ,  memory_format )   → ¶",,
+"
+ torch. empty_strided ( size ,  stride ,  * ,  dtype ,  layout ,  device ,  requires_grad ,  pin_memory )   → ¶",,
+"
+ torch. full ( size ,  fill_value ,  * ,  out ,  dtype ,  layout ,  device ,  requires_grad )   → ¶",,
+"
+ torch. full_like ( input ,  fill_value ,  \* ,  dtype=None ,  layout=torch.strided ,  device=None ,  requires_grad=False ,  memory_format=torch.preserve_format )   → ¶",,
+"
+ torch. quantize_per_tensor ( input ,  scale ,  zero_point ,  dtype )   → ¶",,
+"
+ torch. quantize_per_channel ( input ,  scales ,  zero_points ,  axis ,  dtype )   → ¶",,
+"
+ torch. dequantize ( tensor )   → ¶",,
+"
+ torch. complex ( real ,  imag ,  * ,  out )   → ¶",,
+"
+ torch. real ( input )   → ¶",,
+"
+ torch. imag ( input )   → ¶",,
+"
+ torch. polar ( abs ,  angle ,  * ,  out )   → ¶",,
+"
+ torch. abs ( input ,  * ,  out )   → ¶",,
+"
+ torch. angle ( input ,  * ,  out )   → ¶",,
+"
+ torch. heaviside ( input ,  values ,  * ,  out )   → ¶",,
+"
+ torch. adjoint ( Tensor )   → ¶",,
+"
+ torch. argwhere ( input )   → ¶",,
+"
+ torch. cat ( tensors ,  dim ,  * ,  out )   → ¶",,
+"
+ torch. concat ( tensors ,  dim ,  * ,  out )   → ¶",,
+"
+ torch. concatenate ( tensors ,  axis ,  out )   → ¶",,
+"
+ torch. conj ( input )   → ¶",,
+"
+ torch. chunk ( input ,  chunks ,  dim )   → ¶",,
+"
+ torch. dsplit ( input ,  indices_or_sections )   → ¶",,
+"
+ torch. column_stack ( tensors ,  * ,  out )   → ¶",,
+"
+ torch. dstack ( tensors ,  * ,  out )   → ¶",,
+"
+ torch. gather ( input ,  dim ,  index ,  * ,  sparse_grad ,  out )   → ¶",,
+"
+ torch. hsplit ( input ,  indices_or_sections )   → ¶",,
+"
+ torch. hstack ( tensors ,  * ,  out )   → ¶",,
+"
+ torch. index_add ( input ,  dim ,  index ,  source ,  * ,  alpha ,  out )   → ¶",,
+"
+ Tensor. index_add_ ( dim ,  index ,  source ,  * ,  alpha )   → ¶",,
+"
+ torch. index_copy ( input ,  dim ,  index ,  source ,  * ,  out )   → ¶",,
+"
+ torch. index_reduce ( input ,  dim ,  index ,  source ,  reduce ,  * ,  include_self ,  out )   → ¶",,
+"
+ Tensor. index_reduce_ ( dim ,  index ,  source ,  reduce ,  * ,  include_self )   → ¶",,
+"
+ torch. index_select ( input ,  dim ,  index ,  * ,  out )   → ¶",,
+"
+ torch. masked_select ( input ,  mask ,  * ,  out )   → ¶",,
+"
+ torch. movedim ( input ,  source ,  destination )   → ¶",,
+"
+ torch. moveaxis ( input ,  source ,  destination )   → ¶",,
+"
+ torch. narrow ( input ,  dim ,  start ,  length )   → ¶",,
+"
+ torch. nonzero ( input ,  * ,  out ,  as_tuple )   → ¶",,
+"
+ torch. permute ( input ,  dims )   → ¶",,
+"
+ torch. reshape ( input ,  shape )   → ¶",,
+"
+ torch. row_stack ( tensors ,  * ,  out )   → ¶",,
+"
+ torch. vstack ( tensors ,  * ,  out )   → ¶",,
+"
+ torch. select ( input ,  dim ,  index )   → ¶",,
+"
+ torch. scatter ( input ,  dim ,  index ,  src )   → ¶",,
+"
+ Tensor. scatter_ ( dim ,  index ,  src ,  reduce )   → ¶",,
+"
+ torch. diagonal_scatter ( input ,  src ,  offset ,  dim1 ,  dim2 )   → ¶",,
+"
+ torch. select_scatter ( input ,  src ,  dim ,  index )   → ¶",,
+"
+ torch. slice_scatter ( input ,  src ,  dim ,  start ,  end ,  step )   → ¶",,
+"
+ torch. scatter_add ( input ,  dim ,  index ,  src )   → ¶",,
+"
+ Tensor. scatter_add_ ( dim ,  index ,  src )   → ¶",,
+"
+ torch. scatter_reduce ( input ,  dim ,  index ,  src ,  reduce ,  * ,  include_self )   → ¶",,
+"
+ Tensor. scatter_reduce_ ( dim ,  index ,  src ,  reduce ,  * ,  include_self )   → ¶",,
+"
+ torch. split ( tensor ,  split_size_or_sections ,  dim ) [source] ¶",,
+"
+ torch. squeeze ( input ,  dim )   → ¶",,
+"
+ torch. stack ( tensors ,  dim ,  * ,  out )   → ¶",,
+"
+ torch. swapaxes ( input ,  axis0 ,  axis1 )   → ¶",,
+"
+ torch. transpose ( input ,  dim0 ,  dim1 )   → ¶",,
+"
+ torch. swapdims ( input ,  dim0 ,  dim1 )   → ¶",,
+"
+ torch. t ( input )   → ¶",,
+"
+ torch. take ( input ,  index )   → ¶",,
+"
+ torch. take_along_dim ( input ,  indices ,  dim ,  * ,  out )   → ¶",,
+"
+ torch. tensor_split ( input ,  indices_or_sections ,  dim )   → ¶",,
+"
+ torch. tile ( input ,  dims )   → ¶",,
+"
+ torch. unbind ( input ,  dim )   → ¶",,
+"
+ torch. unsqueeze ( input ,  dim )   → ¶",,
+"
+ torch. vsplit ( input ,  indices_or_sections )   → ¶",,
+"
+ torch. where ( condition ,  x ,  y )   → ¶",,
+"
+ class torch. Generator ( device ) ¶",,
+"
+ torch. seed ( ) [source] ¶",,
+"
+ torch. manual_seed ( seed ) [source] ¶",,
+"
+ torch. initial_seed ( ) [source] ¶",,
+"
+ torch. get_rng_state ( ) [source] ¶",,
+"
+ torch. set_rng_state ( new_state ) [source] ¶",,
+"
+ torch. bernoulli ( input ,  * ,  generator ,  out )   → ¶",,
+"
+ torch. multinomial ( input ,  num_samples ,  replacement ,  * ,  generator ,  out )   → ¶",,
+"
+ torch. normal ( mean ,  std ,  * ,  generator ,  out )   → ¶",">>> torch.normal(mean=torch.arange(1.,6.))
+tensor([ 1.1552,  2.6148,  2.6535,  5.8318,  4.2361])
+",">>> torch.normal(2,3,size=(1,4))
+tensor([[-1.3987, -1.9544,  3.6048,  0.7909]])
+"
+"
+ torch. poisson ( input ,  generator )   → ¶",,
+"
+ Tensor. bernoulli_ ( p ,  * ,  generator )   → ¶",,
+"
+ Tensor. cauchy_ ( median ,  sigma ,  * ,  generator )   → ¶",,
+"
+ Tensor. exponential_ ( lambd ,  * ,  generator )   → ¶",,
+"
+ Tensor. geometric_ ( p ,  * ,  generator )   → ¶",,
+"
+ Tensor. log_normal_ ( mean ,  std ,  * ,  generator ) ¶",,
+"
+ Tensor. normal_ ( mean ,  std ,  * ,  generator )   → ¶",,
+"
+ Tensor. random_ ( from=0 ,  to=None ,  * ,  generator=None )   → ¶",,
+"
+ Tensor. uniform_ ( from=0 ,  to=1 )   → ¶",,
+"
+ class torch.quasirandom. SobolEngine ( dimension ,  scramble ,  seed ) [source] ¶",,
+"
+ torch. save ( obj ,  f ,  pickle_module ,  pickle_protocol ,  _use_new_zipfile_serialization ) [source] ¶",,
+"
+ torch. load ( f ,  map_location ,  pickle_module ,  * ,  weights_only ,  ** ) [source] ¶",,
+"
+ torch. get_num_threads ( )   → ¶",,
+"
+ torch. set_num_threads ( int ) ¶",,
+"
+ torch. get_num_interop_threads ( )   → ¶",,
+"
+ torch. set_num_interop_threads ( int ) ¶",,
+"
+ class torch. no_grad [source] ¶",,
+"
+ class torch. enable_grad [source] ¶",,
+"
+ class torch. set_grad_enabled ( mode ) [source] ¶",,
+"
+ torch. is_grad_enabled ( ) ¶",,
+"
+ class torch. inference_mode ( mode ) [source] ¶",,
+"
+ torch. is_inference_mode_enabled ( ) ¶",,
+"
+ torch. absolute ( input ,  * ,  out )   → ¶",,
+"
+ torch. acos ( input ,  * ,  out )   → ¶",,
+"
+ torch. arccos ( input ,  * ,  out )   → ¶",,
+"
+ torch. acosh ( input ,  * ,  out )   → ¶",,
+"
+ torch. arccosh ( input ,  * ,  out )   → ¶",,
+"
+ torch. add ( input ,  other ,  * ,  alpha ,  out )   → ¶",,
+"
+ torch. addcdiv ( input ,  tensor1 ,  tensor2 ,  * ,  value ,  out )   → ¶",,
+"
+ torch. addcmul ( input ,  tensor1 ,  tensor2 ,  * ,  value ,  out )   → ¶",,
+"
+ torch. asin ( input ,  * ,  out )   → ¶",,
+"
+ torch. arcsin ( input ,  * ,  out )   → ¶",,
+"
+ torch. asinh ( input ,  * ,  out )   → ¶",,
+"
+ torch. arcsinh ( input ,  * ,  out )   → ¶",,
+"
+ torch. atan ( input ,  * ,  out )   → ¶",,
+"
+ torch. arctan ( input ,  * ,  out )   → ¶",,
+"
+ torch. atanh ( input ,  * ,  out )   → ¶",,
+"
+ torch. arctanh ( input ,  * ,  out )   → ¶",,
+"
+ torch. atan2 ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. arctan2 ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. bitwise_not ( input ,  * ,  out )   → ¶",,
+"
+ torch. bitwise_and ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. bitwise_or ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. bitwise_xor ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. bitwise_left_shift ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. bitwise_right_shift ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. ceil ( input ,  * ,  out )   → ¶",,
+"
+ torch. clamp ( input ,  min ,  max ,  * ,  out )   → ¶",,
+"
+ torch. min ( input )   → ¶",,
+"
+ torch. max ( input )   → ¶",,
+"
+ torch. clip ( input ,  min ,  max ,  * ,  out )   → ¶",,
+"
+ torch. conj_physical ( input ,  * ,  out )   → ¶",,
+"
+ torch. copysign ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. cos ( input ,  * ,  out )   → ¶",,
+"
+ torch. cosh ( input ,  * ,  out )   → ¶",,
+"
+ torch. deg2rad ( input ,  * ,  out )   → ¶",,
+"
+ torch. div ( input ,  other ,  * ,  rounding_mode ,  out )   → ¶",,
+"
+ torch. divide ( input ,  other ,  * ,  rounding_mode ,  out )   → ¶",,
+"
+ torch. digamma ( input ,  * ,  out )   → ¶",,
+"
+ torch. erf ( input ,  * ,  out )   → ¶",,
+"
+ torch. erfc ( input ,  * ,  out )   → ¶",,
+"
+ torch. erfinv ( input ,  * ,  out )   → ¶",,
+"
+ torch. exp ( input ,  * ,  out )   → ¶",,
+"
+ torch. exp2 ( input ,  * ,  out )   → ¶",,
+"
+ torch. expm1 ( input ,  * ,  out )   → ¶",,
+"
+ torch. fake_quantize_per_channel_affine ( input ,  scale ,  zero_point ,  quant_min ,  quant_max )   → ¶",,
+"
+ torch. fake_quantize_per_tensor_affine ( input ,  scale ,  zero_point ,  quant_min ,  quant_max )   → ¶",,
+"
+ torch. fix ( input ,  * ,  out )   → ¶",,
+"
+ torch. trunc ( input ,  * ,  out )   → ¶",,
+"
+ torch. float_power ( input ,  exponent ,  * ,  out )   → ¶",,
+"
+ torch. floor ( input ,  * ,  out )   → ¶",,
+"
+ torch. floor_divide ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. fmod ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. frac ( input ,  * ,  out )   → ¶",,
+"
+ torch. frexp ( input ,  * ,  out=None) ,  Tensor ) ¶",,
+"
+ torch. gradient ( input ,  * ,  spacing ,  dim ,  edge_order )   → ¶",,
+"
+ torch. ldexp ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. lerp ( input ,  end ,  weight ,  * ,  out ) ¶",,
+"
+ torch. lgamma ( input ,  * ,  out )   → ¶",,
+"
+ torch. log ( input ,  * ,  out )   → ¶",,
+"
+ torch. log10 ( input ,  * ,  out )   → ¶",,
+"
+ torch. log1p ( input ,  * ,  out )   → ¶",,
+"
+ torch. log2 ( input ,  * ,  out )   → ¶",,
+"
+ torch. logaddexp ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. logaddexp2 ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. logical_and ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. logical_not ( input ,  * ,  out )   → ¶",,
+"
+ torch. logical_or ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. logical_xor ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. logit ( input ,  eps ,  * ,  out )   → ¶",,
+"
+ torch. hypot ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. i0 ( input ,  * ,  out )   → ¶",,
+"
+ torch. igamma ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. igammac ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. mul ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. multiply ( input ,  other ,  * ,  out ) ¶",,
+"
+ torch. mvlgamma ( input ,  p ,  * ,  out )   → ¶",,
+"
+ torch. nan_to_num ( input ,  nan ,  posinf ,  neginf ,  * ,  out )   → ¶",,
+"
+ torch. neg ( input ,  * ,  out )   → ¶",,
+"
+ torch. negative ( input ,  * ,  out )   → ¶",,
+"
+ torch. nextafter ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. polygamma ( n ,  input ,  * ,  out )   → ¶",,
+"
+ torch. positive ( input )   → ¶",,
+"
+ torch. pow ( input ,  exponent ,  * ,  out )   → ¶",,
+"
+ torch. quantized_batch_norm ( input ,  weight=None ,  bias=None ,  mean ,  var ,  eps ,  output_scale ,  output_zero_point )   → ¶",,
+"
+ torch. quantized_max_pool1d ( input ,  kernel_size ,  stride ,  padding ,  dilation ,  ceil_mode )   → ¶",,
+"
+ torch. quantized_max_pool2d ( input ,  kernel_size ,  stride ,  padding ,  dilation ,  ceil_mode )   → ¶",,
+"
+ torch. rad2deg ( input ,  * ,  out )   → ¶",,
+"
+ torch. reciprocal ( input ,  * ,  out )   → ¶",,
+"
+ torch. remainder ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. round ( input ,  * ,  decimals ,  out )   → ¶",,
+"
+ torch. rsqrt ( input ,  * ,  out )   → ¶",,
+"
+ torch. sigmoid ( input ,  * ,  out )   → ¶",,
+"
+ torch. sign ( input ,  * ,  out )   → ¶",,
+"
+ torch. sgn ( input ,  * ,  out )   → ¶",,
+"
+ torch. signbit ( input ,  * ,  out )   → ¶",,
+"
+ torch. sin ( input ,  * ,  out )   → ¶",,
+"
+ torch. sinc ( input ,  * ,  out )   → ¶",,
+"
+ torch. sinh ( input ,  * ,  out )   → ¶",,
+"
+ torch. sqrt ( input ,  * ,  out )   → ¶",,
+"
+ torch. square ( input ,  * ,  out )   → ¶",,
+"
+ torch. sub ( input ,  other ,  * ,  alpha ,  out )   → ¶",,
+"
+ torch. subtract ( input ,  other ,  * ,  alpha ,  out )   → ¶",,
+"
+ torch. tan ( input ,  * ,  out )   → ¶",,
+"
+ torch. tanh ( input ,  * ,  out )   → ¶",,
+"
+ torch. true_divide ( dividend ,  divisor ,  * ,  out )   → ¶",,
+"
+ torch. xlogy ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. argmax ( input )   → ¶",,
+"
+ torch. argmin ( input ,  dim ,  keepdim )   → ¶",,
+"
+ torch. amax ( input ,  dim ,  keepdim ,  * ,  out )   → ¶",,
+"
+ torch. amin ( input ,  dim ,  keepdim ,  * ,  out )   → ¶",,
+"
+ torch. aminmax ( input ,  * ,  dim=None ,  keepdim=False ,  out=None) ,  Tensor ) ¶",,
+"
+ torch. all ( input )   → ¶",,
+"
+ torch. any ( input )   → ¶",,
+"
+ torch. dist ( input ,  other ,  p )   → ¶",,
+"
+ torch. logsumexp ( input ,  dim ,  keepdim ,  * ,  out ) ¶",,
+"
+ torch. mean ( input ,  * ,  dtype )   → ¶",,
+"
+ torch. nanmean ( input ,  dim ,  keepdim ,  * ,  dtype ,  out )   → ¶",,
+"
+ torch. median ( input )   → ¶",,
+"
+ torch. nanmedian ( input )   → ¶",,
+"
+ torch. mode ( input ,  dim ,  keepdim ,  * ,  out ) ¶",,
+"
+ torch. norm ( input ,  p ,  dim ,  keepdim ,  out ,  dtype ) [source] ¶",,
+"
+ torch. nansum ( input ,  * ,  dtype )   → ¶",,
+"
+ torch. prod ( input ,  * ,  dtype )   → ¶",,
+"
+ torch. quantile ( input ,  q ,  dim ,  keepdim ,  * ,  interpolation ,  out )   → ¶",,
+"
+ torch. nanquantile ( input ,  q ,  dim ,  keepdim ,  * ,  interpolation ,  out )   → ¶",,
+"
+ torch. std ( input ,  dim ,  unbiased ,  keepdim ,  * ,  out )   → ¶",,
+"
+ torch. std_mean ( input ,  dim ,  unbiased ,  keepdim ,  * ,  out ) ¶",,
+"
+ torch. sum ( input ,  * ,  dtype )   → ¶",,
+"
+ torch. unique ( input ,  sorted ,  return_inverse ,  return_counts ,  dim )   → ¶",,
+"
+ torch. unique_consecutive ( * ,  ** ) ¶",,
+"
+ torch. var ( input ,  dim ,  unbiased ,  keepdim ,  * ,  out )   → ¶",,
+"
+ torch. var_mean ( input ,  dim ,  unbiased ,  keepdim ,  * ,  out ) ¶",,
+"
+ torch. count_nonzero ( input ,  dim )   → ¶",,
+"
+ torch. allclose ( input ,  other ,  rtol ,  atol ,  equal_nan )   → ¶",,
+"
+ torch. argsort ( input ,  dim ,  descending ,  stable )   → ¶",,
+"
+ torch. eq ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. equal ( input ,  other )   → ¶",,
+"
+ torch. ge ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. greater_equal ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. gt ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. greater ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. isclose ( input ,  other ,  rtol ,  atol ,  equal_nan )   → ¶",,
+"
+ torch. isfinite ( input )   → ¶",,
+"
+ torch. isin ( elements ,  test_elements ,  * ,  assume_unique ,  invert )   → ¶",,
+"
+ torch. isinf ( input )   → ¶",,
+"
+ torch. isposinf ( input ,  * ,  out )   → ¶",,
+"
+ torch. isneginf ( input ,  * ,  out )   → ¶",,
+"
+ torch. isnan ( input )   → ¶",,
+"
+ torch. isreal ( input )   → ¶",,
+"
+ torch. kthvalue ( input ,  k ,  dim ,  keepdim ,  * ,  out ) ¶",,
+"
+ torch. le ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. less_equal ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. lt ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. less ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. maximum ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. minimum ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. fmax ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. fmin ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. ne ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. not_equal ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. sort ( input ,  dim ,  descending ,  stable ,  * ,  out ) ¶",,
+"
+ torch. topk ( input ,  k ,  dim ,  largest ,  sorted ,  * ,  out ) ¶",,
+"
+ torch. msort ( input ,  * ,  out )   → ¶",,
+"
+ torch. stft ( input ,  n_fft ,  hop_length ,  win_length ,  window ,  center ,  pad_mode ,  normalized ,  onesided ,  return_complex ) [source] ¶",,
+"
+ torch. istft ( input ,  n_fft ,  hop_length ,  win_length ,  window ,  center ,  normalized ,  onesided ,  length ,  return_complex )   → ¶",,
+"
+ torch. bartlett_window ( window_length ,  periodic ,  * ,  dtype ,  layout ,  device ,  requires_grad )   → ¶",,
+"
+ torch. blackman_window ( window_length ,  periodic ,  * ,  dtype ,  layout ,  device ,  requires_grad )   → ¶",,
+"
+ torch. hamming_window ( window_length ,  periodic ,  alpha ,  beta ,  * ,  dtype ,  layout ,  device ,  requires_grad )   → ¶",,
+"
+ torch. hann_window ( window_length ,  periodic ,  * ,  dtype ,  layout ,  device ,  requires_grad )   → ¶",,
+"
+ torch. kaiser_window ( window_length ,  periodic ,  beta ,  * ,  dtype ,  layout ,  device ,  requires_grad )   → ¶",,
+"
+ torch. atleast_1d ( * ) [source] ¶",,
+"
+ torch. atleast_2d ( * ) [source] ¶",,
+"
+ torch. atleast_3d ( * ) [source] ¶",,
+"
+ torch. bincount ( input ,  weights ,  minlength )   → ¶",,
+"
+ torch. block_diag ( * ) [source] ¶",,
+"
+ torch. broadcast_tensors ( * )   → [source] ¶",,
+"
+ torch. broadcast_to ( input ,  shape )   → ¶",,
+"
+ torch. broadcast_shapes ( * )   → [source] ¶",,
+"
+ torch. bucketize ( input ,  boundaries ,  * ,  out_int32 ,  right ,  out )   → ¶",,
+"
+ torch. cartesian_prod ( * ) [source] ¶",,
+"
+ torch. cdist ( x1 ,  x2 ,  p ,  compute_mode ) [source] ¶",,
+"
+ torch. clone ( input ,  * ,  memory_format )   → ¶",,
+"
+ torch. combinations ( input ,  r ,  with_replacement )   → ¶",,
+"
+ torch. corrcoef ( input )   → ¶",,
+"
+ torch. cov ( input ,  * ,  correction ,  fweights ,  aweights )   → ¶",,
+"
+ torch. cross ( input ,  other ,  dim ,  * ,  out )   → ¶",,
+"
+ torch. cummax ( input ,  dim ,  * ,  out ) ¶",,
+"
+ torch. cummin ( input ,  dim ,  * ,  out ) ¶",,
+"
+ torch. cumprod ( input ,  dim ,  * ,  dtype ,  out )   → ¶",,
+"
+ torch. cumsum ( input ,  dim ,  * ,  dtype ,  out )   → ¶",,
+"
+ torch. diag ( input ,  diagonal ,  * ,  out )   → ¶",,
+"
+ torch. diag_embed ( input ,  offset ,  dim1 ,  dim2 )   → ¶",,
+"
+ torch. diagflat ( input ,  offset )   → ¶",,
+"
+ torch. diagonal ( input ,  offset ,  dim1 ,  dim2 )   → ¶",,
+"
+ torch. diff ( input ,  n ,  dim ,  prepend ,  append )   → ¶",,
+"
+ torch. einsum ( equation ,  * )   → [source] ¶",,
+"
+ torch. flatten ( input ,  start_dim ,  end_dim )   → ¶",,
+"
+ torch. flip ( input ,  dims )   → ¶",,
+"
+ torch. fliplr ( input )   → ¶",,
+"
+ torch. flipud ( input )   → ¶",,
+"
+ torch. kron ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. rot90 ( input ,  k ,  dims )   → ¶",,
+"
+ torch. gcd ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. histc ( input ,  bins ,  min ,  max ,  * ,  out )   → ¶",,
+"
+ torch. histogram ( input ,  bins ,  * ,  range ,  weight ,  density ,  out ) ¶",,
+"
+ torch. histogramdd ( input ,  bins ,  * ,  range=None ,  weight=None ,  density=False ,  out=None) ,  Tensor[] ) ¶",,
+"
+ torch. meshgrid ( * ,  indexing ) [source] ¶",,
+"
+ torch. lcm ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. logcumsumexp ( input ,  dim ,  * ,  out )   → ¶",,
+"
+ torch. ravel ( input )   → ¶",,
+"
+ torch. renorm ( input ,  p ,  dim ,  maxnorm ,  * ,  out )   → ¶",,
+"
+ torch. repeat_interleave ( input ,  repeats ,  dim ,  * ,  output_size )   → ¶",,
+"
+ torch. roll ( input ,  shifts ,  dims )   → ¶",,
+"
+ torch. searchsorted ( sorted_sequence ,  values ,  * ,  out_int32 ,  right ,  side ,  out ,  sorter )   → ¶",,
+"
+ torch. tensordot ( a ,  b ,  dims ,  out ) [source] ¶",,
+"
+ torch. trace ( input )   → ¶",,
+"
+ torch. tril ( input ,  diagonal ,  * ,  out )   → ¶",,
+"
+ torch. tril_indices ( row ,  col ,  offset ,  * ,  dtype ,  device ,  layout )   → ¶",,
+"
+ torch. triu ( input ,  diagonal ,  * ,  out )   → ¶",,
+"
+ torch. triu_indices ( row ,  col ,  offset ,  * ,  dtype ,  device ,  layout )   → ¶",,
+"
+ torch. unflatten ( input ,  dim ,  sizes )   → ¶",,
+"
+ torch. vander ( x ,  N ,  increasing )   → ¶",,
+"
+ torch. view_as_real ( input )   → ¶",,
+"
+ torch. view_as_complex ( input )   → ¶",,
+"
+ torch. resolve_conj ( input )   → ¶",,
+"
+ torch. resolve_neg ( input )   → ¶",,
+"
+ torch. addbmm ( input ,  batch1 ,  batch2 ,  * ,  beta ,  alpha ,  out )   → ¶",,
+"
+ torch. addmm ( input ,  mat1 ,  mat2 ,  * ,  beta ,  alpha ,  out )   → ¶",,
+"
+ torch. addmv ( input ,  mat ,  vec ,  * ,  beta ,  alpha ,  out )   → ¶",,
+"
+ torch. addr ( input ,  vec1 ,  vec2 ,  * ,  beta ,  alpha ,  out )   → ¶",,
+"
+ torch. baddbmm ( input ,  batch1 ,  batch2 ,  * ,  beta ,  alpha ,  out )   → ¶",,
+"
+ torch. bmm ( input ,  mat2 ,  * ,  out )   → ¶",,
+"
+ torch. chain_matmul ( * ,  out ) [source] ¶",,
+"
+ torch. cholesky ( input ,  upper ,  * ,  out )   → ¶",,
+"
+ torch. cholesky_inverse ( input ,  upper ,  * ,  out )   → ¶",,
+"
+ torch. cholesky_solve ( input ,  input2 ,  upper ,  * ,  out )   → ¶",,
+"
+ torch. dot ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. geqrf ( input ,  * ,  out ) ¶",,
+"
+ torch. ger ( input ,  vec2 ,  * ,  out )   → ¶",,
+"
+ torch. outer ( input ,  vec2 ,  * ,  out )   → ¶",,
+"
+ torch. inner ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. inverse ( input ,  * ,  out )   → ¶",,
+"
+ torch.linalg. inv ( A ,  * ,  out )   → ¶",,
+"
+ torch. det ( input )   → ¶",,
+"
+ torch.linalg. det ( A ,  * ,  out )   → ¶",,
+"
+ torch. logdet ( input )   → ¶",,
+"
+ torch. slogdet ( input ) ¶",,
+"
+ torch.linalg. slogdet ( A ,  * ,  out ) ¶",,
+"
+ torch. lu ( * ,  ** ) ¶",,
+"
+ torch. lu_solve ( b ,  LU_data ,  LU_pivots ,  * ,  out )   → ¶",,
+"
+ torch.linalg. lu_factor ( A ,  * ,  bool ,  out=None) ,  Tensor ) ¶",,
+"
+ torch. lu_unpack ( LU_data ,  LU_pivots ,  unpack_data ,  unpack_pivots ,  * ,  out ) ¶",,
+"
+ torch. matmul ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. matrix_power ( input ,  n ,  * ,  out )   → ¶",,
+"
+ torch.linalg. matrix_power ( A ,  n ,  * ,  out )   → ¶",,
+"
+ torch. matrix_exp ( A )   → ¶",,
+"
+ torch.linalg. matrix_exp ( A )   → ¶",,
+"
+ torch. mm ( input ,  mat2 ,  * ,  out )   → ¶",,
+"
+ torch. mv ( input ,  vec ,  * ,  out )   → ¶",,
+"
+ torch. orgqr ( input ,  tau )   → ¶",,
+"
+ torch.linalg. householder_product ( A ,  tau ,  * ,  out )   → ¶",,
+"
+ torch. ormqr ( input ,  tau ,  other ,  left ,  transpose ,  * ,  out )   → ¶",,
+"
+ torch. pinverse ( input ,  rcond )   → ¶",,
+"
+ torch.linalg. pinv ( A ,  * ,  atol ,  rtol ,  hermitian ,  out )   → ¶",,
+"
+ torch. qr ( input ,  some ,  * ,  out ) ¶",,
+"
+ torch. svd ( input ,  some ,  compute_uv ,  * ,  out ) ¶",,
+"
+ torch. svd_lowrank ( A ,  q ,  niter ,  M ) [source] ¶",,
+"
+ torch. pca_lowrank ( A ,  q ,  center ,  niter ) [source] ¶",,
+"
+ torch. symeig ( input ,  eigenvectors ,  upper ,  * ,  out ) ¶",,
+"
+ torch. lobpcg ( A ,  k ,  B ,  X ,  n ,  iK ,  niter ,  tol ,  largest ,  method ,  tracker ,  ortho_iparams ,  ortho_fparams ,  ortho_bparams ) [source] ¶",,
+"
+ torch. trapz ( y ,  x ,  * ,  dim )   → ¶",,
+"
+ torch. trapezoid ( y ,  x ,  * ,  dx ,  dim )   → ¶",,
+"
+ torch. cumulative_trapezoid ( y ,  x ,  * ,  dx ,  dim )   → ¶",,
+"
+ torch. triangular_solve ( b ,  A ,  upper ,  transpose ,  unitriangular ,  * ,  out ) ¶",,
+"
+ torch. vdot ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch. compiled_with_cxx11_abi ( ) [source] ¶",,
+"
+ torch. result_type ( tensor1 ,  tensor2 )   → ¶",,
+"
+ torch. can_cast ( from ,  to )   → ¶",,
+"
+ torch. promote_types ( type1 ,  type2 )   → ¶",,
+"
+ torch. use_deterministic_algorithms ( mode ,  * ,  warn_only ) [source] ¶",,
+"
+ torch. are_deterministic_algorithms_enabled ( ) [source] ¶",,
+"
+ torch. is_deterministic_algorithms_warn_only_enabled ( ) [source] ¶",,
+"
+ torch. set_deterministic_debug_mode ( debug_mode ) [source] ¶",,
+"
+ torch. get_deterministic_debug_mode ( ) [source] ¶",,
+"
+ torch. set_float32_matmul_precision ( precision ) [source] ¶",,
+"
+ torch. get_float32_matmul_precision ( ) [source] ¶",,
+"
+ torch. set_warn_always ( b ) [source] ¶",,
+"
+ torch. is_warn_always_enabled ( ) [source] ¶",,
+"
+ torch. _assert ( condition ,  message ) [source] ¶",,
+"
+ class torch.nn.parameter. Parameter ( data ,  requires_grad ) [source] ¶",,
+"
+ class torch.nn.parameter. UninitializedParameter ( requires_grad ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn.parameter. UninitializedBuffer ( requires_grad ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. Module [source] ¶",,
+"
+ class torch.nn. Sequential ( * ) [source] ¶",,
+"
+ class torch.nn. ModuleList ( modules ) [source] ¶",,
+"
+ class torch.nn. ModuleDict ( modules ) [source] ¶",,
+"
+ class torch.nn. ParameterList ( values ) [source] ¶",,
+"
+ class torch.nn. ParameterDict ( parameters ) [source] ¶",,
+"
+ torch.nn.modules.module. register_module_forward_pre_hook ( hook ) [source] ¶",,
+"
+ torch.nn.modules.module. register_module_forward_hook ( hook ) [source] ¶",,
+"
+ torch.nn.modules.module. register_module_backward_hook ( hook ) [source] ¶",,
+"
+ torch.nn.modules.module. register_module_full_backward_hook ( hook ) [source] ¶",,
+"
+ class torch.nn. Conv1d ( in_channels ,  out_channels ,  kernel_size ,  stride ,  padding ,  dilation ,  groups ,  bias ,  padding_mode ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. Conv2d ( in_channels ,  out_channels ,  kernel_size ,  stride ,  padding ,  dilation ,  groups ,  bias ,  padding_mode ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. Conv3d ( in_channels ,  out_channels ,  kernel_size ,  stride ,  padding ,  dilation ,  groups ,  bias ,  padding_mode ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. ConvTranspose1d ( in_channels ,  out_channels ,  kernel_size ,  stride ,  padding ,  output_padding ,  groups ,  bias ,  dilation ,  padding_mode ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. ConvTranspose2d ( in_channels ,  out_channels ,  kernel_size ,  stride ,  padding ,  output_padding ,  groups ,  bias ,  dilation ,  padding_mode ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. ConvTranspose3d ( in_channels ,  out_channels ,  kernel_size ,  stride ,  padding ,  output_padding ,  groups ,  bias ,  dilation ,  padding_mode ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. LazyConv1d ( out_channels ,  kernel_size ,  stride ,  padding ,  dilation ,  groups ,  bias ,  padding_mode ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. LazyConv2d ( out_channels ,  kernel_size ,  stride ,  padding ,  dilation ,  groups ,  bias ,  padding_mode ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. LazyConv3d ( out_channels ,  kernel_size ,  stride ,  padding ,  dilation ,  groups ,  bias ,  padding_mode ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. LazyConvTranspose1d ( out_channels ,  kernel_size ,  stride ,  padding ,  output_padding ,  groups ,  bias ,  dilation ,  padding_mode ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. LazyConvTranspose2d ( out_channels ,  kernel_size ,  stride ,  padding ,  output_padding ,  groups ,  bias ,  dilation ,  padding_mode ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. LazyConvTranspose3d ( out_channels ,  kernel_size ,  stride ,  padding ,  output_padding ,  groups ,  bias ,  dilation ,  padding_mode ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. Unfold ( kernel_size ,  dilation ,  padding ,  stride ) [source] ¶",,
+"
+ class torch.nn. Fold ( output_size ,  kernel_size ,  dilation ,  padding ,  stride ) [source] ¶",,
+"
+ class torch.nn. MaxPool1d ( kernel_size ,  stride ,  padding ,  dilation ,  return_indices ,  ceil_mode ) [source] ¶",,
+"
+ class torch.nn. MaxPool2d ( kernel_size ,  stride ,  padding ,  dilation ,  return_indices ,  ceil_mode ) [source] ¶",,
+"
+ class torch.nn. MaxPool3d ( kernel_size ,  stride ,  padding ,  dilation ,  return_indices ,  ceil_mode ) [source] ¶",,
+"
+ class torch.nn. MaxUnpool1d ( kernel_size ,  stride ,  padding ) [source] ¶",,
+"
+ class torch.nn. MaxUnpool2d ( kernel_size ,  stride ,  padding ) [source] ¶",,
+"
+ class torch.nn. MaxUnpool3d ( kernel_size ,  stride ,  padding ) [source] ¶",,
+"
+ class torch.nn. AvgPool1d ( kernel_size ,  stride ,  padding ,  ceil_mode ,  count_include_pad ) [source] ¶",,
+"
+ class torch.nn. AvgPool2d ( kernel_size ,  stride ,  padding ,  ceil_mode ,  count_include_pad ,  divisor_override ) [source] ¶",,
+"
+ class torch.nn. AvgPool3d ( kernel_size ,  stride ,  padding ,  ceil_mode ,  count_include_pad ,  divisor_override ) [source] ¶",,
+"
+ class torch.nn. FractionalMaxPool2d ( kernel_size ,  output_size ,  output_ratio ,  return_indices ,  _random_samples ) [source] ¶",,
+"
+ class torch.nn. FractionalMaxPool3d ( kernel_size ,  output_size ,  output_ratio ,  return_indices ,  _random_samples ) [source] ¶",,
+"
+ class torch.nn. LPPool1d ( norm_type ,  kernel_size ,  stride ,  ceil_mode ) [source] ¶",,
+"
+ class torch.nn. LPPool2d ( norm_type ,  kernel_size ,  stride ,  ceil_mode ) [source] ¶",,
+"
+ class torch.nn. AdaptiveMaxPool1d ( output_size ,  return_indices ) [source] ¶",,
+"
+ class torch.nn. AdaptiveMaxPool2d ( output_size ,  return_indices ) [source] ¶",,
+"
+ class torch.nn. AdaptiveMaxPool3d ( output_size ,  return_indices ) [source] ¶",,
+"
+ class torch.nn. AdaptiveAvgPool1d ( output_size ) [source] ¶",,
+"
+ class torch.nn. AdaptiveAvgPool2d ( output_size ) [source] ¶",,
+"
+ class torch.nn. AdaptiveAvgPool3d ( output_size ) [source] ¶",,
+"
+ class torch.nn. ReflectionPad1d ( padding ) [source] ¶",,
+"
+ class torch.nn. ReflectionPad2d ( padding ) [source] ¶",,
+"
+ class torch.nn. ReflectionPad3d ( padding ) [source] ¶",,
+"
+ class torch.nn. ReplicationPad1d ( padding ) [source] ¶",,
+"
+ class torch.nn. ReplicationPad2d ( padding ) [source] ¶",,
+"
+ class torch.nn. ReplicationPad3d ( padding ) [source] ¶",,
+"
+ class torch.nn. ZeroPad2d ( padding ) [source] ¶",,
+"
+ class torch.nn. ConstantPad1d ( padding ,  value ) [source] ¶",,
+"
+ class torch.nn. ConstantPad2d ( padding ,  value ) [source] ¶",,
+"
+ class torch.nn. ConstantPad3d ( padding ,  value ) [source] ¶",,
+"
+ class torch.nn. ELU ( alpha ,  inplace ) [source] ¶",,
+"
+ class torch.nn. Hardshrink ( lambd ) [source] ¶",,
+"
+ class torch.nn. Hardsigmoid ( inplace ) [source] ¶",,
+"
+ class torch.nn. Hardtanh ( min_val ,  max_val ,  inplace ,  min_value ,  max_value ) [source] ¶",,
+"
+ class torch.nn. Hardswish ( inplace ) [source] ¶",,
+"
+ class torch.nn. LeakyReLU ( negative_slope ,  inplace ) [source] ¶",,
+"
+ class torch.nn. LogSigmoid [source] ¶",,
+"
+ class torch.nn. MultiheadAttention ( embed_dim ,  num_heads ,  dropout ,  bias ,  add_bias_kv ,  add_zero_attn ,  kdim ,  vdim ,  batch_first ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. PReLU ( num_parameters ,  init ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. ReLU ( inplace ) [source] ¶",,
+"
+ class torch.nn. ReLU6 ( inplace ) [source] ¶",,
+"
+ class torch.nn. RReLU ( lower ,  upper ,  inplace ) [source] ¶",,
+"
+ class torch.nn. SELU ( inplace ) [source] ¶",,
+"
+ class torch.nn. CELU ( alpha ,  inplace ) [source] ¶",,
+"
+ class torch.nn. GELU ( approximate ) [source] ¶",,
+"
+ class torch.nn. Sigmoid [source] ¶",,
+"
+ class torch.nn. SiLU ( inplace ) [source] ¶",,
+"
+ class torch.nn. Mish ( inplace ) [source] ¶",,
+"
+ class torch.nn. Softplus ( beta ,  threshold ) [source] ¶",,
+"
+ class torch.nn. Softshrink ( lambd ) [source] ¶",,
+"
+ class torch.nn. Softsign [source] ¶",,
+"
+ class torch.nn. Tanh [source] ¶",,
+"
+ class torch.nn. Tanhshrink [source] ¶",,
+"
+ class torch.nn. Threshold ( threshold ,  value ,  inplace ) [source] ¶",,
+"
+ class torch.nn. GLU ( dim ) [source] ¶",,
+"
+ class torch.nn. Softmin ( dim ) [source] ¶",,
+"
+ class torch.nn. Softmax ( dim ) [source] ¶",,
+"
+ class torch.nn. Softmax2d [source] ¶",,
+"
+ class torch.nn. LogSoftmax ( dim ) [source] ¶",,
+"
+ class torch.nn. AdaptiveLogSoftmaxWithLoss ( in_features ,  n_classes ,  cutoffs ,  div_value ,  head_bias ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. BatchNorm1d ( num_features ,  eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. BatchNorm2d ( num_features ,  eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. BatchNorm3d ( num_features ,  eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. LazyBatchNorm1d ( eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. LazyBatchNorm2d ( eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. LazyBatchNorm3d ( eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. GroupNorm ( num_groups ,  num_channels ,  eps ,  affine ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. SyncBatchNorm ( num_features ,  eps ,  momentum ,  affine ,  track_running_stats ,  process_group ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. InstanceNorm1d ( num_features ,  eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. InstanceNorm2d ( num_features ,  eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. InstanceNorm3d ( num_features ,  eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. LazyInstanceNorm1d ( eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. LazyInstanceNorm2d ( eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. LazyInstanceNorm3d ( eps ,  momentum ,  affine ,  track_running_stats ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. LayerNorm ( normalized_shape ,  eps ,  elementwise_affine ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. LocalResponseNorm ( size ,  alpha ,  beta ,  k ) [source] ¶",,
+"
+ class torch.nn. RNNBase ( mode ,  input_size ,  hidden_size ,  num_layers ,  bias ,  batch_first ,  dropout ,  bidirectional ,  proj_size ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. RNN ( * ,  ** ) [source] ¶",,
+"
+ class torch.nn. LSTM ( * ,  ** ) [source] ¶",,
+"
+ class torch.nn. GRU ( * ,  ** ) [source] ¶",,
+"
+ class torch.nn. RNNCell ( input_size ,  hidden_size ,  bias ,  nonlinearity ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. LSTMCell ( input_size ,  hidden_size ,  bias ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. GRUCell ( input_size ,  hidden_size ,  bias ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. Transformer ( d_model=512 ,  nhead=8 ,  num_encoder_layers=6 ,  num_decoder_layers=6 ,  dim_feedforward=2048 ,  dropout=0.1 ,  activation=<function ,  custom_encoder=None ,  custom_decoder=None ,  layer_norm_eps=1e-05 ,  batch_first=False ,  norm_first=False ,  device=None ,  dtype=None ) [source] ¶",,
+"
+ class torch.nn. TransformerEncoder ( encoder_layer ,  num_layers ,  norm ,  enable_nested_tensor ,  mask_check ) [source] ¶",,
+"
+ class torch.nn. TransformerDecoder ( decoder_layer ,  num_layers ,  norm ) [source] ¶",,
+"
+ class torch.nn. TransformerEncoderLayer ( d_model ,  nhead ,  dim_feedforward=2048 ,  dropout=0.1 ,  activation=<function ,  layer_norm_eps=1e-05 ,  batch_first=False ,  norm_first=False ,  device=None ,  dtype=None ) [source] ¶",,
+"
+ class torch.nn. TransformerDecoderLayer ( d_model ,  nhead ,  dim_feedforward=2048 ,  dropout=0.1 ,  activation=<function ,  layer_norm_eps=1e-05 ,  batch_first=False ,  norm_first=False ,  device=None ,  dtype=None ) [source] ¶",,
+"
+ class torch.nn. Identity ( * ,  ** ) [source] ¶",,
+"
+ class torch.nn. Linear ( in_features ,  out_features ,  bias ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. Bilinear ( in1_features ,  in2_features ,  out_features ,  bias ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. LazyLinear ( out_features ,  bias ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. Dropout ( p ,  inplace ) [source] ¶",,
+"
+ class torch.nn. Dropout1d ( p ,  inplace ) [source] ¶",,
+"
+ class torch.nn. Dropout2d ( p ,  inplace ) [source] ¶",,
+"
+ class torch.nn. Dropout3d ( p ,  inplace ) [source] ¶",,
+"
+ class torch.nn. AlphaDropout ( p ,  inplace ) [source] ¶",,
+"
+ class torch.nn. FeatureAlphaDropout ( p ,  inplace ) [source] ¶",,
+"
+ class torch.nn. Embedding ( num_embeddings ,  embedding_dim ,  padding_idx ,  max_norm ,  norm_type ,  scale_grad_by_freq ,  sparse ,  _weight ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. EmbeddingBag ( num_embeddings ,  embedding_dim ,  max_norm ,  norm_type ,  scale_grad_by_freq ,  mode ,  sparse ,  _weight ,  include_last_offset ,  padding_idx ,  device ,  dtype ) [source] ¶",,
+"
+ class torch.nn. CosineSimilarity ( dim ,  eps ) [source] ¶",,
+"
+ class torch.nn. PairwiseDistance ( p ,  eps ,  keepdim ) [source] ¶",,
+"
+ class torch.nn. L1Loss ( size_average ,  reduce ,  reduction ) [source] ¶",,
+"
+ class torch.nn. MSELoss ( size_average ,  reduce ,  reduction ) [source] ¶",,
+"
+ class torch.nn. CrossEntropyLoss ( weight ,  size_average ,  ignore_index ,  reduce ,  reduction ,  label_smoothing ) [source] ¶",,
+"
+ class torch.nn. CTCLoss ( blank ,  reduction ,  zero_infinity ) [source] ¶",,
+"
+ class torch.nn. NLLLoss ( weight ,  size_average ,  ignore_index ,  reduce ,  reduction ) [source] ¶",,
+"
+ class torch.nn. PoissonNLLLoss ( log_input ,  full ,  size_average ,  eps ,  reduce ,  reduction ) [source] ¶",,
+"
+ class torch.nn. GaussianNLLLoss ( * ,  full ,  eps ,  reduction ) [source] ¶",,
+"
+ class torch.nn. KLDivLoss ( size_average ,  reduce ,  reduction ,  log_target ) [source] ¶",,
+"
+ class torch.nn. BCELoss ( weight ,  size_average ,  reduce ,  reduction ) [source] ¶",,
+"
+ class torch.nn. BCEWithLogitsLoss ( weight ,  size_average ,  reduce ,  reduction ,  pos_weight ) [source] ¶",,
+"
+ class torch.nn. MarginRankingLoss ( margin ,  size_average ,  reduce ,  reduction ) [source] ¶",,
+"
+ class torch.nn. HingeEmbeddingLoss ( margin ,  size_average ,  reduce ,  reduction ) [source] ¶",,
+"
+ class torch.nn. MultiLabelMarginLoss ( size_average ,  reduce ,  reduction ) [source] ¶",,
+"
+ class torch.nn. HuberLoss ( reduction ,  delta ) [source] ¶",,
+"
+ class torch.nn. SmoothL1Loss ( size_average ,  reduce ,  reduction ,  beta ) [source] ¶",,
+"
+ class torch.nn. SoftMarginLoss ( size_average ,  reduce ,  reduction ) [source] ¶",,
+"
+ class torch.nn. MultiLabelSoftMarginLoss ( weight ,  size_average ,  reduce ,  reduction ) [source] ¶",,
+"
+ class torch.nn. CosineEmbeddingLoss ( margin ,  size_average ,  reduce ,  reduction ) [source] ¶",,
+"
+ class torch.nn. MultiMarginLoss ( p ,  margin ,  weight ,  size_average ,  reduce ,  reduction ) [source] ¶",,
+"
+ class torch.nn. TripletMarginLoss ( margin ,  p ,  eps ,  swap ,  size_average ,  reduce ,  reduction ) [source] ¶",,
+"
+ class torch.nn. TripletMarginWithDistanceLoss ( * ,  distance_function ,  margin ,  swap ,  reduction ) [source] ¶",,
+"
+ class torch.nn. PixelShuffle ( upscale_factor ) [source] ¶",,
+"
+ class torch.nn. PixelUnshuffle ( downscale_factor ) [source] ¶",,
+"
+ class torch.nn. Upsample ( size ,  scale_factor ,  mode ,  align_corners ,  recompute_scale_factor ) [source] ¶",,
+"
+ class torch.nn. UpsamplingNearest2d ( size ,  scale_factor ) [source] ¶",,
+"
+ class torch.nn. UpsamplingBilinear2d ( size ,  scale_factor ) [source] ¶",,
+"
+ class torch.nn. ChannelShuffle ( groups ) [source] ¶",,
+"
+ class torch.nn. DataParallel ( module ,  device_ids ,  output_device ,  dim ) [source] ¶",,
+"
+ class torch.nn.parallel. DistributedDataParallel ( module ,  device_ids ,  output_device ,  dim ,  broadcast_buffers ,  process_group ,  bucket_cap_mb ,  find_unused_parameters ,  check_reduction ,  gradient_as_bucket_view ,  static_graph ) [source] ¶",,
+"
+ torch.nn.utils. clip_grad_norm_ ( parameters ,  max_norm ,  norm_type ,  error_if_nonfinite ) [source] ¶",,
+"
+ torch.nn.utils. clip_grad_value_ ( parameters ,  clip_value ) [source] ¶",,
+"
+ torch.nn.utils. parameters_to_vector ( parameters ) [source] ¶",,
+"
+ torch.nn.utils. vector_to_parameters ( vec ,  parameters ) [source] ¶",,
+"
+ class torch.nn.utils.prune. BasePruningMethod [source] ¶",,
+"
+ class torch.nn.utils.prune. PruningContainer ( * ) [source] ¶",,
+"
+ class torch.nn.utils.prune. Identity [source] ¶",,
+"
+ class torch.nn.utils.prune. RandomUnstructured ( amount ) [source] ¶",,
+"
+ class torch.nn.utils.prune. L1Unstructured ( amount ) [source] ¶",,
+"
+ class torch.nn.utils.prune. RandomStructured ( amount ,  dim ) [source] ¶",,
+"
+ class torch.nn.utils.prune. LnStructured ( amount ,  n ,  dim ) [source] ¶",,
+"
+ class torch.nn.utils.prune. CustomFromMask ( mask ) [source] ¶",,
+"
+ torch.nn.utils.prune. identity ( module ,  name ) [source] ¶",,
+"
+ torch.nn.utils.prune. random_unstructured ( module ,  name ,  amount ) [source] ¶",,
+"
+ torch.nn.utils.prune. l1_unstructured ( module ,  name ,  amount ,  importance_scores ) [source] ¶",,
+"
+ torch.nn.utils.prune. random_structured ( module ,  name ,  amount ,  dim ) [source] ¶",,
+"
+ torch.nn.utils.prune. ln_structured ( module ,  name ,  amount ,  n ,  dim ,  importance_scores ) [source] ¶",,
+"
+ torch.nn.utils.prune. global_unstructured ( parameters ,  pruning_method ,  importance_scores ,  ** ) [source] ¶",,
+"
+ torch.nn.utils.prune. custom_from_mask ( module ,  name ,  mask ) [source] ¶",,
+"
+ torch.nn.utils.prune. remove ( module ,  name ) [source] ¶",,
+"
+ torch.nn.utils.prune. is_pruned ( module ) [source] ¶",,
+"
+ torch.nn.utils. weight_norm ( module ,  name ,  dim ) [source] ¶",,
+"
+ torch.nn.utils. remove_weight_norm ( module ,  name ) [source] ¶",,
+"
+ torch.nn.utils. spectral_norm ( module ,  name ,  n_power_iterations ,  eps ,  dim ) [source] ¶",,
+"
+ torch.nn.utils. remove_spectral_norm ( module ,  name ) [source] ¶",,
+"
+ torch.nn.utils. skip_init ( module_cls ,  * ,  ** ) [source] ¶",,
+"
+ torch.nn.utils.parametrizations. orthogonal ( module ,  name ,  orthogonal_map ,  * ,  use_trivialization ) [source] ¶",,
+"
+ torch.nn.utils.parametrizations. spectral_norm ( module ,  name ,  n_power_iterations ,  eps ,  dim ) [source] ¶",,
+"
+ torch.nn.utils.parametrize. register_parametrization ( module ,  tensor_name ,  parametrization ,  * ,  unsafe ) [source] ¶",,
+"
+ torch.nn.utils.parametrize. remove_parametrizations ( module ,  tensor_name ,  leave_parametrized ) [source] ¶",,
+"
+ torch.nn.utils.parametrize. cached ( ) [source] ¶",,
+"
+ torch.nn.utils.parametrize. is_parametrized ( module ,  tensor_name ) [source] ¶",,
+"
+ class torch.nn.utils.parametrize. ParametrizationList ( modules ,  original ,  unsafe ) [source] ¶",,
+"
+ torch.nn.utils.stateless. functional_call ( module ,  parameters_and_buffers ,  args ,  kwargs ) [source] ¶",,
+"
+ class torch.nn.utils.rnn. PackedSequence ( data ,  batch_sizes ,  sorted_indices ,  unsorted_indices ) [source] ¶",,
+"
+ torch.nn.utils.rnn. pack_padded_sequence ( input ,  lengths ,  batch_first ,  enforce_sorted ) [source] ¶",,
+"
+ torch.nn.utils.rnn. pad_packed_sequence ( sequence ,  batch_first ,  padding_value ,  total_length ) [source] ¶",,
+"
+ torch.nn.utils.rnn. pad_sequence ( sequences ,  batch_first ,  padding_value ) [source] ¶",,
+"
+ torch.nn.utils.rnn. pack_sequence ( sequences ,  enforce_sorted ) [source] ¶",,
+"
+ class torch.nn. Flatten ( start_dim ,  end_dim ) [source] ¶",,
+"
+ class torch.nn. Unflatten ( dim ,  unflattened_size ) [source] ¶",,
+"
+ class torch.nn.modules.lazy. LazyModuleMixin ( * ,  ** ) [source] ¶",,
+"
+ torch.nn.functional. conv1d ( input ,  weight ,  bias ,  stride ,  padding ,  dilation ,  groups )   → ¶",,
+"
+ torch.nn.functional. conv2d ( input ,  weight ,  bias ,  stride ,  padding ,  dilation ,  groups )   → ¶",,
+"
+ torch.nn.functional. conv3d ( input ,  weight ,  bias ,  stride ,  padding ,  dilation ,  groups )   → ¶",,
+"
+ torch.nn.functional. conv_transpose1d ( input ,  weight ,  bias ,  stride ,  padding ,  output_padding ,  groups ,  dilation )   → ¶",,
+"
+ torch.nn.functional. conv_transpose2d ( input ,  weight ,  bias ,  stride ,  padding ,  output_padding ,  groups ,  dilation )   → ¶",,
+"
+ torch.nn.functional. conv_transpose3d ( input ,  weight ,  bias ,  stride ,  padding ,  output_padding ,  groups ,  dilation )   → ¶",,
+"
+ torch.nn.functional. unfold ( input ,  kernel_size ,  dilation ,  padding ,  stride ) [source] ¶",,
+"
+ torch.nn.functional. fold ( input ,  output_size ,  kernel_size ,  dilation ,  padding ,  stride ) [source] ¶",,
+"
+ torch.nn.functional. avg_pool1d ( input ,  kernel_size ,  stride ,  padding ,  ceil_mode ,  count_include_pad )   → ¶",,
+"
+ torch.nn.functional. avg_pool2d ( input ,  kernel_size ,  stride ,  padding ,  ceil_mode ,  count_include_pad ,  divisor_override )   → ¶",,
+"
+ torch.nn.functional. avg_pool3d ( input ,  kernel_size ,  stride ,  padding ,  ceil_mode ,  count_include_pad ,  divisor_override )   → ¶",,
+"
+ torch.nn.functional. max_pool1d ( input ,  kernel_size ,  stride ,  padding ,  dilation ,  ceil_mode ,  return_indices ) ¶",,
+"
+ torch.nn.functional. max_pool2d ( input ,  kernel_size ,  stride ,  padding ,  dilation ,  ceil_mode ,  return_indices ) ¶",,
+"
+ torch.nn.functional. max_pool3d ( input ,  kernel_size ,  stride ,  padding ,  dilation ,  ceil_mode ,  return_indices ) ¶",,
+"
+ torch.nn.functional. max_unpool1d ( input ,  indices ,  kernel_size ,  stride ,  padding ,  output_size ) [source] ¶",,
+"
+ torch.nn.functional. max_unpool2d ( input ,  indices ,  kernel_size ,  stride ,  padding ,  output_size ) [source] ¶",,
+"
+ torch.nn.functional. max_unpool3d ( input ,  indices ,  kernel_size ,  stride ,  padding ,  output_size ) [source] ¶",,
+"
+ torch.nn.functional. lp_pool1d ( input ,  norm_type ,  kernel_size ,  stride ,  ceil_mode ) [source] ¶",,
+"
+ torch.nn.functional. lp_pool2d ( input ,  norm_type ,  kernel_size ,  stride ,  ceil_mode ) [source] ¶",,
+"
+ torch.nn.functional. adaptive_max_pool1d ( * ,  ** ) ¶",,
+"
+ torch.nn.functional. adaptive_max_pool2d ( * ,  ** ) ¶",,
+"
+ torch.nn.functional. adaptive_max_pool3d ( * ,  ** ) ¶",,
+"
+ torch.nn.functional. adaptive_avg_pool1d ( input ,  output_size )   → ¶",,
+"
+ torch.nn.functional. adaptive_avg_pool2d ( input ,  output_size ) [source] ¶",,
+"
+ torch.nn.functional. adaptive_avg_pool3d ( input ,  output_size ) [source] ¶",,
+"
+ torch.nn.functional. fractional_max_pool2d ( * ,  ** ) ¶",,
+"
+ torch.nn.functional. fractional_max_pool3d ( * ,  ** ) ¶",,
+"
+ torch.nn.functional. threshold ( input ,  threshold ,  value ,  inplace ) ¶",,
+"
+ torch.nn.functional. threshold_ ( input ,  threshold ,  value )   → ¶",,
+"
+ torch.nn.functional. relu ( input ,  inplace )   → [source] ¶",,
+"
+ torch.nn.functional. relu_ ( input )   → ¶",,
+"
+ torch.nn.functional. hardtanh ( input ,  min_val ,  max_val ,  inplace )   → [source] ¶",,
+"
+ torch.nn.functional. hardtanh_ ( input ,  min_val ,  max_val )   → ¶",,
+"
+ torch.nn.functional. hardswish ( input ,  inplace ) [source] ¶",,
+"
+ torch.nn.functional. relu6 ( input ,  inplace )   → [source] ¶",,
+"
+ torch.nn.functional. elu ( input ,  alpha ,  inplace ) [source] ¶",,
+"
+ torch.nn.functional. elu_ ( input ,  alpha )   → ¶",,
+"
+ torch.nn.functional. selu ( input ,  inplace )   → [source] ¶",,
+"
+ torch.nn.functional. celu ( input ,  alpha ,  inplace )   → [source] ¶",,
+"
+ torch.nn.functional. leaky_relu ( input ,  negative_slope ,  inplace )   → [source] ¶",,
+"
+ torch.nn.functional. leaky_relu_ ( input ,  negative_slope )   → ¶",,
+"
+ torch.nn.functional. prelu ( input ,  weight )   → ¶",,
+"
+ torch.nn.functional. rrelu ( input ,  lower ,  upper ,  training ,  inplace )   → [source] ¶",,
+"
+ torch.nn.functional. rrelu_ ( input ,  lower ,  upper ,  training )   → ¶",,
+"
+ torch.nn.functional. glu ( input ,  dim )   → [source] ¶",,
+"
+ torch.nn.functional. gelu ( input ,  approximate )   → ¶",,
+"
+ torch.nn.functional. logsigmoid ( input )   → ¶",,
+"
+ torch.nn.functional. hardshrink ( input ,  lambd )   → ¶",,
+"
+ torch.nn.functional. tanhshrink ( input )   → [source] ¶",,
+"
+ torch.nn.functional. softsign ( input )   → [source] ¶",,
+"
+ torch.nn.functional. softplus ( input ,  beta ,  threshold )   → ¶",,
+"
+ torch.nn.functional. softmin ( input ,  dim ,  _stacklevel ,  dtype ) [source] ¶",,
+"
+ torch.nn.functional. softmax ( input ,  dim ,  _stacklevel ,  dtype ) [source] ¶",,
+"
+ torch.nn.functional. softshrink ( input ,  lambd )   → ¶",,
+"
+ torch.nn.functional. gumbel_softmax ( logits ,  tau ,  hard ,  eps ,  dim ) [source] ¶",,
+"
+ torch.nn.functional. log_softmax ( input ,  dim ,  _stacklevel ,  dtype ) [source] ¶",,
+"
+ torch.nn.functional. tanh ( input )   → [source] ¶",,
+"
+ torch.nn.functional. sigmoid ( input )   → [source] ¶",,
+"
+ torch.nn.functional. hardsigmoid ( input ,  inplace ) [source] ¶",,
+"
+ torch.nn.functional. silu ( input ,  inplace ) [source] ¶",,
+"
+ torch.nn.functional. mish ( input ,  inplace ) [source] ¶",,
+"
+ torch.nn.functional. batch_norm ( input ,  running_mean ,  running_var ,  weight ,  bias ,  training ,  momentum ,  eps ) [source] ¶",,
+"
+ torch.nn.functional. group_norm ( input ,  num_groups ,  weight ,  bias ,  eps ) [source] ¶",,
+"
+ torch.nn.functional. instance_norm ( input ,  running_mean ,  running_var ,  weight ,  bias ,  use_input_stats ,  momentum ,  eps ) [source] ¶",,
+"
+ torch.nn.functional. layer_norm ( input ,  normalized_shape ,  weight ,  bias ,  eps ) [source] ¶",,
+"
+ torch.nn.functional. local_response_norm ( input ,  size ,  alpha ,  beta ,  k ) [source] ¶",,
+"
+ torch.nn.functional. normalize ( input ,  p ,  dim ,  eps ,  out ) [source] ¶",,
+"
+ torch.nn.functional. linear ( input ,  weight ,  bias )   → ¶",,
+"
+ torch.nn.functional. bilinear ( input1 ,  input2 ,  weight ,  bias )   → ¶",,
+"
+ torch.nn.functional. dropout ( input ,  p ,  training ,  inplace ) [source] ¶",,
+"
+ torch.nn.functional. alpha_dropout ( input ,  p ,  training ,  inplace ) [source] ¶",,
+"
+ torch.nn.functional. feature_alpha_dropout ( input ,  p ,  training ,  inplace ) [source] ¶",,
+"
+ torch.nn.functional. dropout1d ( input ,  p ,  training ,  inplace ) [source] ¶",,
+"
+ torch.nn.functional. dropout2d ( input ,  p ,  training ,  inplace ) [source] ¶",,
+"
+ torch.nn.functional. dropout3d ( input ,  p ,  training ,  inplace ) [source] ¶",,
+"
+ torch.nn.functional. embedding ( input ,  weight ,  padding_idx ,  max_norm ,  norm_type ,  scale_grad_by_freq ,  sparse ) [source] ¶",,
+"
+ torch.nn.functional. embedding_bag ( input ,  weight ,  offsets ,  max_norm ,  norm_type ,  scale_grad_by_freq ,  mode ,  sparse ,  per_sample_weights ,  include_last_offset ,  padding_idx ) [source] ¶",,
+"
+ torch.nn.functional. one_hot ( tensor ,  num_classes )   → ¶",,
+"
+ torch.nn.functional. pairwise_distance ( x1 ,  x2 ,  p ,  eps ,  keepdim )   → ¶",,
+"
+ torch.nn.functional. cosine_similarity ( x1 ,  x2 ,  dim ,  eps )   → ¶",,
+"
+ torch.nn.functional. pdist ( input ,  p )   → ¶",,
+"
+ torch.nn.functional. binary_cross_entropy ( input ,  target ,  weight ,  size_average ,  reduce ,  reduction ) [source] ¶",,
+"
+ torch.nn.functional. binary_cross_entropy_with_logits ( input ,  target ,  weight ,  size_average ,  reduce ,  reduction ,  pos_weight ) [source] ¶",,
+"
+ torch.nn.functional. poisson_nll_loss ( input ,  target ,  log_input ,  full ,  size_average ,  eps ,  reduce ,  reduction ) [source] ¶",,
+"
+ torch.nn.functional. cosine_embedding_loss ( input1 ,  input2 ,  target ,  margin ,  size_average ,  reduce ,  reduction )   → [source] ¶",,
+"
+ torch.nn.functional. cross_entropy ( input ,  target ,  weight ,  size_average ,  ignore_index ,  reduce ,  reduction ,  label_smoothing ) [source] ¶",,
+"
+ torch.nn.functional. ctc_loss ( log_probs ,  targets ,  input_lengths ,  target_lengths ,  blank ,  reduction ,  zero_infinity ) [source] ¶",,
+"
+ torch.nn.functional. gaussian_nll_loss ( input ,  target ,  var ,  full ,  eps ,  reduction ) [source] ¶",,
+"
+ torch.nn.functional. hinge_embedding_loss ( input ,  target ,  margin ,  size_average ,  reduce ,  reduction )   → [source] ¶",,
+"
+ torch.nn.functional. kl_div ( input ,  target ,  size_average ,  reduce ,  reduction ,  log_target ) [source] ¶",,
+"
+ torch.nn.functional. l1_loss ( input ,  target ,  size_average ,  reduce ,  reduction )   → [source] ¶",,
+"
+ torch.nn.functional. mse_loss ( input ,  target ,  size_average ,  reduce ,  reduction )   → [source] ¶",,
+"
+ torch.nn.functional. margin_ranking_loss ( input1 ,  input2 ,  target ,  margin ,  size_average ,  reduce ,  reduction )   → [source] ¶",,
+"
+ torch.nn.functional. multilabel_margin_loss ( input ,  target ,  size_average ,  reduce ,  reduction )   → [source] ¶",,
+"
+ torch.nn.functional. multilabel_soft_margin_loss ( input ,  target ,  weight ,  size_average ,  reduce ,  reduction )   → [source] ¶",,
+"
+ torch.nn.functional. multi_margin_loss ( input ,  target ,  p ,  margin ,  weight ,  size_average ,  reduce ,  reduction )   → [source] ¶",,
+"
+ torch.nn.functional. nll_loss ( input ,  target ,  weight ,  size_average ,  ignore_index ,  reduce ,  reduction ) [source] ¶",,
+"
+ torch.nn.functional. huber_loss ( input ,  target ,  reduction ,  delta ) [source] ¶",,
+"
+ torch.nn.functional. smooth_l1_loss ( input ,  target ,  size_average ,  reduce ,  reduction ,  beta ) [source] ¶",,
+"
+ torch.nn.functional. soft_margin_loss ( input ,  target ,  size_average ,  reduce ,  reduction )   → [source] ¶",,
+"
+ torch.nn.functional. triplet_margin_loss ( anchor ,  positive ,  negative ,  margin ,  p ,  eps ,  swap ,  size_average ,  reduce ,  reduction ) [source] ¶",,
+"
+ torch.nn.functional. triplet_margin_with_distance_loss ( anchor ,  positive ,  negative ,  * ,  distance_function ,  margin ,  swap ,  reduction ) [source] ¶",,
+"
+ torch.nn.functional. pixel_shuffle ( input ,  upscale_factor )   → ¶",,
+"
+ torch.nn.functional. pixel_unshuffle ( input ,  downscale_factor )   → ¶",,
+"
+ torch.nn.functional. pad ( input ,  pad ,  mode ,  value )   → ¶",,
+"
+ torch.nn.functional. interpolate ( input ,  size ,  scale_factor ,  mode ,  align_corners ,  recompute_scale_factor ,  antialias ) [source] ¶",,
+"
+ torch.nn.functional. upsample ( input ,  size ,  scale_factor ,  mode ,  align_corners ) [source] ¶",,
+"
+ torch.nn.functional. upsample_nearest ( input ,  size ,  scale_factor ) [source] ¶",,
+"
+ torch.nn.functional. upsample_bilinear ( input ,  size ,  scale_factor ) [source] ¶",,
+"
+ torch.nn.functional. grid_sample ( input ,  grid ,  mode ,  padding_mode ,  align_corners ) [source] ¶",,
+"
+ torch.nn.functional. affine_grid ( theta ,  size ,  align_corners ) [source] ¶",,
+"
+ Tensor. new_tensor ( data ,  * ,  dtype ,  device ,  requires_grad ,  layout ,  pin_memory )   → ¶",,
+"
+ torch.nn.parallel. data_parallel ( module ,  inputs ,  device_ids ,  output_device ,  dim ,  module_kwargs ) [source] ¶",,
+"
+ Tensor. requires_grad_ ( requires_grad )   → ¶",,
+"
+ Tensor. detach ( ) ¶",,
+"
+ Tensor. item ( )   → ¶",,
+"
+ Tensor. to ( * ,  ** )   → ¶",,
+"
+ Tensor. new_full ( size ,  fill_value ,  * ,  dtype ,  device ,  requires_grad ,  layout ,  pin_memory )   → ¶",,
+"
+ Tensor. new_empty ( size ,  * ,  dtype ,  device ,  requires_grad ,  layout ,  pin_memory )   → ¶",,
+"
+ Tensor. new_ones ( size ,  * ,  dtype ,  device ,  requires_grad ,  layout ,  pin_memory )   → ¶",,
+"
+ Tensor. new_zeros ( size ,  * ,  dtype ,  device ,  requires_grad ,  layout ,  pin_memory )   → ¶",,
+"
+ Tensor. is_cuda ¶",,
+"
+ Tensor. is_quantized ¶",,
+"
+ Tensor. is_meta ¶",,
+"
+ Tensor. device ¶",,
+"
+ Tensor. grad ¶",,
+"
+ Tensor. ndim ¶",,
+"
+ Tensor. dim ( )   → ¶",,
+"
+ Tensor. real ¶",,
+"
+ Tensor. imag ¶",,
+"
+ Tensor. abs ( )   → ¶",,
+"
+ Tensor. abs_ ( )   → ¶",,
+"
+ Tensor. absolute ( )   → ¶",,
+"
+ Tensor. absolute_ ( )   → ¶",,
+"
+ Tensor. acos ( )   → ¶",,
+"
+ Tensor. acos_ ( )   → ¶",,
+"
+ Tensor. arccos ( )   → ¶",,
+"
+ Tensor. arccos_ ( )   → ¶",,
+"
+ Tensor. add ( other ,  * ,  alpha )   → ¶",,
+"
+ Tensor. add_ ( other ,  * ,  alpha )   → ¶",,
+"
+ Tensor. addbmm ( batch1 ,  batch2 ,  * ,  beta ,  alpha )   → ¶",,
+"
+ Tensor. addbmm_ ( batch1 ,  batch2 ,  * ,  beta ,  alpha )   → ¶",,
+"
+ Tensor. addcdiv ( tensor1 ,  tensor2 ,  * ,  value )   → ¶",,
+"
+ Tensor. addcdiv_ ( tensor1 ,  tensor2 ,  * ,  value )   → ¶",,
+"
+ Tensor. addcmul ( tensor1 ,  tensor2 ,  * ,  value )   → ¶",,
+"
+ Tensor. addcmul_ ( tensor1 ,  tensor2 ,  * ,  value )   → ¶",,
+"
+ Tensor. addmm ( mat1 ,  mat2 ,  * ,  beta ,  alpha )   → ¶",,
+"
+ Tensor. addmm_ ( mat1 ,  mat2 ,  * ,  beta ,  alpha )   → ¶",,
+"
+ Tensor. sspaddmm ( mat1 ,  mat2 ,  * ,  beta ,  alpha )   → ¶",,
+"
+ torch. sspaddmm ( input ,  mat1 ,  mat2 ,  * ,  beta ,  alpha ,  out )   → ¶",,
+"
+ Tensor. addmv ( mat ,  vec ,  * ,  beta ,  alpha )   → ¶",,
+"
+ Tensor. addmv_ ( mat ,  vec ,  * ,  beta ,  alpha )   → ¶",,
+"
+ Tensor. addr ( vec1 ,  vec2 ,  * ,  beta ,  alpha )   → ¶",,
+"
+ Tensor. addr_ ( vec1 ,  vec2 ,  * ,  beta ,  alpha )   → ¶",,
+"
+ Tensor. adjoint ( )   → ¶",,
+"
+ Tensor. allclose ( other ,  rtol ,  atol ,  equal_nan )   → ¶",,
+"
+ Tensor. amax ( dim ,  keepdim )   → ¶",,
+"
+ Tensor. amin ( dim ,  keepdim )   → ¶",,
+"
+ Tensor. aminmax ( * ,  dim=None ,  keepdim=False) ,  Tensor ) ¶",,
+"
+ Tensor. angle ( )   → ¶",,
+"
+ Tensor. apply_ ( callable )   → ¶",,
+"
+ Tensor. argmax ( dim ,  keepdim )   → ¶",,
+"
+ Tensor. argmin ( dim ,  keepdim )   → ¶",,
+"
+ Tensor. argsort ( dim ,  descending )   → ¶",,
+"
+ Tensor. argwhere ( )   → ¶",,
+"
+ Tensor. asin ( )   → ¶",,
+"
+ Tensor. asin_ ( )   → ¶",,
+"
+ Tensor. arcsin ( )   → ¶",,
+"
+ Tensor. arcsin_ ( )   → ¶",,
+"
+ Tensor. as_strided ( size ,  stride ,  storage_offset )   → ¶",,
+"
+ Tensor. atan ( )   → ¶",,
+"
+ Tensor. atan_ ( )   → ¶",,
+"
+ Tensor. arctan ( )   → ¶",,
+"
+ Tensor. arctan_ ( )   → ¶",,
+"
+ Tensor. atan2 ( other )   → ¶",,
+"
+ Tensor. atan2_ ( other )   → ¶",,
+"
+ Tensor. arctan2 ( other )   → ¶",,
+"
+ Tensor. arctan2_ ( ) ¶",,
+"
+ Tensor. all ( dim ,  keepdim )   → ¶",,
+"
+ Tensor. any ( dim ,  keepdim )   → ¶",,
+"
+ Tensor. backward ( gradient ,  retain_graph ,  create_graph ,  inputs ) [source] ¶",,
+"
+ Tensor. baddbmm ( batch1 ,  batch2 ,  * ,  beta ,  alpha )   → ¶",,
+"
+ Tensor. baddbmm_ ( batch1 ,  batch2 ,  * ,  beta ,  alpha )   → ¶",,
+"
+ Tensor. bernoulli ( * ,  generator )   → ¶",,
+"
+ Tensor. bfloat16 ( memory_format )   → ¶",,
+"
+ Tensor. bincount ( weights ,  minlength )   → ¶",,
+"
+ Tensor. bitwise_not ( )   → ¶",,
+"
+ Tensor. bitwise_not_ ( )   → ¶",,
+"
+ Tensor. bitwise_and ( )   → ¶",,
+"
+ Tensor. bitwise_and_ ( )   → ¶",,
+"
+ Tensor. bitwise_or ( )   → ¶",,
+"
+ Tensor. bitwise_or_ ( )   → ¶",,
+"
+ Tensor. bitwise_xor ( )   → ¶",,
+"
+ Tensor. bitwise_xor_ ( )   → ¶",,
+"
+ Tensor. bitwise_left_shift ( other )   → ¶",,
+"
+ Tensor. bitwise_left_shift_ ( other )   → ¶",,
+"
+ Tensor. bitwise_right_shift ( other )   → ¶",,
+"
+ Tensor. bitwise_right_shift_ ( other )   → ¶",,
+"
+ Tensor. bmm ( batch2 )   → ¶",,
+"
+ Tensor. bool ( memory_format )   → ¶",,
+"
+ Tensor. byte ( memory_format )   → ¶",,
+"
+ Tensor. broadcast_to ( shape )   → ¶",,
+"
+ Tensor. ceil ( )   → ¶",,
+"
+ Tensor. ceil_ ( )   → ¶",,
+"
+ Tensor. char ( memory_format )   → ¶",,
+"
+ Tensor. cholesky ( upper )   → ¶",,
+"
+ Tensor. cholesky_inverse ( upper )   → ¶",,
+"
+ Tensor. cholesky_solve ( input2 ,  upper )   → ¶",,
+"
+ Tensor. chunk ( chunks ,  dim )   → ¶",,
+"
+ Tensor. clamp ( min ,  max )   → ¶",,
+"
+ Tensor. clamp_ ( min ,  max )   → ¶",,
+"
+ Tensor. clip ( min ,  max )   → ¶",,
+"
+ Tensor. clip_ ( min ,  max )   → ¶",,
+"
+ Tensor. clone ( * ,  memory_format )   → ¶",,
+"
+ Tensor. contiguous ( memory_format )   → ¶",,
+"
+ Tensor. copy_ ( src ,  non_blocking )   → ¶",,
+"
+ Tensor. conj ( )   → ¶",,
+"
+ Tensor. conj_physical ( )   → ¶",,
+"
+ Tensor. conj_physical_ ( )   → ¶",,
+"
+ Tensor. resolve_conj ( )   → ¶",,
+"
+ Tensor. resolve_neg ( )   → ¶",,
+"
+ Tensor. copysign ( other )   → ¶",,
+"
+ Tensor. copysign_ ( other )   → ¶",,
+"
+ Tensor. cos ( )   → ¶",,
+"
+ Tensor. cos_ ( )   → ¶",,
+"
+ Tensor. cosh ( )   → ¶",,
+"
+ Tensor. cosh_ ( )   → ¶",,
+"
+ Tensor. corrcoef ( )   → ¶",,
+"
+ Tensor. count_nonzero ( dim )   → ¶",,
+"
+ Tensor. cov ( * ,  correction ,  fweights ,  aweights )   → ¶",,
+"
+ Tensor. acosh ( )   → ¶",,
+"
+ Tensor. acosh_ ( )   → ¶",,
+"
+ Tensor. arccosh ( ) ¶",,
+"
+ Tensor. arccosh_ ( ) ¶",,
+"
+ Tensor. cpu ( memory_format )   → ¶",,
+"
+ Tensor. cross ( other ,  dim )   → ¶",,
+"
+ Tensor. cuda ( device ,  non_blocking ,  memory_format )   → ¶",,
+"
+ Tensor. logcumsumexp ( dim )   → ¶",,
+"
+ Tensor. cummax ( dim ) ¶",,
+"
+ Tensor. cummin ( dim ) ¶",,
+"
+ Tensor. cumprod ( dim ,  dtype )   → ¶",,
+"
+ Tensor. cumprod_ ( dim ,  dtype )   → ¶",,
+"
+ Tensor. cumsum ( dim ,  dtype )   → ¶",,
+"
+ Tensor. cumsum_ ( dim ,  dtype )   → ¶",,
+"
+ Tensor. chalf ( memory_format )   → ¶",,
+"
+ Tensor. cfloat ( memory_format )   → ¶",,
+"
+ Tensor. cdouble ( memory_format )   → ¶",,
+"
+ Tensor. data_ptr ( )   → ¶",,
+"
+ Tensor. deg2rad ( )   → ¶",,
+"
+ Tensor. dequantize ( )   → ¶",,
+"
+ Tensor. det ( )   → ¶",,
+"
+ Tensor. dense_dim ( )   → ¶",,
+"
+ Tensor. detach_ ( ) ¶",,
+"
+ Tensor. diag ( diagonal )   → ¶",,
+"
+ Tensor. diag_embed ( offset ,  dim1 ,  dim2 )   → ¶",,
+"
+ Tensor. diagflat ( offset )   → ¶",,
+"
+ Tensor. diagonal ( offset ,  dim1 ,  dim2 )   → ¶",,
+"
+ Tensor. diagonal_scatter ( src ,  offset ,  dim1 ,  dim2 )   → ¶",,
+"
+ Tensor. fill_diagonal_ ( fill_value ,  wrap )   → ¶",,
+"
+ Tensor. fmax ( other )   → ¶",,
+"
+ Tensor. fmin ( other )   → ¶",,
+"
+ Tensor. diff ( n ,  dim ,  prepend ,  append )   → ¶",,
+"
+ Tensor. digamma ( )   → ¶",,
+"
+ Tensor. digamma_ ( )   → ¶",,
+"
+ Tensor. dist ( other ,  p )   → ¶",,
+"
+ Tensor. div ( value ,  * ,  rounding_mode )   → ¶",,
+"
+ Tensor. div_ ( value ,  * ,  rounding_mode )   → ¶",,
+"
+ Tensor. divide ( value ,  * ,  rounding_mode )   → ¶",,
+"
+ Tensor. divide_ ( value ,  * ,  rounding_mode )   → ¶",,
+"
+ Tensor. dot ( other )   → ¶",,
+"
+ Tensor. double ( memory_format )   → ¶",,
+"
+ Tensor. dsplit ( split_size_or_sections )   → ¶",,
+"
+ Tensor. element_size ( )   → ¶",,
+"
+ Tensor. eq ( other )   → ¶",,
+"
+ Tensor. eq_ ( other )   → ¶",,
+"
+ Tensor. equal ( other )   → ¶",,
+"
+ Tensor. erf ( )   → ¶",,
+"
+ Tensor. erf_ ( )   → ¶",,
+"
+ Tensor. erfc ( )   → ¶",,
+"
+ Tensor. erfc_ ( )   → ¶",,
+"
+ Tensor. erfinv ( )   → ¶",,
+"
+ Tensor. erfinv_ ( )   → ¶",,
+"
+ Tensor. exp ( )   → ¶",,
+"
+ Tensor. exp_ ( )   → ¶",,
+"
+ Tensor. expm1 ( )   → ¶",,
+"
+ Tensor. expm1_ ( )   → ¶",,
+"
+ Tensor. expand ( * )   → ¶",,
+"
+ Tensor. expand_as ( other )   → ¶",,
+"
+ Tensor. fix ( )   → ¶",,
+"
+ Tensor. fix_ ( )   → ¶",,
+"
+ Tensor. fill_ ( value )   → ¶",,
+"
+ Tensor. flatten ( start_dim ,  end_dim )   → ¶",,
+"
+ Tensor. flip ( dims )   → ¶",,
+"
+ Tensor. fliplr ( )   → ¶",,
+"
+ Tensor. flipud ( )   → ¶",,
+"
+ Tensor. float ( memory_format )   → ¶",,
+"
+ Tensor. float_power ( exponent )   → ¶",,
+"
+ Tensor. float_power_ ( exponent )   → ¶",,
+"
+ Tensor. floor ( )   → ¶",,
+"
+ Tensor. floor_ ( )   → ¶",,
+"
+ Tensor. floor_divide ( value )   → ¶",,
+"
+ Tensor. floor_divide_ ( value )   → ¶",,
+"
+ Tensor. fmod ( divisor )   → ¶",,
+"
+ Tensor. fmod_ ( divisor )   → ¶",,
+"
+ Tensor. frac ( )   → ¶",,
+"
+ Tensor. frac_ ( )   → ¶",,
+"
+ Tensor. frexp ( input) ,  Tensor ) ¶",,
+"
+ Tensor. gather ( dim ,  index )   → ¶",,
+"
+ Tensor. gcd ( other )   → ¶",,
+"
+ Tensor. gcd_ ( other )   → ¶",,
+"
+ Tensor. ge ( other )   → ¶",,
+"
+ Tensor. ge_ ( other )   → ¶",,
+"
+ Tensor. greater_equal ( other )   → ¶",,
+"
+ Tensor. greater_equal_ ( other )   → ¶",,
+"
+ Tensor. geqrf ( ) ¶",,
+"
+ Tensor. ger ( vec2 )   → ¶",,
+"
+ Tensor. get_device ( ) ) ¶",,
+"
+ Tensor. gt ( other )   → ¶",,
+"
+ Tensor. gt_ ( other )   → ¶",,
+"
+ Tensor. greater ( other )   → ¶",,
+"
+ Tensor. greater_ ( other )   → ¶",,
+"
+ Tensor. half ( memory_format )   → ¶",,
+"
+ Tensor. hardshrink ( lambd )   → ¶",,
+"
+ Tensor. heaviside ( values )   → ¶",,
+"
+ Tensor. histc ( bins ,  min ,  max )   → ¶",,
+"
+ Tensor. histogram ( input ,  bins ,  * ,  range ,  weight ,  density ) ¶",,
+"
+ Tensor. hsplit ( split_size_or_sections )   → ¶",,
+"
+ Tensor. hypot ( other )   → ¶",,
+"
+ Tensor. hypot_ ( other )   → ¶",,
+"
+ Tensor. i0 ( )   → ¶",,
+"
+ Tensor. i0_ ( )   → ¶",,
+"
+ Tensor. igamma ( other )   → ¶",,
+"
+ Tensor. igamma_ ( other )   → ¶",,
+"
+ Tensor. igammac ( other )   → ¶",,
+"
+ Tensor. igammac_ ( other )   → ¶",,
+"
+ Tensor. index_add ( dim ,  index ,  source ,  * ,  alpha )   → ¶",,
+"
+ Tensor. index_copy_ ( dim ,  index ,  tensor )   → ¶",,
+"
+ Tensor. index_copy ( dim ,  index ,  tensor2 )   → ¶",,
+"
+ Tensor. index_fill_ ( dim ,  index ,  value )   → ¶",,
+"
+ Tensor. index_fill ( dim ,  index ,  value )   → ¶",,
+"
+ Tensor. index_put_ ( indices ,  values ,  accumulate )   → ¶",,
+"
+ Tensor. index_put ( indices ,  values ,  accumulate )   → ¶",,
+"
+ Tensor. index_reduce ( ) ¶",,
+"
+ Tensor. index_select ( dim ,  index )   → ¶",,
+"
+ Tensor. indices ( )   → ¶",,
+"
+ Tensor. inner ( other )   → ¶",,
+"
+ Tensor. int ( memory_format )   → ¶",,
+"
+ Tensor. int_repr ( )   → ¶",,
+"
+ Tensor. inverse ( )   → ¶",,
+"
+ Tensor. isclose ( other ,  rtol ,  atol ,  equal_nan )   → ¶",,
+"
+ Tensor. isfinite ( )   → ¶",,
+"
+ Tensor. isinf ( )   → ¶",,
+"
+ Tensor. isposinf ( )   → ¶",,
+"
+ Tensor. isneginf ( )   → ¶",,
+"
+ Tensor. isnan ( )   → ¶",,
+"
+ Tensor. is_contiguous ( memory_format )   → ¶",,
+"
+ Tensor. is_complex ( )   → ¶",,
+"
+ Tensor. is_conj ( )   → ¶",,
+"
+ Tensor. is_floating_point ( )   → ¶",,
+"
+ Tensor. is_inference ( )   → ¶",,
+"
+ Tensor. is_leaf ¶",,
+"
+ Tensor. is_pinned ( ) ¶",,
+"
+ Tensor. is_set_to ( tensor )   → ¶",,
+"
+ Tensor. is_shared ( ) [source] ¶",,
+"
+ Tensor. is_signed ( )   → ¶",,
+"
+ Tensor. is_sparse ¶",,
+"
+ Tensor. istft ( n_fft ,  hop_length ,  win_length ,  window ,  center ,  normalized ,  onesided ,  length ,  return_complex ) [source] ¶",,
+"
+ Tensor. isreal ( )   → ¶",,
+"
+ Tensor. kthvalue ( k ,  dim ,  keepdim ) ¶",,
+"
+ Tensor. lcm ( other )   → ¶",,
+"
+ Tensor. lcm_ ( other )   → ¶",,
+"
+ Tensor. ldexp ( other )   → ¶",,
+"
+ Tensor. ldexp_ ( other )   → ¶",,
+"
+ Tensor. le ( other )   → ¶",,
+"
+ Tensor. le_ ( other )   → ¶",,
+"
+ Tensor. less_equal ( other )   → ¶",,
+"
+ Tensor. less_equal_ ( other )   → ¶",,
+"
+ Tensor. lerp ( end ,  weight )   → ¶",,
+"
+ Tensor. lerp_ ( end ,  weight )   → ¶",,
+"
+ Tensor. lgamma ( )   → ¶",,
+"
+ Tensor. lgamma_ ( )   → ¶",,
+"
+ Tensor. log ( )   → ¶",,
+"
+ Tensor. log_ ( )   → ¶",,
+"
+ Tensor. logdet ( )   → ¶",,
+"
+ Tensor. log10 ( )   → ¶",,
+"
+ Tensor. log10_ ( )   → ¶",,
+"
+ Tensor. log1p ( )   → ¶",,
+"
+ Tensor. log1p_ ( )   → ¶",,
+"
+ Tensor. log2 ( )   → ¶",,
+"
+ Tensor. log2_ ( )   → ¶",,
+"
+ Tensor. logaddexp ( other )   → ¶",,
+"
+ Tensor. logaddexp2 ( other )   → ¶",,
+"
+ Tensor. logsumexp ( dim ,  keepdim )   → ¶",,
+"
+ Tensor. logical_and ( )   → ¶",,
+"
+ Tensor. logical_and_ ( )   → ¶",,
+"
+ Tensor. logical_not ( )   → ¶",,
+"
+ Tensor. logical_not_ ( )   → ¶",,
+"
+ Tensor. logical_or ( )   → ¶",,
+"
+ Tensor. logical_or_ ( )   → ¶",,
+"
+ Tensor. logical_xor ( )   → ¶",,
+"
+ Tensor. logical_xor_ ( )   → ¶",,
+"
+ Tensor. logit ( )   → ¶",,
+"
+ Tensor. logit_ ( )   → ¶",,
+"
+ Tensor. long ( memory_format )   → ¶",,
+"
+ Tensor. lt ( other )   → ¶",,
+"
+ Tensor. lt_ ( other )   → ¶",,
+"
+ Tensor. less ( ) ¶",,
+"
+ Tensor. less_ ( other )   → ¶",,
+"
+ Tensor. lu ( pivot ,  get_infos ) [source] ¶",,
+"
+ Tensor. lu_solve ( LU_data ,  LU_pivots )   → ¶",,
+"
+ Tensor. as_subclass ( cls )   → ¶",,
+"
+ Tensor. map_ ( tensor ,  callable ) ¶",,
+"
+ Tensor. masked_scatter_ ( mask ,  source ) ¶",,
+"
+ Tensor. masked_scatter ( mask ,  tensor )   → ¶",,
+"
+ Tensor. masked_fill_ ( mask ,  value ) ¶",,
+"
+ Tensor. masked_fill ( mask ,  value )   → ¶",,
+"
+ Tensor. masked_select ( mask )   → ¶",,
+"
+ Tensor. matmul ( tensor2 )   → ¶",,
+"
+ Tensor. matrix_power ( n )   → ¶",,
+"
+ Tensor. matrix_exp ( )   → ¶",,
+"
+ Tensor. max ( dim ,  keepdim ) ¶",,
+"
+ Tensor. maximum ( other )   → ¶",,
+"
+ Tensor. mean ( dim ,  keepdim ,  * ,  dtype )   → ¶",,
+"
+ Tensor. nanmean ( dim ,  keepdim ,  * ,  dtype )   → ¶",,
+"
+ Tensor. median ( dim ,  keepdim ) ¶",,
+"
+ Tensor. nanmedian ( dim ,  keepdim ) ¶",,
+"
+ Tensor. min ( dim ,  keepdim ) ¶",,
+"
+ Tensor. minimum ( other )   → ¶",,
+"
+ Tensor. mm ( mat2 )   → ¶",,
+"
+ Tensor. smm ( mat )   → ¶",,
+"
+ torch. smm ( input ,  mat )   → ¶",,
+"
+ Tensor. mode ( dim ,  keepdim ) ¶",,
+"
+ Tensor. movedim ( source ,  destination )   → ¶",,
+"
+ Tensor. moveaxis ( source ,  destination )   → ¶",,
+"
+ Tensor. msort ( )   → ¶",,
+"
+ Tensor. mul ( value )   → ¶",,
+"
+ Tensor. mul_ ( value )   → ¶",,
+"
+ Tensor. multiply ( value )   → ¶",,
+"
+ Tensor. multiply_ ( value )   → ¶",,
+"
+ Tensor. multinomial ( num_samples ,  replacement ,  * ,  generator )   → ¶",,
+"
+ Tensor. mv ( vec )   → ¶",,
+"
+ Tensor. mvlgamma ( p )   → ¶",,
+"
+ Tensor. mvlgamma_ ( p )   → ¶",,
+"
+ Tensor. nansum ( dim ,  keepdim ,  dtype )   → ¶",,
+"
+ Tensor. narrow ( dimension ,  start ,  length )   → ¶",,
+"
+ Tensor. narrow_copy ( dimension ,  start ,  length )   → ¶",,
+"
+ Tensor. ndimension ( )   → ¶",,
+"
+ Tensor. nan_to_num ( nan ,  posinf ,  neginf )   → ¶",,
+"
+ Tensor. nan_to_num_ ( nan ,  posinf ,  neginf )   → ¶",,
+"
+ Tensor. ne ( other )   → ¶",,
+"
+ Tensor. ne_ ( other )   → ¶",,
+"
+ Tensor. not_equal ( other )   → ¶",,
+"
+ Tensor. not_equal_ ( other )   → ¶",,
+"
+ Tensor. neg ( )   → ¶",,
+"
+ Tensor. neg_ ( )   → ¶",,
+"
+ Tensor. negative ( )   → ¶",,
+"
+ Tensor. negative_ ( )   → ¶",,
+"
+ Tensor. nelement ( )   → ¶",,
+"
+ Tensor. numel ( )   → ¶",,
+"
+ Tensor. nextafter ( other )   → ¶",,
+"
+ Tensor. nextafter_ ( other )   → ¶",,
+"
+ Tensor. nonzero ( )   → ¶",,
+"
+ Tensor. norm ( p ,  dim ,  keepdim ,  dtype ) [source] ¶",,
+"
+ Tensor. numpy ( * ,  force )   → ¶",,
+"
+ Tensor. orgqr ( input2 )   → ¶",,
+"
+ Tensor. ormqr ( input2 ,  input3 ,  left ,  transpose )   → ¶",,
+"
+ Tensor. outer ( vec2 )   → ¶",,
+"
+ Tensor. permute ( * )   → ¶",,
+"
+ Tensor. pin_memory ( )   → ¶",,
+"
+ Tensor. pinverse ( )   → ¶",,
+"
+ Tensor. polygamma ( n )   → ¶",,
+"
+ Tensor. polygamma_ ( n )   → ¶",,
+"
+ Tensor. positive ( )   → ¶",,
+"
+ Tensor. pow ( exponent )   → ¶",,
+"
+ Tensor. pow_ ( exponent )   → ¶",,
+"
+ Tensor. prod ( dim ,  keepdim ,  dtype )   → ¶",,
+"
+ Tensor. put_ ( index ,  source ,  accumulate )   → ¶",,
+"
+ Tensor. qr ( some ) ¶",,
+"
+ Tensor. qscheme ( )   → ¶",,
+"
+ Tensor. quantile ( q ,  dim ,  keepdim ,  * ,  interpolation )   → ¶",,
+"
+ Tensor. nanquantile ( q ,  dim ,  keepdim ,  * ,  interpolation )   → ¶",,
+"
+ Tensor. q_scale ( )   → ¶",,
+"
+ Tensor. q_zero_point ( )   → ¶",,
+"
+ Tensor. q_per_channel_scales ( )   → ¶",,
+"
+ Tensor. q_per_channel_zero_points ( )   → ¶",,
+"
+ Tensor. q_per_channel_axis ( )   → ¶",,
+"
+ Tensor. rad2deg ( )   → ¶",,
+"
+ Tensor. ravel ( )   → ¶",,
+"
+ Tensor. reciprocal ( )   → ¶",,
+"
+ Tensor. reciprocal_ ( )   → ¶",,
+"
+ Tensor. record_stream ( stream ) ¶",,
+"
+ Tensor. register_hook ( hook ) [source] ¶",,
+"
+ Tensor. remainder ( divisor )   → ¶",,
+"
+ Tensor. remainder_ ( divisor )   → ¶",,
+"
+ Tensor. renorm ( p ,  dim ,  maxnorm )   → ¶",,
+"
+ Tensor. renorm_ ( p ,  dim ,  maxnorm )   → ¶",,
+"
+ Tensor. repeat ( * )   → ¶",,
+"
+ Tensor. repeat_interleave ( repeats ,  dim ,  * ,  output_size )   → ¶",,
+"
+ Tensor. requires_grad ¶",,
+"
+ Tensor. reshape ( * )   → ¶",,
+"
+ Tensor. reshape_as ( other )   → ¶",,
+"
+ Tensor. resize_ ( * ,  memory_format )   → ¶",,
+"
+ Tensor. resize_as_ ( tensor ,  memory_format )   → ¶",,
+"
+ Tensor. retain_grad ( )   → ¶",,
+"
+ Tensor. retains_grad ¶",,
+"
+ Tensor. roll ( shifts ,  dims )   → ¶",,
+"
+ Tensor. rot90 ( k ,  dims )   → ¶",,
+"
+ Tensor. round ( decimals )   → ¶",,
+"
+ Tensor. round_ ( decimals )   → ¶",,
+"
+ Tensor. rsqrt ( )   → ¶",,
+"
+ Tensor. rsqrt_ ( )   → ¶",,
+"
+ Tensor. scatter ( dim ,  index ,  src )   → ¶",,
+"
+ Tensor. scatter_add ( dim ,  index ,  src )   → ¶",,
+"
+ Tensor. scatter_reduce ( dim ,  index ,  src ,  reduce ,  * ,  include_self )   → ¶",,
+"
+ Tensor. select ( dim ,  index )   → ¶",,
+"
+ Tensor. select_scatter ( src ,  dim ,  index )   → ¶",,
+"
+ Tensor. set_ ( source ,  storage_offset ,  size ,  stride )   → ¶",,
+"
+ Tensor. share_memory_ ( ) [source] ¶",,
+"
+ Tensor. short ( memory_format )   → ¶",,
+"
+ Tensor. sigmoid ( )   → ¶",,
+"
+ Tensor. sigmoid_ ( )   → ¶",,
+"
+ Tensor. sign ( )   → ¶",,
+"
+ Tensor. sign_ ( )   → ¶",,
+"
+ Tensor. signbit ( )   → ¶",,
+"
+ Tensor. sgn ( )   → ¶",,
+"
+ Tensor. sgn_ ( )   → ¶",,
+"
+ Tensor. sin ( )   → ¶",,
+"
+ Tensor. sin_ ( )   → ¶",,
+"
+ Tensor. sinc ( )   → ¶",,
+"
+ Tensor. sinc_ ( )   → ¶",,
+"
+ Tensor. sinh ( )   → ¶",,
+"
+ Tensor. sinh_ ( )   → ¶",,
+"
+ Tensor. asinh ( )   → ¶",,
+"
+ Tensor. asinh_ ( )   → ¶",,
+"
+ Tensor. arcsinh ( )   → ¶",,
+"
+ Tensor. arcsinh_ ( )   → ¶",,
+"
+ Tensor. size ( dim )   → ¶",,
+"
+ Tensor. slogdet ( ) ¶",,
+"
+ Tensor. slice_scatter ( src ,  dim ,  start ,  end ,  step )   → ¶",,
+"
+ Tensor. sort ( dim ,  descending ) ¶",,
+"
+ Tensor. split ( split_size ,  dim ) [source] ¶",,
+"
+ Tensor. sparse_mask ( mask )   → ¶",,
+"
+ Tensor. sparse_dim ( )   → ¶",,
+"
+ Tensor. sqrt ( )   → ¶",,
+"
+ Tensor. sqrt_ ( )   → ¶",,
+"
+ Tensor. square ( )   → ¶",,
+"
+ Tensor. square_ ( )   → ¶",,
+"
+ Tensor. squeeze ( dim )   → ¶",,
+"
+ Tensor. squeeze_ ( dim )   → ¶",,
+"
+ Tensor. std ( dim ,  unbiased ,  keepdim )   → ¶",,
+"
+ Tensor. stft ( n_fft ,  hop_length ,  win_length ,  window ,  center ,  pad_mode ,  normalized ,  onesided ,  return_complex ) [source] ¶",,
+"
+ Tensor. storage ( )   → [source] ¶",,
+"
+ Tensor. storage_offset ( )   → ¶",,
+"
+ Tensor. storage_type ( )   → [source] ¶",,
+"
+ Tensor. stride ( dim )   → ¶",,
+"
+ Tensor. sub ( other ,  * ,  alpha )   → ¶",,
+"
+ Tensor. sub_ ( other ,  * ,  alpha )   → ¶",,
+"
+ Tensor. subtract ( other ,  * ,  alpha )   → ¶",,
+"
+ Tensor. subtract_ ( other ,  * ,  alpha )   → ¶",,
+"
+ Tensor. sum ( dim ,  keepdim ,  dtype )   → ¶",,
+"
+ Tensor. sum_to_size ( * )   → ¶",,
+"
+ Tensor. svd ( some ,  compute_uv ) ¶",,
+"
+ Tensor. swapaxes ( axis0 ,  axis1 )   → ¶",,
+"
+ Tensor. swapdims ( dim0 ,  dim1 )   → ¶",,
+"
+ Tensor. symeig ( eigenvectors ,  upper ) ¶",,
+"
+ Tensor. t ( )   → ¶",,
+"
+ Tensor. t_ ( )   → ¶",,
+"
+ Tensor. tensor_split ( indices_or_sections ,  dim )   → ¶",,
+"
+ Tensor. tile ( * )   → ¶",,
+"
+ Tensor. to_mkldnn ( )   → ¶",,
+"
+ Tensor. take ( indices )   → ¶",,
+"
+ Tensor. take_along_dim ( indices ,  dim )   → ¶",,
+"
+ Tensor. tan ( )   → ¶",,
+"
+ Tensor. tan_ ( )   → ¶",,
+"
+ Tensor. tanh ( )   → ¶",,
+"
+ Tensor. tanh_ ( )   → ¶",,
+"
+ Tensor. atanh ( )   → ¶",,
+"
+ Tensor. atanh_ ( other )   → ¶",,
+"
+ Tensor. arctanh ( )   → ¶",,
+"
+ Tensor. arctanh_ ( other )   → ¶",,
+"
+ Tensor. tolist ( )   → ¶",,
+"
+ Tensor. topk ( k ,  dim ,  largest ,  sorted ) ¶",,
+"
+ Tensor. to_dense ( )   → ¶",,
+"
+ Tensor. to_sparse ( sparseDims )   → ¶",,
+"
+ Tensor. to_sparse_csr ( )   → ¶",,
+"
+ Tensor. to_sparse_csc ( )   → ¶",,
+"
+ Tensor. to_sparse_bsr ( blocksize )   → ¶",,
+"
+ Tensor. to_sparse_bsc ( blocksize )   → ¶",,
+"
+ Tensor. trace ( )   → ¶",,
+"
+ Tensor. transpose ( dim0 ,  dim1 )   → ¶",,
+"
+ Tensor. transpose_ ( dim0 ,  dim1 )   → ¶",,
+"
+ Tensor. triangular_solve ( A ,  upper ,  transpose ,  unitriangular ) ¶",,
+"
+ Tensor. tril ( diagonal )   → ¶",,
+"
+ Tensor. tril_ ( diagonal )   → ¶",,
+"
+ Tensor. triu ( diagonal )   → ¶",,
+"
+ Tensor. triu_ ( diagonal )   → ¶",,
+"
+ Tensor. true_divide ( value )   → ¶",,
+"
+ Tensor. true_divide_ ( value )   → ¶",,
+"
+ Tensor. trunc ( )   → ¶",,
+"
+ Tensor. trunc_ ( )   → ¶",,
+"
+ Tensor. type ( dtype ,  non_blocking ,  ** )   → ¶",,
+"
+ Tensor. type_as ( tensor )   → ¶",,
+"
+ Tensor. unbind ( dim )   → ¶",,
+"
+ Tensor. unflatten ( dim ,  sizes )   → [source] ¶",,
+"
+ Tensor. unfold ( dimension ,  size ,  step )   → ¶",,
+"
+ Tensor. unique ( sorted ,  return_inverse ,  return_counts ,  dim ) [source] ¶",,
+"
+ Tensor. unique_consecutive ( return_inverse ,  return_counts ,  dim ) [source] ¶",,
+"
+ Tensor. unsqueeze ( dim )   → ¶",,
+"
+ Tensor. unsqueeze_ ( dim )   → ¶",,
+"
+ Tensor. values ( )   → ¶",,
+"
+ Tensor. var ( dim ,  unbiased ,  keepdim )   → ¶",,
+"
+ Tensor. vdot ( other )   → ¶",,
+"
+ Tensor. view ( * )   → ¶",,
+"
+ Tensor. view_as ( other )   → ¶",,
+"
+ Tensor. vsplit ( split_size_or_sections )   → ¶",,
+"
+ Tensor. where ( condition ,  y )   → ¶",,
+"
+ Tensor. xlogy ( other )   → ¶",,
+"
+ Tensor. xlogy_ ( other )   → ¶",,
+"
+ Tensor. zero_ ( )   → ¶",,
+"
+ torch.cuda. set_device ( device ) [source] ¶",,
+"
+ torch.cuda. current_device ( ) [source] ¶",,
+"
+ torch.autograd. backward ( tensors ,  grad_tensors ,  retain_graph ,  create_graph ,  grad_variables ,  inputs ) [source] ¶",,
+"
+ torch.autograd. grad ( outputs ,  inputs ,  grad_outputs ,  retain_graph ,  create_graph ,  only_inputs ,  allow_unused ,  is_grads_batched ) [source] ¶",,
+"
+ class torch.autograd.forward_ad. dual_level [source] ¶",,
+"
+ torch.autograd.forward_ad. make_dual ( tensor ,  tangent ,  * ,  level ) [source] ¶",,
+"
+ torch.autograd.forward_ad. unpack_dual ( tensor ,  * ,  level ) [source] ¶",,
+"
+ torch.autograd.functional. jacobian ( func ,  inputs ,  create_graph ,  strict ,  vectorize ,  strategy ) [source] ¶",,
+"
+ torch.autograd.functional. hessian ( func ,  inputs ,  create_graph ,  strict ,  vectorize ,  outer_jacobian_strategy ) [source] ¶",,
+"
+ torch.autograd.functional. vjp ( func ,  inputs ,  v ,  create_graph ,  strict ) [source] ¶",,
+"
+ torch.autograd.functional. jvp ( func ,  inputs ,  v ,  create_graph ,  strict ) [source] ¶",,
+"
+ torch.autograd.functional. vhp ( func ,  inputs ,  v ,  create_graph ,  strict ) [source] ¶",,
+"
+ torch.autograd.functional. hvp ( func ,  inputs ,  v ,  create_graph ,  strict ) [source] ¶",,
+"
+ static Function. forward ( ctx ,  * ,  ** ) [source] ¶",,
+"
+ torch.autograd. gradcheck ( func ,  inputs ,  * ,  eps ,  atol ,  rtol ,  raise_exception ,  check_sparse_nnz ,  nondet_tol ,  check_undefined_grad ,  check_grad_dtypes ,  check_batched_grad ,  check_batched_forward_grad ,  check_forward_ad ,  check_backward_ad ,  fast_mode ) [source] ¶",,
+"
+ static Function. backward ( ctx ,  * ) [source] ¶",,
+"
+ static Function. jvp ( ctx ,  * ) [source] ¶",,
+"
+ FunctionCtx. mark_dirty ( * ) [source] ¶",,
+"
+ FunctionCtx. mark_non_differentiable ( * ) [source] ¶",,
+"
+ FunctionCtx. save_for_backward ( * ) [source] ¶",,
+"
+ FunctionCtx. set_materialize_grads ( value ) [source] ¶",,
+"
+ torch.autograd. gradgradcheck ( func ,  inputs ,  grad_outputs ,  * ,  eps ,  atol ,  rtol ,  gen_non_contig_grad_outputs ,  raise_exception ,  nondet_tol ,  check_undefined_grad ,  check_grad_dtypes ,  check_batched_grad ,  check_fwd_over_rev ,  check_rev_over_rev ,  fast_mode ) [source] ¶",,
+"
+ profile. export_chrome_trace ( path ) [source] ¶",,
+"
+ profile. key_averages ( group_by_input_shape ,  group_by_stack_n ) [source] ¶",,
+"
+ property profile. self_cpu_time_total ¶",,
+"
+ profile. total_average ( ) [source] ¶",,
+"
+ torch.autograd.profiler. load_nvprof ( path ) [source] ¶",,
+"
+ class torch.cuda. StreamContext ( stream ) [source] ¶",,
+"
+ torch.cuda. is_available ( ) [source] ¶",,
+"
+ torch.cuda. can_device_access_peer ( device ,  peer_device ) [source] ¶",,
+"
+ torch.cuda. current_blas_handle ( ) [source] ¶",,
+"
+ torch.cuda. current_stream ( device ) [source] ¶",,
+"
+ class torch.cuda. Stream ( device ,  priority ,  ** ) [source] ¶",,
+"
+ torch.cuda. default_stream ( device ) [source] ¶",,
+"
+ class torch.cuda. device ( device ) [source] ¶",,
+"
+ torch.cuda. device_count ( ) [source] ¶",,
+"
+ class torch.cuda. device_of ( obj ) [source] ¶",,
+"
+ torch.cuda. get_arch_list ( ) [source] ¶",,
+"
+ torch.cuda. get_device_capability ( device ) [source] ¶",,
+"
+ torch.cuda. get_device_name ( device ) [source] ¶",,
+"
+ torch.cuda. get_device_properties ( device ) [source] ¶",,
+"
+ torch.cuda. get_gencode_flags ( ) [source] ¶",,
+"
+ torch.cuda. get_sync_debug_mode ( ) [source] ¶",,
+"
+ torch.cuda. init ( ) [source] ¶",,
+"
+ torch.cuda. ipc_collect ( ) [source] ¶",,
+"
+ torch.cuda. is_initialized ( ) [source] ¶",,
+"
+ torch.cuda. memory_usage ( device ) [source] ¶",,
+"
+ torch.cuda. set_stream ( stream ) [source] ¶",,
+"
+ torch.cuda. set_sync_debug_mode ( debug_mode ) [source] ¶",,
+"
+ torch.cuda. stream ( stream ) [source] ¶",,
+"
+ torch.cuda. synchronize ( device ) [source] ¶",,
+"
+ torch.cuda. utilization ( device ) [source] ¶",,
+"
+ exception torch.cuda. OutOfMemoryError ¶",,
+"
+ torch.cuda. get_rng_state ( device ) [source] ¶",,
+"
+ torch.cuda. get_rng_state_all ( ) [source] ¶",,
+"
+ torch.cuda. set_rng_state ( new_state ,  device ) [source] ¶",,
+"
+ torch.cuda. set_rng_state_all ( new_states ) [source] ¶",,
+"
+ torch.cuda. manual_seed ( seed ) [source] ¶",,
+"
+ torch.cuda. manual_seed_all ( seed ) [source] ¶",,
+"
+ torch.cuda. seed ( ) [source] ¶",,
+"
+ torch.cuda. seed_all ( ) [source] ¶",,
+"
+ torch.cuda. initial_seed ( ) [source] ¶",,
+"
+ torch.cuda.comm. broadcast ( tensor ,  devices ,  * ,  out ) [source] ¶",,
+"
+ torch.cuda.comm. broadcast_coalesced ( tensors ,  devices ,  buffer_size ) [source] ¶",,
+"
+ torch.cuda.comm. reduce_add ( inputs ,  destination ) [source] ¶",,
+"
+ torch.cuda.comm. scatter ( tensor ,  devices ,  chunk_sizes ,  dim ,  streams ,  * ,  out ) [source] ¶",,
+"
+ torch.cuda.comm. gather ( tensors ,  dim ,  destination ,  * ,  out ) [source] ¶",,
+"
+ class torch.cuda. ExternalStream ( stream_ptr ,  device ,  ** ) [source] ¶",,
+"
+ class torch.cuda. Event ( enable_timing ,  blocking ,  interprocess ) [source] ¶",,
+"
+ torch.cuda. is_current_stream_capturing ( ) [source] ¶",,
+"
+ torch.cuda. graph_pool_handle ( ) [source] ¶",,
+"
+ class torch.cuda. CUDAGraph [source] ¶",,
+"
+ class torch.cuda. graph ( cuda_graph ,  pool ,  stream ) [source] ¶",,
+"
+ torch.cuda. make_graphed_callables ( callables ,  sample_args ,  num_warmup_iters ) [source] ¶",,
+"
+ torch.cuda. empty_cache ( ) [source] ¶",,
+"
+ torch.cuda. list_gpu_processes ( device ) [source] ¶",,
+"
+ torch.cuda. mem_get_info ( device ) [source] ¶",,
+"
+ torch.cuda. memory_stats ( device ) [source] ¶",,
+"
+ torch.cuda. memory_summary ( device ,  abbreviated ) [source] ¶",,
+"
+ torch.cuda. memory_snapshot ( ) [source] ¶",,
+"
+ torch.cuda. memory_allocated ( device ) [source] ¶",,
+"
+ torch.cuda. max_memory_allocated ( device ) [source] ¶",,
+"
+ torch.cuda. reset_max_memory_allocated ( device ) [source] ¶",,
+"
+ torch.cuda. memory_reserved ( device ) [source] ¶",,
+"
+ torch.cuda. max_memory_reserved ( device ) [source] ¶",,
+"
+ torch.cuda. set_per_process_memory_fraction ( fraction ,  device ) [source] ¶",,
+"
+ torch.cuda. memory_cached ( device ) [source] ¶",,
+"
+ torch.cuda. max_memory_cached ( device ) [source] ¶",,
+"
+ torch.cuda. reset_max_memory_cached ( device ) [source] ¶",,
+"
+ torch.cuda. reset_peak_memory_stats ( device ) [source] ¶",,
+"
+ torch.cuda. caching_allocator_alloc ( size ,  device ,  stream ) [source] ¶",,
+"
+ torch.cuda. caching_allocator_delete ( mem_ptr ) [source] ¶",,
+"
+ torch.cuda.nvtx. mark ( msg ) [source] ¶",,
+"
+ torch.cuda.nvtx. range_push ( msg ) [source] ¶",,
+"
+ torch.cuda.nvtx. range_pop ( ) [source] ¶",,
+"
+ torch.cuda.jiterator. _create_jit_fn ( code_string ,  ** ) [source] ¶","code_string=""template <typename T> T my_gelu(T a) { return a > 0 ? a : 0; }""
+my_gelu=create_jit_fn(code_string)
+my_lib=torch.library.Library(""aten"",""IMPL"")
+my_lib.impl('aten::gelu',my_gelu,""CUDA"")
+# torch.nn.GELU and torch.nn.function.gelu are now overridden
+a=torch.rand(3,device='cuda')
+torch.allclose(torch.nn.functional.gelu(a),torch.nn.functional.relu(a))
+",
+"
+ torch.cuda.jiterator. _create_multi_output_jit_fn ( code_string ,  num_outputs ,  ** ) [source] ¶",,
+"
+ torch.linalg. inv_ex ( A ,  * ,  check_errors ,  out ) ¶",,
+"
+ torch.linalg. cholesky ( A ,  * ,  upper ,  out )   → ¶",,
+"
+ torch.linalg. cholesky_ex ( A ,  * ,  upper ,  check_errors ,  out ) ¶",,
+"
+ torch.linalg. lu ( A ,  * ,  pivot ,  out ) ¶",,
+"
+ torch.linalg. lu_solve ( LU ,  pivots ,  B ,  * ,  left ,  adjoint ,  out )   → ¶",,
+"
+ torch.linalg. qr ( A ,  mode ,  * ,  out ) ¶",,
+"
+ torch.linalg. eigh ( A ,  UPLO ,  * ,  out ) ¶",,
+"
+ torch.linalg. svd ( A ,  full_matrices ,  * ,  driver ,  out ) ¶",,
+"
+ torch.linalg. svdvals ( A ,  * ,  driver ,  out )   → ¶",,
+"
+ Optimizer. state_dict ( ) [source] ¶",,
+"
+ Optimizer. step ( closure ) [source] ¶",,
+"
+ torch.fft. fft ( input ,  n ,  dim ,  norm ,  * ,  out )   → ¶",,
+"
+ torch.fft. ifft ( input ,  n ,  dim ,  norm ,  * ,  out )   → ¶",,
+"
+ torch.fft. fft2 ( input ,  s ,  dim ,  norm ,  * ,  out )   → ¶",,
+"
+ torch.fft. ifft2 ( input ,  s ,  dim ,  norm ,  * ,  out )   → ¶",,
+"
+ torch.fft. fftn ( input ,  s ,  dim ,  norm ,  * ,  out )   → ¶",,
+"
+ torch.fft. ifftn ( input ,  s ,  dim ,  norm ,  * ,  out )   → ¶",,
+"
+ torch.fft. rfft ( input ,  n ,  dim ,  norm ,  * ,  out )   → ¶",,
+"
+ torch.fft. irfft ( input ,  n ,  dim ,  norm ,  * ,  out )   → ¶",,
+"
+ torch.fft. rfft2 ( input ,  s ,  dim ,  norm ,  * ,  out )   → ¶",,
+"
+ torch.fft. irfft2 ( input ,  s ,  dim ,  norm ,  * ,  out )   → ¶",,
+"
+ torch.fft. rfftn ( input ,  s ,  dim ,  norm ,  * ,  out )   → ¶",,
+"
+ torch.fft. irfftn ( input ,  s ,  dim ,  norm ,  * ,  out )   → ¶",,
+"
+ torch.fft. hfft ( input ,  n ,  dim ,  norm ,  * ,  out )   → ¶",,
+"
+ torch.fft. ihfft ( input ,  n ,  dim ,  norm ,  * ,  out )   → ¶",,
+"
+ torch.fft. hfft2 ( input ,  s ,  dim ,  norm ,  * ,  out )   → ¶",,
+"
+ torch.fft. ihfft2 ( input ,  s ,  dim ,  norm ,  * ,  out )   → ¶",,
+"
+ torch.fft. hfftn ( input ,  s ,  dim ,  norm ,  * ,  out )   → ¶",,
+"
+ torch.fft. ihfftn ( input ,  s ,  dim ,  norm ,  * ,  out )   → ¶",,
+"
+ torch.fft. fftfreq ( n ,  d ,  * ,  out ,  dtype ,  layout ,  device ,  requires_grad )   → ¶",,
+"
+ torch.fft. rfftfreq ( n ,  d ,  * ,  out ,  dtype ,  layout ,  device ,  requires_grad )   → ¶",,
+"
+ torch.fft. fftshift ( input ,  dim )   → ¶",,
+"
+ torch.fft. ifftshift ( input ,  dim )   → ¶",,
+"
+ torch.jit. script ( obj ,  optimize ,  _frames_up ,  _rcb ,  example_inputs ) [source] ¶",,
+"
+ class torch.jit. ScriptModule [source] ¶",,
+"
+ class torch.jit. ScriptFunction ¶",,
+"
+ torch.jit. trace ( func ,  example_inputs ,  optimize=None ,  check_trace=True ,  check_inputs=None ,  check_tolerance=1e-05 ,  strict=True ,  _force_outplace=False ,  _module_class=None ,  _compilation_unit=<torch.jit.CompilationUnit ) [source] ¶",,
+"
+ torch.jit. script_if_tracing ( fn ) [source] ¶",,
+"
+ torch.jit. trace_module ( mod ,  inputs ,  optimize=None ,  check_trace=True ,  check_inputs=None ,  check_tolerance=1e-05 ,  strict=True ,  _force_outplace=False ,  _module_class=None ,  _compilation_unit=<torch.jit.CompilationUnit ) [source] ¶",,
+"
+ torch.jit. fork ( func ,  * ,  ** ) [source] ¶",,
+"
+ torch.jit. wait ( future ) [source] ¶",,
+"
+ torch.jit. freeze ( mod ,  preserved_attrs ,  optimize_numerics ) [source] ¶",,
+"
+ torch.jit. optimize_for_inference ( mod ,  other_methods ) [source] ¶",,
+"
+ torch.jit. enable_onednn_fusion ( enabled ) [source] ¶",,
+"
+ torch.jit. onednn_fusion_enabled ( ) [source] ¶",,
+"
+ torch.jit. set_fusion_strategy ( strategy ) [source] ¶",,
+"
+ class torch.jit. strict_fusion [source] ¶",,
+"
+ torch.jit. save ( m ,  f ,  _extra_files ) [source] ¶",,
+"
+ torch.jit. load ( f ,  map_location ,  _extra_files ) [source] ¶",,
+"
+ torch.jit. ignore ( drop ,  ** ) [source] ¶",,
+"
+ torch.jit. unused ( fn ) [source] ¶",,
+"
+ torch.jit. isinstance ( obj ,  target_type ) [source] ¶",,
+"
+ class torch.jit. Attribute ( value ,  type ) [source] ¶",,
+"
+ torch.jit. annotate ( the_type ,  the_value ) [source] ¶",,
+"
+ torch.linalg. norm ( A ,  ord ,  dim ,  keepdim ,  * ,  out ,  dtype )   → ¶",">>> A=torch.arange(8,dtype=torch.float).reshape(2,2,2)
+>>> LA.norm(A,dim=(1,2))
+tensor([ 3.7417, 11.2250])
+>>> LA.norm(A[0,:,:]),LA.norm(A[1,:,:])
+(tensor(3.7417), tensor(11.2250))
+",
+"
+ torch.linalg. vector_norm ( x ,  ord ,  dim ,  keepdim ,  * ,  dtype ,  out )   → ¶",,
+"
+ torch.linalg. matrix_norm ( A ,  ord ,  dim ,  keepdim ,  * ,  dtype ,  out )   → ¶",,
+"
+ torch.linalg. diagonal ( A ,  * ,  offset ,  dim1 ,  dim2 )   → ¶",,
+"
+ torch.linalg. cond ( A ,  p ,  * ,  out )   → ¶",,
+"
+ torch.linalg. matrix_rank ( A ,  * ,  atol ,  rtol ,  hermitian ,  out )   → ¶",,
+"
+ torch.linalg. eig ( A ,  * ,  out ) ¶",,
+"
+ torch.linalg. eigvals ( A ,  * ,  out )   → ¶",,
+"
+ torch.linalg. eigvalsh ( A ,  UPLO ,  * ,  out )   → ¶",,
+"
+ torch.linalg. solve ( A ,  B ,  * ,  left ,  out )   → ¶",,
+"
+ torch.linalg. solve_triangular ( A ,  B ,  * ,  upper ,  left ,  unitriangular ,  out )   → ¶",,
+"
+ torch.linalg. lstsq ( A ,  B ,  rcond ,  * ,  driver ) ¶",,
+"
+ torch.linalg. cross ( input ,  other ,  * ,  dim ,  out )   → ¶",,
+"
+ torch.linalg. matmul ( input ,  other ,  * ,  out )   → ¶",,
+"
+ torch.linalg. vecdot ( x ,  y ,  * ,  dim ,  out )   → ¶",,
+"
+ torch.linalg. multi_dot ( tensors ,  * ,  out ) ¶",,
+"
+ torch.linalg. tensorinv ( A ,  ind ,  * ,  out )   → ¶",,
+"
+ torch.linalg. tensorsolve ( A ,  B ,  dims ,  * ,  out )   → ¶",,
+"
+ torch.linalg. vander ( x ,  N )   → ¶",,
+"
+ torch.linalg. solve_ex ( A ,  B ,  * ,  left ,  check_errors ,  out ) ¶",,
+"
+ torch.linalg. lu_factor_ex ( A ,  * ,  pivot ,  check_errors ,  out ) ¶",,
+"
+ torch.linalg. ldl_factor ( A ,  * ,  hermitian ,  out ) ¶",,
+"
+ torch.linalg. ldl_factor_ex ( A ,  * ,  hermitian ,  check_errors ,  out ) ¶",,
+"
+ torch.linalg. ldl_solve ( LD ,  pivots ,  B ,  * ,  hermitian ,  out )   → ¶",,
+"
+ class torch.onnx. JitScalarType ( value ) ¶",,
+"
+ Optimizer. add_param_group ( param_group ) [source] ¶",,
+"
+ Optimizer. load_state_dict ( state_dict ) [source] ¶",,
+"
+ Optimizer. zero_grad ( set_to_none ) [source] ¶",,
+"
+ class torch.optim. Adadelta ( params ,  lr ,  rho ,  eps ,  weight_decay ,  foreach ,  * ,  maximize ) [source] ¶",,
+"
+ class torch.optim. Adagrad ( params ,  lr ,  lr_decay ,  weight_decay ,  initial_accumulator_value ,  eps ,  foreach ,  * ,  maximize ) [source] ¶",,
+"
+ class torch.optim. Adam ( params ,  lr ,  betas ,  eps ,  weight_decay ,  amsgrad ,  * ,  foreach ,  maximize ,  capturable ,  differentiable ,  fused ) [source] ¶",,
+"
+ class torch.optim. AdamW ( params ,  lr ,  betas ,  eps ,  weight_decay ,  amsgrad ,  * ,  maximize ,  foreach ,  capturable ) [source] ¶",,
+"
+ class torch.optim. SparseAdam ( params ,  lr ,  betas ,  eps ,  maximize ) [source] ¶",,
+"
+ class torch.optim. Adamax ( params ,  lr ,  betas ,  eps ,  weight_decay ,  foreach ,  * ,  maximize ) [source] ¶",,
+"
+ class torch.optim. ASGD ( params ,  lr ,  lambd ,  alpha ,  t0 ,  weight_decay ,  foreach ,  maximize ) [source] ¶",,
+"
+ class torch.optim. LBFGS ( params ,  lr ,  max_iter ,  max_eval ,  tolerance_grad ,  tolerance_change ,  history_size ,  line_search_fn ) [source] ¶",,
+"
+ class torch.optim. NAdam ( params ,  lr ,  betas ,  eps ,  weight_decay ,  momentum_decay ,  foreach ) [source] ¶",,
+"
+ class torch.optim. RAdam ( params ,  lr ,  betas ,  eps ,  weight_decay ,  foreach ) [source] ¶",,
+"
+ class torch.optim. RMSprop ( params ,  lr ,  alpha ,  eps ,  weight_decay ,  momentum ,  centered ,  foreach ,  maximize ,  differentiable ) [source] ¶",,
+"
+ class torch.optim. Rprop ( params ,  lr ,  etas ,  step_sizes ,  foreach ,  maximize ) [source] ¶",,
+"
+ class torch.optim. SGD ( params ,  lr=<required ,  momentum=0 ,  dampening=0 ,  weight_decay=0 ,  nesterov=False ,  * ,  maximize=False ,  foreach=None ,  differentiable=False ) [source] ¶",,
+"
+ class torch.optim.lr_scheduler. ReduceLROnPlateau ( optimizer ,  mode ,  factor ,  patience ,  threshold ,  threshold_mode ,  cooldown ,  min_lr ,  eps ,  verbose ) [source] ¶",,
+"
+ class torch.optim.lr_scheduler. LambdaLR ( optimizer ,  lr_lambda ,  last_epoch ,  verbose ) [source] ¶",,
+"
+ class torch.optim.lr_scheduler. MultiplicativeLR ( optimizer ,  lr_lambda ,  last_epoch ,  verbose ) [source] ¶",,
+"
+ class torch.optim.lr_scheduler. StepLR ( optimizer ,  step_size ,  gamma ,  last_epoch ,  verbose ) [source] ¶",,
+"
+ class torch.optim.lr_scheduler. MultiStepLR ( optimizer ,  milestones ,  gamma ,  last_epoch ,  verbose ) [source] ¶",,
+"
+ class torch.optim.lr_scheduler. ConstantLR ( optimizer ,  factor ,  total_iters ,  last_epoch ,  verbose ) [source] ¶",,
+"
+ class torch.optim.lr_scheduler. LinearLR ( optimizer ,  start_factor ,  end_factor ,  total_iters ,  last_epoch ,  verbose ) [source] ¶",,
+"
+ class torch.optim.lr_scheduler. ExponentialLR ( optimizer ,  gamma ,  last_epoch ,  verbose ) [source] ¶",,
+"
+ class torch.optim.lr_scheduler. PolynomialLR ( optimizer ,  total_iters ,  power ,  last_epoch ,  verbose ) [source] ¶",,
+"
+ class torch.optim.lr_scheduler. CosineAnnealingLR ( optimizer ,  T_max ,  eta_min ,  last_epoch ,  verbose ) [source] ¶",,
+"
+ class torch.optim.lr_scheduler. ChainedScheduler ( schedulers ) [source] ¶",,
+"
+ class torch.optim.lr_scheduler. SequentialLR ( optimizer ,  schedulers ,  milestones ,  last_epoch ,  verbose ) [source] ¶",,
+"
+ class torch.optim.lr_scheduler. CyclicLR ( optimizer ,  base_lr ,  max_lr ,  step_size_up ,  step_size_down ,  mode ,  gamma ,  scale_fn ,  scale_mode ,  cycle_momentum ,  base_momentum ,  max_momentum ,  last_epoch ,  verbose ) [source] ¶",,
+"
+ class torch.optim.lr_scheduler. OneCycleLR ( optimizer ,  max_lr ,  total_steps ,  epochs ,  steps_per_epoch ,  pct_start ,  anneal_strategy ,  cycle_momentum ,  base_momentum ,  max_momentum ,  div_factor ,  final_div_factor ,  three_phase ,  last_epoch ,  verbose ) [source] ¶",,
+"
+ class torch.optim.lr_scheduler. CosineAnnealingWarmRestarts ( optimizer ,  T_0 ,  T_mult ,  eta_min ,  last_epoch ,  verbose ) [source] ¶",,
+"
+ class torch.ao.nn.quantized. FloatFunctional [source] ¶",,
+"
+ Tensor. is_sparse_csr ¶",,
+"
+ Tensor. coalesce ( )   → ¶",,
+"
+ Tensor. is_coalesced ( )   → ¶",,
+"
+ torch.sparse. softmax ( input ,  dim ,  * ,  dtype )   → ¶",,
+"
+ torch. sparse_csr_tensor ( crow_indices ,  col_indices ,  values ,  size ,  * ,  dtype ,  device ,  requires_grad )   → ¶",,
+"
+ torch. sparse_csc_tensor ( ccol_indices ,  row_indices ,  values ,  size ,  * ,  dtype ,  device ,  requires_grad )   → ¶",,
+"
+ torch. sparse_bsr_tensor ( crow_indices ,  col_indices ,  values ,  size ,  * ,  dtype ,  device ,  requires_grad )   → ¶",,
+"
+ torch. sparse_bsc_tensor ( ccol_indices ,  row_indices ,  values ,  size ,  * ,  dtype ,  device ,  requires_grad )   → ¶",,
+"
+ torch. sparse_compressed_tensor ( compressed_indices ,  plain_indices ,  values ,  size ,  * ,  dtype ,  layout ,  device ,  requires_grad )   → ¶",,
+"
+ torch.sparse. mm ( ) ¶",,
+"
+ torch. hspmm ( mat1 ,  mat2 ,  * ,  out )   → ¶",,
+"
+ torch.sparse. addmm ( mat ,  mat1 ,  mat2 ,  * ,  beta ,  alpha )   → ¶",,
+"
+ Tensor. to_sparse_coo ( ) [source] ¶",,
+"
+ Tensor. sparse_resize_ ( size ,  sparse_dim ,  dense_dim )   → ¶",,
+"
+ Tensor. sparse_resize_and_clear_ ( size ,  sparse_dim ,  dense_dim )   → ¶",,
+"
+ Tensor. crow_indices ( )   → ¶",,
+"
+ Tensor. col_indices ( )   → ¶",,
+"
+ Tensor. row_indices ( ) ¶",,
+"
+ Tensor. ccol_indices ( ) ¶",,
+"
+ torch.sparse. sum ( input ,  dim ,  dtype ) [source] ¶",,
+"
+ torch.sparse. sampled_addmm ( input ,  mat1 ,  mat2 ,  * ,  beta ,  alpha ,  out )   → ¶",,
+"
+ torch.sparse. log_softmax ( input ,  dim ,  * ,  dtype )   → ¶",,
+"
+ torch.sparse. spdiags ( diagonals ,  offsets ,  shape ,  layout )   → ¶",">>> diags=torch.tensor([[1,2],[3,4]])
+>>> offsets=torch.tensor([0,-1])
+>>> torch.sparse.spdiags(diags,offsets,(5,5)).to_dense()
+tensor([[1, 0, 0, 0, 0],
+        [3, 2, 0, 0, 0],
+        [0, 4, 0, 0, 0],
+        [0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0]])
+",">>> diags=torch.tensor([[1,2,3],[1,2,3],[1,2,3]])
+>>> torch.sparse.spdiags(diags,torch.tensor([0,1,2]),(5,5)).to_dense()
+tensor([[1, 2, 3, 0, 0],
+        [0, 2, 3, 0, 0],
+        [0, 0, 3, 0, 0],
+        [0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0]])
+"

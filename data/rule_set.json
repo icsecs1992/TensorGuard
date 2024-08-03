@@ -1,0 +1,250 @@
+{
+    "entry1":
+        {
+            "example1":
+                {
+                    "Deleted lines": "-  TORCH_CHECK(std > 0.0, \"normal_ expects std > 0.0, but found std=\", std);  // TODO: dedupe",
+                    "Added lines": "+    OP_REQUIRES(\n+        context, dense_size > 0 && product > 0,\n+        errors::InvalidArgument(\n+            \"Input tensor has \", nnz, \" non zero elements but input shape (\",\n+            input_shape.DebugString(), \") or output shape (\",\n+            output_shape.DebugString(), \") is empty\"));",
+                    "Label": "YES",
+                    "Commit message": "Don't do any work when reshaping 0 elements sparse tensor. If reshaping to 0 elements tensor, check that input has no elements. If reshaping no elements input, check that output has no elements.",
+                    "commit_link": "https://github.com/tensorflow/tensorflow/commit/4923de56ec94fff7770df259ab7f2288a74feb41"
+                },
+            "example2":
+                {
+                    "Deleted lines": "-    if dim:",
+                    "Added lines": "+    if dim is not None:",
+                    "Label": "YES",
+                    "Commit message": "handle the case in acc_ops.sum when dim == 0, differentiating it from the case when dim is None" , 
+                    "commit_link": "https://github.com/pytorch/pytorch/commit/c99277e177cf16736262251c7e92ea5e9ba2c5c2"
+                }
+            
+        },
+    "entry2":
+        {
+            "example1":
+                {
+                    "Deleted lines": "-      self.dim() <= output_size.size(),",
+                    "Added lines": "+      static_cast<size_t>(self.dim()) <= output_size.size(),",
+                    "Label": "YES",
+                    "Commit message": "aten: Ensure dim is size_t ",
+                    "commit_link": "https://github.com/pytorch/pytorch/commit/a69f427f957a37eee9c1dd5df681f30ab38ed3e4"
+                },
+            "example2":
+                {
+                    "Deleted lines": "",
+                    "Added lines": "+  if (value.isTensor() && argument.type() == TensorType::get()) {\n+    // Fast-path for the common case\n+    return;\n+  }",
+                    "Label": "NO",
+                    "Commit message": "[JIT] Optimize FunctionSchema::checkArg for the Tensor case.",
+                    "commit_link": "https://github.com/pytorch/pytorch/commit/3611d26a25bd889627403a808ea667ac99c09904"
+                }
+        },
+    "entry3":
+        {
+            "example1":
+                {
+                    "Deleted lines": "-",
+                    "Added lines": "+  if (cuda_stream_ != nullptr) {\n+    LOG(FATAL) <<  // Crash OK.\n+        \"Trying to set the stream twice. This isn't supported. \";\n+  }\n+",
+                    "Label": "YES",
+                    "Commit message": "Add a check",
+                    "commit_link": "https://github.com/tensorflow/tensorflow/commit/c5019e2156c749d35ec786ff7946a55006d9ba91"
+                },
+            "example2":
+                {
+                    "Deleted lines": "-    if (data == nullptr) {",
+                    "Added lines": "+    if (is_empty()) {",
+                    "Label": "YES",
+                    "Commit message": "[S337714] Back out [PyTorch] Don't do extra numel() check in TensorImpl::data()",
+                    "commit_link": "https://github.com/pytorch/pytorch/commit/bde7b81f34925491fbcbb9e355697eb594e36923"
+                }
+        },
+    "entry4":
+        {
+            "example1":
+                {
+                    "Deleted lines": "-    TORCH_CHECK(i <= UINT32_MAX);\n-    iterShapeData[i] = (uint32_t)(iterShape[i]);\n-      strides[i][offset] = iter.strides(offset)[i];",
+                    "Added lines": "+  TORCH_CHECK(iter.can_use_32bit_indexing(), \"Can't be indexed using 32-bit iterator\");\n+    iterShapeData[i] = static_cast<uint32_t>(iterShape[i]);\n+      strides[i][offset] = static_cast<uint32_t>(iter.strides(offset)[i]);",
+                    "Label": "YES",
+                    "Commit message": "[MPS] Fix boundary checks in generateKernelOffsets",
+                    "commit_link": "https://github.com/pytorch/pytorch/commit/f6639359357452de8bfc691430396ded98ea399c"
+                },
+            "example2":
+                {
+                    "Deleted lines": "-    } while (IsTrailByte(in[*pos]) && *pos < size);",
+                    "Added lines": "+    } while (*pos < size && IsTrailByte(in[*pos]));",
+                    "Label": "YES",
+                    "Commit message": "Fix out-of-bounds StringPiece access in ForwardNUTF8CharPositions()Even a simple invocation like 'int p = 0; ForwardNUTF8CharPositions(a, 1, &p);' will cause an invalid access to in[1]. Checking for *pos < size before that access fixes this issue.Luckily the invalid access has only ever happened when the *pos < size part of the condition is false and thus the outcome of the IsTrailByte check is irrelevant. Thus this probably hasn't had any observable impact except when extra guards against invalid memory accesses are enabled.",
+                    "commit_link": "https://github.com/tensorflow/tensorflow/commit/1908d7ef706f0f3f8c7a300068355bf795fb3d17"
+                }
+        },
+    "entry5":
+        {
+            "example1":
+                {
+                    "Deleted lines": "-          \"cannot compute \", op->Name(), \" as input #\", i,",
+                    "Added lines": "+          \"cannot compute \", op->Name(), \" as input #\", i, \"(zero-based)\",",
+                    "Label": "YES",
+                    "Commit message": "Minor change for better error msg in eager input type checking",
+                    "commit_link": "https://github.com/tensorflow/tensorflow/commit/f0bf6c5191d224f229808f4b321158d890a481e0"
+                },
+            "example2":
+                {
+                    "Deleted lines": "-                error_message += 'XPU Autocast only supports dtype of torch.bfloat16 currently.'",
+                    "Added lines": "+                error_message += 'XPU Autocast only supports dtypes of torch.bfloat16 and torch.float16 currently.'",
+                    "Label": "YES",
+                    "Commit message": " change error_message for XPU Autocast data type check (#102073)  XPU autocast supports bf16 and fp16 data types, we are going to change the error_message for that.",
+                    "commit_link": "https://github.com/pytorch/pytorch/commit/faa7eb81c634492b70fcc0327622bb0aa812cacd"
+                }
+        },
+    "entry6":
+        {
+            "example1":
+                {
+                    "Deleted lines": "-        if not torch.cuda.is_available() and self.device == 'cuda':",
+                    "Added lines": "+        if torch.cuda.amp.common.amp_definitely_not_available() and self.device == 'cuda':",
+                    "Label": "YES",
+                    "Commit message": " Update cuda amp to also check xla device (#63413)  Summary: Fixes pytorch/xla#3086. Pytorch/XLA:GPU also use cuda amp. I verified the pt/xla `test_autocast` with this fix and all test passed.",
+                    "commit_link": "https://github.com/pytorch/pytorch/commit/30e1c74dc19ae2b622b46ebcdb7972c42775ac80"
+                },
+            "example2":
+                {
+                    "Deleted lines": "",
+                    "Added lines": "+  if (num_conv2d_gpu == 0) return false;\n+",
+                    "Label": "YES",
+                    "Commit message": " Fixed division by zero, by checking the number of GPUs in GenericLayoutOptimizer.",
+                    "commit_link": "https://github.com/tensorflow/tensorflow/commit/b234ff0ee4ce87d21a3e5306b678e1fb4b1fedfc"
+                }
+        },
+    "entry7":
+        {
+            "example1":
+                {
+                    "Deleted lines": "-#if CUDA_VERSION < 10000",
+                    "Added lines": "+#if defined(CUDA_VERSION) && (CUDA_VERSION < 10000)",
+                    "Label": "YES",
+                    "Commit message": "make sure not to check `CUDA_VERSION` if it is not defined",
+                    "commit_link": "https://github.com/pytorch/pytorch/commit/563bbeb8905f4cea0bc5353dc12518c61113128e"
+                },
+            "example2":
+                {
+                    "Deleted lines": "-#if CUDA_VERSION >= 12000\n-#endif  // CUDA_VERSION >= 12000\n-#if CUDA_VERSION >= 12000\n-#endif  // CUDA_VERSION >= 12000",
+                    "Added lines": "+#if CUDA_VERSION >= 12030\n+#endif  // CUDA_VERSION >= 12030\n+#if CUDA_VERSION >= 12030\n+#endif  // CUDA_VERSION >= 12030",
+                    "Label": "YES",
+                    "Commit message": " only found CU_MEM_LOCATION_TYPE_HOST, `CU_MEM_LOCATION_TYPE_HOST_NU…  …MA` and `CU_MEM_LOCATION_TYPE_HOST_NUMA_CURRENT` in [CUDA version 12.3.1 doc](https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__TYPES.html), and didn't find the evidence of their existence in formal versions' doc, so suggest to use check `CUDA_VERSION` at `12030` here, for `maxSize`, resolved directly in the same way",
+                    "commit_link": "https://github.com/tensorflow/tensorflow/commit/6c472f6632c4864da749e7a4aee8c001a905287f"
+                }
+        },
+    "entry8":
+        {
+            "example1":
+                {
+                    "Deleted lines": "-    if context.executing_eagerly():\n-      trainable = variable._trainable  # pylint: disable=protected-access",
+                    "Added lines": "+    if ops.executing_eagerly_outside_functions():\n+      trainable = variable.trainable",
+                    "Label": "YES",
+                    "Commit message": " Update RNNCell._rnn_get_variable to use Variable._trainable in TF2 mode.  When using a legacy RNNCell in TF2 mode within a tf.function the check led to treating a tf.bool tensor as a Python bool. This change makes use within a tf.function use the same logic that is used in Eager mode.",
+                    "commit_link": "https://github.com/tensorflow/tensorflow/commit/0317f64491ba42376d96b157983a02d8b31b679e"
+                },
+            "example2":
+                {
+                    "Deleted lines": "",
+                    "Added lines": "+\n+    Raises:\n+      RuntimeError: When not called eagerly.\n+    if not context.executing_eagerly():\n+      raise RuntimeError(\"is_dtensor must be called eagerly.\")",
+                    "Label": "YES",
+                    "Commit message": "Update the is_dtensor check to only run in eager mode.",
+                    "commit_link": "https://github.com/tensorflow/tensorflow/commit/8c3822edbb31cf71cedaf49f2167e45c1e2d0b83"
+                }
+        },
+    "entry9":
+        {
+            "example1":
+                {
+                    "Deleted lines": "-                if self.has_backedge():",
+                    "Added lines": "+                if self.has_backedge() and self.should_compile_partial_graph():",
+                    "Label": "YES",
+                    "Commit message": "When nopython=True, Dynamo can't allow graph breaks. Although `len(compiler.captured_graphs)` is 2, no error was thrown during the compilation. This observation conflicts with `nopython=True`. After some digging, I found a check is missed before making graph break. This PR adds it.",
+                    "commit_link": "https://github.com/pytorch/pytorch/commit/bdbd3ed312e0fc81e75302239ea78b3445fe95e7"
+                },
+            "example2":
+                {
+                    "Deleted lines": "",
+                    "Added lines": "+      if (graph->FindInputs(node->id).size() != 1) {\n+        return {TransformStatus::DECLINED,\n+",
+                    "Label": "YES",
+                    "Commit message": " Fixed add bias transformation.  Added check for convolution with dynamic weights.",
+                    "commit_link": "https://github.com/tensorflow/tensorflow/commit/264eb6ed1dbfb5e078c7dd977da8d7e633106fc5"
+                }
+        },
+    "entry10":
+        {
+            "example1":
+                {
+                    "Deleted lines": "",
+                    "Added lines": "+                    if orig.is_quantized:\n+                        orig = orig.dequantize()\n+                    if ref.is_quantized:\n+                        ref = ref.dequantize()",
+                    "Label": "YES",
+                    "Commit message": "TorchScript add check if quantized",
+                    "commit_link": "https://github.com/pytorch/pytorch/commit/acd51e13f727af22e6c9e579518362898f1b12e6"
+                },
+            "example2":
+                {
+                    "Deleted lines": "-      // reference CPU path.\n-      Expect(is_accelerator_specified ||\n-                 (builtin->filter_width * builtin->filter_height <= 256),\n-             NNAPIValidationFailureType::kUnsupportedOperandSize,\n-             \"Large filter window would overflow on the reference CPU path\",\n-             &val_ctx);",
+                    "Added lines": "+      // quantized reference CPU path.\n+      if (IsQuantized(context->tensors[node->inputs->data[0]].type)) {\n+        Expect(is_accelerator_specified ||\n+                   (builtin->filter_width * builtin->filter_height <= 256),\n+               NNAPIValidationFailureType::kUnsupportedOperandSize,\n+               \"Large filter window would overflow on the reference CPU path\",\n+               &val_ctx);\n+      }",
+                    "Label": "YES",
+                    "Commit message": " Make NNAPI delegate only apply overflow check to quantized average_pool",
+                    "commit_link": "https://github.com/tensorflow/tensorflow/commit/2adf1114d4dc7ca30e5117acd2dc7aeb3279feb7"
+                }
+        },
+    "entry11":
+        {
+            "example1":
+                {
+                    "Deleted lines": "-                if self.args.ci and (\n-                    (\n-                        isinstance(e, RuntimeError)\n-                        and \"Internal Triton PTX codegen error\" in str(e)\n-                    or (isinstance(e, KeyError) and \"cubin\" in str(e))",
+                    "Added lines": "+from torch._dynamo.exc import BackendCompilerFailed\n+                if (\n+                    self.args.ci\n+                    and isinstance(e, BackendCompilerFailed)\n+                    and (\n+                        \"Internal Triton PTX codegen error\" in str(e)\n+                        or \"cubin\" in str(e)",
+                    "Label": "YES",
+                    "Commit message": " [inductor] Check for BackendCompilerFailed on CI (#91634)  Summary: #91283 skips certain random triton failure on CI, but we need to check against the BackendCompilerFailed exception type. ",
+                    "commit_link": "https://github.com/pytorch/pytorch/commit/6bf0e3b697ce688bc8325440dea3b51fea571c3d"
+                },
+            "example2":
+                {
+                    "Deleted lines": "-    # It is not expected for PG to be wrapped many times, but support it just\n-    # in case\n-    while isinstance(pg, _ProcessGroupWrapper):\n-        pg = pg.wrapped_pg",
+                    "Added lines": "+    # Gate PG wrapper check on Gloo availability.\n+    if _GLOO_AVAILABLE:\n+        # It is not expected for PG to be wrapped many times, but support it just\n+        # in case\n+        while isinstance(pg, _ProcessGroupWrapper):\n+",
+                    "Label": "YES",
+                    "Commit message": "_ProcessGroupWrapper check needs to be gated on Gloo availability, this fails when gloo is not avail_ProcessGroupWrapper check needs to be gated on Gloo availability, this fails when gloo is not avail. ghstack-source-id: 148837056",
+                    "commit_link": "https://github.com/pytorch/pytorch/commit/678c08bb55eef0c2e707a17d0cd6e50f5b9bd427"
+                }
+        },
+    "entry12":
+        {
+            "example1":
+                {
+                    "Deleted lines": "-    if device_type.lower() == \"cuda\":",
+                    "Added lines": "+    if device_type and device_type.lower() == \"cuda\":",
+                    "Label": "YES",
+                    "Commit message": "Fix AttributeError in _get_device_attr (#48406)Summary:In PyTorch 1.5, when running `torch.cuda.reset_peak_memory_stats()` on a machine where `torch.cuda.is_available() is False`, I would get:```AssertionError:Found no NVIDIA driver on your system. Please check that youhave an NVIDIA GPU and installed a driver fromhttp://www.nvidia.com/Download/index.aspx```In PyTorch 1.7, the same gets me a worse error (and a user warning about missing NVIDIA drivers if you look for it):```...File would be pretty gross if pytorch_memlab had to change that to catch an AttributeError.With this patch, we get a more sensible:```...File ",
+                    "commit_link": "https://github.com/pytorch/pytorch/commit/1c02be1b6a0f6d02d3a0ae19c13d51a3e59a55ae"
+                },
+            "example2":
+                {
+                    "Deleted lines": "-    if (indices.is_cuda()) {",
+                    "Added lines": "+    if (!indices.is_cpu()) {",
+                    "Label": "YES",
+                    "Commit message": " Fix issue in sparce_coo_tensor only supporting CUDA device.  ## Motivation The at::native::_validate_sparse_coo_tensor_args only supports checking the indices on CUDA device and CPU device. To extend the function to support more device type. ",
+                    "commit_link": "https://github.com/pytorch/pytorch/commit/a9deda5469a6ef73692a9dd796cc4eeba4436d6c"
+                }
+        },
+    "entry13":
+        {
+            "example1":
+                {
+                    "Deleted lines": "-        if (nativeLibsDoNotStrip) {",
+                    "Added lines": "+        if (nativeLibsDoNotStrip.toBoolean()) {\n+            logger.warn('WARNING: nativeLibsDoNotStrip==true; debug symbols included')",
+                    "Label": "YES",
+                    "Commit message": " Fix issue in sparce_coo_tensor only supporting CUDA device.  ## Motivation The at::native::_validate_sparse_coo_tensor_args only supports checking the indices on CUDA device and CPU device. To extend the function to support more device type. ",
+                    "commit_link": "https://github.com/pytorch/pytorch/commit/8e3486de81d848e5c9a375134b3b14998ac36654"
+                },
+            "example2":
+                {
+                    "Deleted lines": "",
+                    "Added lines": "+static PyObject * THPVariable__is_view(PyObject *self, PyObject* args)\n+{\n+  HANDLE_TH_ERRORS\n+  auto& self_ = reinterpret_cast<THPVariable*>(self)->cdata;\n+  if (self_.is_view()) {\n+    Py_RETURN_TRUE;\n+  } else {\n+    Py_RETURN_FALSE;\n+  }\n+  END_HANDLE_TH_ERRORS\n+}\n+\n+  {\"_is_view\", (PyCFunction)THPVariable__is_view, METH_NOARGS, NULL},",
+                    "Label": "NO",
+                    "Commit message": "I don't know if we actually want to expose this or not, but it's useful for debugging.",
+                    "commit_link": "https://github.com/pytorch/pytorch/commit/bd1271338ada8eda28a72e028a5521480d118bfb"
+                }
+        }
+}
