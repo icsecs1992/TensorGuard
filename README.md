@@ -7,7 +7,7 @@ to the International Conference on Software Engineering (ICSE) 2025 second cycle
 <img src="https://github.com/icsecs1992/TensorGuard/blob/master/assets/ML_APR_flow_new.png" width="600" class="center">
 
 ### :wave: Overview
-TensorGuard is an LLM-based automatic checker designed to detect and fix checker bugs in deep learning libraries.
+TensorGuard is an LLM-based automatic tool designed to detect and fix checker bugs in deep learning libraries.
 It operates as a multi-agent tool and is equipped with a RAG vector database.
 TensorGuard performs bug detection and program repair at the repository level, focusing on changes such as deleted and added lines in commits.
 
