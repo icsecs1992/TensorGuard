@@ -1,6 +1,6 @@
 ## TensorGuard
 This is the open-source repository of the paper titled **Taming Checker Bugs in Deep Learning Libraries** Submitted
-to the International Conference on Software Engineering (ICSE) 2025 second cycle. 
+to the The ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA) 2025. 
 
 :wave: We have taken extensive measures to ensure that this GitHub repository remains anonymous. We are also constantly updating the repository to improve the reproducibility of the package for other researchers.
 
@@ -11,7 +11,7 @@ TensorGuard is an LLM-based automatic tool designed to detect and fix checker bu
 It operates as a multi-agent tool and is equipped with a RAG vector database.
 TensorGuard performs bug detection and program repair at the repository level, focusing on changes such as deleted and added lines in commits.
 
-:bell: Currently, TensorGuard does not support a docker environment, so we recommend running it under virtual environments, e.g., Conda.
+:bell: Currently, TensorGuard does not support a docker environment, so we recommend you running it under virtual environments, e.g., Conda.
 
 ### Data
 You can access all of our data as follows:
